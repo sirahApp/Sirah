@@ -107,7 +107,12 @@
     "top": "37.77%",
     "height": "6.04%",
     "paddingLeft": "5",
-    "paddingRight": "5"
+    "paddingRight": "5",
+    "hintText": "فضلا آدخل الاسم الرباعي",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12
+       }
 }
 
 "#lbl_Fullnamelbl": {
@@ -118,7 +123,7 @@
     "left": "72.39%",
     "color": "#FFFFFF",
     "width": "23%",
-    "text": "الإسم الرباعي",
+    "text": "الإسم الرباعي *",
     "top": "39.93%",
     "height": "size"
 }
@@ -132,7 +137,12 @@
     "top": "47.63%",
     "height": "6.04%",
     "paddingLeft": "5",
-    "paddingRight": "5"
+    "paddingRight": "5",
+    "hintText": "فضلا أدخل الرقم الجامعي ",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12
+       }
 }
 
 "#lbl_Idnumberlbl": {
@@ -143,7 +153,7 @@
     "left": "71.97%",
     "color": "#FFFFFF",
     "width": "24%",
-    "text": "الرقم الجامعي",
+    "text": "الرقم الجامعي *",
     "top": "49.65%",
     "height": "size"
 }
@@ -156,7 +166,7 @@
     "left": "76.56%",
     "color": "#FFFFFF",
     "width": "13%",
-    "text": "الجامعة",
+    "text": "الجامعة *",
     "top": "59.86%",
     "height": "size"
 }
@@ -170,7 +180,12 @@
     "top": "67.36%",
     "height": "6.04%",
     "paddingLeft": "5",
-    "paddingRight": "5"
+    "paddingRight": "5",
+    "hintText": "فضلا آدخل رقم الجوال",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12
+       }
 }
 
 "#lbl_Phonenumberlbl": {
@@ -181,7 +196,7 @@
     "left": "74.16%",
     "color": "#FFFFFF",
     "width": "19%",
-    "text": "رقم الجوال",
+    "text": "رقم الجوال *",
     "top": "69.65%",
     "height": "size"
 }
@@ -202,10 +217,10 @@
     "width": "4.79%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/checkbox_normal.png",
+    "backgroundImage": "/images/checkbox_pressed.png",
     "top": "79.02%",
     "height": "3.19%",
-    "backgroundSelectedImage": "/images/checkbox_pressed.png"
+    //"backgroundSelectedImage": "/images/checkbox_pressed.png"
 }
 
 "#txtFld_Uniname": {
@@ -217,6 +232,24 @@
     "top": "57.36%",
     "height": "6.04%",
     "paddingLeft": "5",
-    "paddingRight": "5"
+    "paddingRight": "5",
+    "hintText": "فضلا آدخل اسم الجامعة",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "font": {
+        "fontSize": 12
+       }
+}
+
+
+"#requiredText": {
+	"font": {
+        "fontSize":12,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "color": "red",
+    "left": "75.29%",
+    "top": "83.45%"
+    
+	
 }
 

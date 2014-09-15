@@ -15,7 +15,5 @@ function onBtn_openinfoClicked(e){
 	winInfo.open();
 	};
 
-			
-	
 	
 $.index.open();

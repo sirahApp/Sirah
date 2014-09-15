@@ -11,21 +11,23 @@
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
 
         <TextField id="txtFld_Fullname" />
-        <Label id="lbl_Fullnamelbl" />
+        <Label id="lbl_Fullnamelbl"/>
         
         <TextField id="txtFld_Idnumber" />
-        <Label id="lbl_Idnumberlbl" />
+        <Label id="lbl_Idnumberlbl"/>
         
-        <Label id="lbl_Uninamelbl" />
         <TextField id="txtFld_Uniname" />
-
-        <Label id="lbl_Phonenumberlbl" />
-        <TextField id="txtFld_Phonenumber" />
+        <Label id="lbl_Uninamelbl"/>
         
-        <Label id="lbl_Checkboxlbl" />        
-        <Button id="btn_Checkbox" />
+        <TextField id="txtFld_Phonenumber" />
+        <Label id="lbl_Phonenumberlbl"/> 
+        
+        
+        <Label id="lbl_Checkboxlbl"/>      
+        <Button id="btn_Checkbox" onClick="changeCheckbox" />
 
         <Button id="btn_Sendscore" onClick="sendScore"/>
+        <Label id="requiredText">  (*) مطلوب</Label>
         
         		
 	</Window>
