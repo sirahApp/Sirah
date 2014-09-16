@@ -52,13 +52,13 @@ function sendScore()
 		
 		if (($.txtFld_Fullname.value==" " ) || (! $.txtFld_Fullname.hasText()) ||( $.txtFld_Idnumber.value==" ") || (!$.txtFld_Idnumber.hasText()) || ( $.txtFld_Uniname.value==" ") || (! $.txtFld_Uniname.hasText()) || ( $.txtFld_Phonenumber.value==" ") || (! $.txtFld_Phonenumber.hasText()))
 		{
-				alert(alertText);
+				customAlert(alertText);
 				
 		}
 		
 		else if (checkIndex != 1)
 				{
-					alert("الرجاء الموافقة على التعهد بالشروط");
+					customAlert("الرجاء الموافقة على التعهد بالشروط");
 					}
 		else
 		{
@@ -105,6 +105,17 @@ function onImg_homebtnClicked()
 			}	
 	});
 
+	dialog.show();
+	
+}
+
+function customAlert(msg)
+	{	
+		var dialog = Ti.UI.createAlertDialog({
+		title :'اكمال البيانات',
+		message: msg,
+		buttonNames: ['موافق']
+	});
 	dialog.show();
 	
 }

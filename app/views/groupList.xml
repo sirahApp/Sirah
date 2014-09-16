@@ -20,7 +20,7 @@
 				<Templates>
 					<ItemTemplate name="listItemTemp" >
 						
-						<Label bindId="title" />
+						<Label bindId="title" id="titleLbl" />
 					</ItemTemplate>
 				</Templates>
 				

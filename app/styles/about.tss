@@ -50,7 +50,7 @@
 	  "color":"#FFFFFF",
 	 
 	  "font": {
-		"fontSize": "16dp",
+		"fontSize": "26sp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
 }
@@ -83,6 +83,6 @@
 	left: '2%',
 	right: '5%',
 	font : {
-		fontSize: 12,
+		fontSize: '16sp',
 	}
 }

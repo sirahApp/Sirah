@@ -93,21 +93,21 @@
 "#audioTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
 	"font": {
-        "fontSize": 12,
+        "fontSize": '18sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "7.5%",
     //"left": "5%",
     "color": "#666666",
     "width": "87%",
-    "top": "70%",
+    "top": "65%",
     "bottom": "5%",
     "height": "size",
 }
 
 "#duration": {
 	"font": {
-        "fontSize": 12
+        "fontSize": '12sp',
     },
     "left": "8.64%",
     "color": "#666666",
@@ -120,7 +120,7 @@
 "#groupTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": 12,
+        "fontSize": '20sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "5%",
@@ -134,7 +134,7 @@
 
 "#pageNumber": {
     "font": {
-        "fontSize": 13,
+        "fontSize": '14sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "left": "46.25%",

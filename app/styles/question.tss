@@ -45,14 +45,14 @@
 "#questiontxt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": 12,
+        "fontSize": '20sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
     "left": "10%",
     "color": "#FFFFFF",
     "width": "81%",
-    "top": "35.9%",
+    "top": "32%",
     "height": "size"
 }
 
@@ -62,8 +62,8 @@
 
 "#ch1": {
     "right": "5%",
-    "width": "75%",
-    "top": "20%",
+    "width": "90%",
+    "top": "15%",
     "height": "size",
     value: false,
     "number":"1"
@@ -71,7 +71,7 @@
 
 "#ch2": {
     "right": "5%",
-    "width": "75%",
+    "width": "90%",
     "top": "45%",
     "height": "size",
     value: false,
@@ -81,7 +81,7 @@
 
 "#ch3": {
     "right": "5%",
-    "width": "75%",
+    "width": "90%",
     "top": "70%",
     "height": "size",
     value: false,
@@ -92,7 +92,7 @@
 "#ch1Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
 	    "font": {
-        "fontSize": 12,
+        "fontSize": '20sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "20%",
@@ -104,7 +104,7 @@
 "#ch2Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     	"font": {
-    	    "fontSize": 12,
+    	    "fontSize": '20sp',
         	"fontFamily": "HelveticaNeueW23forSKY-Reg"
     		},
     "right": "20%",
@@ -117,7 +117,7 @@
 "#ch3Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": 12,
+        "fontSize": '20sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "20%",
@@ -175,7 +175,7 @@
 
 "#pageNumber": {
     "font": {
-        "fontSize": 13,
+        "fontSize": '14sp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "left": "46.04%",
@@ -192,7 +192,7 @@
     "width": "88.95%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "46.8%",
+    "top": "50%",
     "height": "27.84%",
     "image": "/images/imageView1_image.png"
 
@@ -203,7 +203,7 @@
     "width": "88.95%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "46.8%",
+    "top": "50%",
     "height": "27.84%"
 }
 

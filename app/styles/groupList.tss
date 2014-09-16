@@ -81,7 +81,7 @@
 
 "#lbl_Grp_item": {
     "font": {
-        "fontSize": 14.6666666666667,
+        "fontSize": '20sp',
         "fontFamily": "GEDinarOne-Medium"
     },
     "left": "67.08%",
@@ -94,4 +94,10 @@
 
 "#lst": {
 	top: '17%',
+}
+
+"#titleLbl": {
+	"font": {
+		"fontSize": '20sp',
+	}
 }

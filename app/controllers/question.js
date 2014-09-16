@@ -53,7 +53,7 @@ function onBtn_nxtaudiobtnClicked()
 	{   
 		if( $.ch1.value==false && $.ch2.value==false && $.ch3.value==false)
 		{
-			alert("فضلاً اختر إجابة");
+			customAlert();
 	
 		}else{
 		
@@ -142,6 +142,17 @@ function onImg_homebtnClicked()
 			}	
 		});
 
+	dialog.show();
+	
+}
+
+function customAlert()
+	{	
+		var dialog = Ti.UI.createAlertDialog({
+		title :'الإجابة',
+		message: 'فضلاً اختر إجابة',
+		buttonNames: ['موافق']
+	});
 	dialog.show();
 	
 }
