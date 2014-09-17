@@ -54,7 +54,20 @@ var audioPlayer = Ti.Media.createAudioPlayer({
     allowBackground: true
 });  
 
-
+ audioPlayer.addEventListener('change',function(e)
+{
+	console.log(e.description);
+	
+	if (e.description ==  "waiting_for_queue" ||e.description == "starting" )
+		{
+			$.waiting.setText("جاري التحميل .. ");
+			}
+			else
+			{
+				$.waiting.setText(" ");
+			}
+ 
+ });
 function playtrack () {
 	
 	if (Titanium.Network.online == false )
@@ -184,7 +197,7 @@ function onImg_homebtnClicked(){
 
 	
 	var dialog = Ti.UI.createAlertDialog({
-		title :'العودة للقائمة الرئيسية',
+		title :'تنبيه ',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
 		buttonNames: ['نعم','لا']
 	});

@@ -10,7 +10,7 @@
 		<Label id="audioTextLbl"></Label>
 		<Button id="btn_Playpausebtn" onClick="playtrack"/>
         <Button id="btn_Stopbtn" onClick="stopTrack"/>
-        
+        <Label id="waiting"></Label>
        <!--  <Label id="waitingAudio"></Label> -->
 		
 		<View id="timeBar">

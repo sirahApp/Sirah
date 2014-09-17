@@ -181,3 +181,13 @@
     "backFillStart":false
   }
 }
+
+"#waiting": {
+	"left": "5%",
+    "top": "33%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    },
+    "color": "#666666"
+}
