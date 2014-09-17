@@ -149,7 +149,7 @@ function onImg_homebtnClicked()
 function customAlert()
 	{	
 		var dialog = Ti.UI.createAlertDialog({
-		title :'الإجابة',
+		title :'تنبيه',
 		message: 'فضلاً اختر إجابة',
 		buttonNames: ['موافق']
 	});

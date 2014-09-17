@@ -87,14 +87,15 @@
 
 "#lbl_Checkboxlbl": {
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "48.12%",
+    //"left": "48.12%",
+    "right": "16%",
     "color": "#666666",
     "width": "45%",
     "text": "أتعهد بالتقيد بالشروط ... ",
-    "top": "79.51%",
+    "top": "77.51%",
     "height": "size"
 }
 
@@ -111,20 +112,21 @@
     "hintText": "فضلا آدخل الاسم الرباعي",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
        }
 }
 
 "#lbl_Fullnamelbl": {
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "72.39%",
+    //"left": "72.39%",
+    "right": "5%",
     "color": "#FFFFFF",
-    "width": "23%",
-    "text": "الإسم الرباعي *",
-    "top": "39.93%",
+    "width": "size",
+    "text": "الإسم الرباعي*",
+    "top": "37.93%",
     "height": "size"
 }
 
@@ -141,33 +143,35 @@
     "hintText": "فضلا أدخل الرقم الجامعي ",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
        }
 }
 
 "#lbl_Idnumberlbl": {
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "71.97%",
+    //"left": "71.97%",
+    "right": "5%",
     "color": "#FFFFFF",
-    "width": "24%",
-    "text": "الرقم الجامعي *",
-    "top": "49.65%",
+    "width": "size",
+    "text": "الرقم الجامعي*",
+    "top": "47.65%",
     "height": "size"
 }
 
 "#lbl_Uninamelbl": {
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "76.56%",
+    //"left": "76.56%",
+    "right": "5%",
     "color": "#FFFFFF",
-    "width": "13%",
-    "text": "الجامعة *",
-    "top": "59.86%",
+    "width": "size",
+    "text": "الجامعة*",
+    "top": "57.86%",
     "height": "size"
 }
 
@@ -184,20 +188,21 @@
     "hintText": "فضلا آدخل رقم الجوال",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
        }
 }
 
 "#lbl_Phonenumberlbl": {
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "left": "74.16%",
+    //"left": "74.16%",
+    "right": "5%",
     "color": "#FFFFFF",
-    "width": "19%",
-    "text": "رقم الجوال *",
-    "top": "69.65%",
+    "width": "size",
+    "text": "رقم الجوال*",
+    "top": "67.65%",
     "height": "size"
 }
 
@@ -213,12 +218,13 @@
 }
 
 "#btn_Checkbox": {
-    "left": "87.29%",
+    //"left": "87.29%",
+    "right": "10%",
     "width": "4.79%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/checkbox_pressed.png",
-    "top": "79.02%",
+    "top": "77.02%",
     "height": "3.19%",
     //"backgroundSelectedImage": "/images/checkbox_pressed.png"
 }
@@ -236,14 +242,14 @@
     "hintText": "فضلا آدخل اسم الجامعة",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
        }
 }
 
 
 "#requiredText": {
 	"font": {
-        "fontSize": '16sp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "color": "red",
