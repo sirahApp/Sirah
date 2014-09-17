@@ -13,19 +13,19 @@
 			
 
 			
-			<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails">
+<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails" autoStyle="">
 
 				
-<!-- http://docs.appcelerator.com/titanium/latest/#!/guide/ListViews 	-->			
+<!-- http://docs.appcelerator.com/titanium/latest/#!/guide/ListViews  -->			
 				<Templates>
 					<ItemTemplate name="listItemTemp" >
-						
+						<ImageView id="img_Arrow" />  										
 						<Label bindId="title" id="titleLbl" />
 					</ItemTemplate>
 				</Templates>
 				
 				<ListSection dataCollection="groups">
-					<ListItem title:text="{title}"/>
+					<ListItem title:text="{title}" id="lstItem"/>
 				</ListSection>
 			</ListView>
 		</Window>
