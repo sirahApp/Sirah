@@ -164,5 +164,20 @@
 }
 
 "#timeBar":{
-	"top": "47%"
+	"top": "47%",
+	"width": 250,
+	"height": "7%",
+	"backgroundColor": "#857274",
+}
+
+"#timeProgress":{
+	"left": "0%",
+	"width": "0%",
+	"backgroundGradient": {
+    "type": 'linear',
+    "colors": ['#85447f', '#d59f5b'],
+    "startPoint": { x: 0, y: 0 },
+    "endPoint": { x: '100%', y: '100%' },
+    "backFillStart":false
+  }
 }

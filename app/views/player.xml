@@ -13,8 +13,9 @@
         
        <!--  <Label id="waitingAudio"></Label> -->
 		
-		<View id="timeBar"  width="250" height="10" backgroundColor="black"  >
-		<View id="timeProgress" width="1" height="10"  backgroundColor="gray" left="0" /></View>
+		<View id="timeBar">
+		<View id="timeProgress"/>
+		</View> 
 		<Label id="duration"></Label>
 		</View>
 		<Button onClick="onBtn_showquestionClicked" id="btn_Showquestion" />

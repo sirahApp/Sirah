@@ -129,7 +129,7 @@ function onImg_homebtnClicked()
 
 	
 		var dialog = Ti.UI.createAlertDialog({
-		title :' العودة للقائمة الرئيسية',
+		title :' تنبيه',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
 		buttonNames: ['نعم','لا']
 	});

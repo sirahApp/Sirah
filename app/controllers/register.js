@@ -63,6 +63,7 @@ function sendScore()
 		else
 		{	
 				checkID();
+				
 				 	
 		} 
 	
@@ -78,9 +79,10 @@ function checkID(){
 }, function (e) {
     if (e.success) {
     	if(e.sirah.length){
-    		        alert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
+    		       customAlert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
     	}else{
     				sendToACS();
+    				
     		
     	}
     	
@@ -113,7 +115,9 @@ function sendToACS(){
 			      }
 			    }, function(e) {
 			      if(e.success) {
-			        alert("تم  إرسال إجابتك");
+			        customAlert("تم إرسال إجابتك");
+			        $.register.close();
+			        
 			      } else {
 			        alert('Error: ' + ((e.error && e.message) || JSON.stringify(e)));
 			      }
@@ -132,7 +136,7 @@ function sendToACS(){
 function onImg_homebtnClicked()
 	{
 		var dialog = Ti.UI.createAlertDialog({
-		title :' العودة للقائمة الرئيسية',
+		title :' تنبيه',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
 		buttonNames: ['نعم','لا']
 	});
