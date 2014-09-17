@@ -11,7 +11,7 @@
     <copyright>2014 by nourainclub</copyright>
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
+    <navbar-hidden>true</navbar-hidden>
     <analytics>true</analytics>
     <guid>0b311dae-ba78-4b8d-ba6c-0fc4b6a13a3c</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>

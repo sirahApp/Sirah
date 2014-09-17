@@ -5,7 +5,9 @@
         <ImageView id="img_Logo" />
          <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />	
          	
+         	<View id="QTxt">
 			<Label id="questiontxt"></Label>
+			</View>
 
             <ImageView id="img_Imageview1"/> 			
 			<View id="choices">

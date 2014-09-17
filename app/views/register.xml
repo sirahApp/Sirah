@@ -6,10 +6,11 @@
 
 		
 		
-		 <ImageView id="img_Imageview1" />
+		<ImageView id="img_Imageview1" />
         <ImageView  id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
 
+        
         <TextField id="txtFld_Fullname" />
         <Label id="lbl_Fullnamelbl"/>
         

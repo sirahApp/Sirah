@@ -112,7 +112,7 @@ function onImg_homebtnClicked()
 function customAlert(msg)
 	{	
 		var dialog = Ti.UI.createAlertDialog({
-		title :'اكمال البيانات',
+		title :'تنبيه',
 		message: msg,
 		buttonNames: ['موافق']
 	});
