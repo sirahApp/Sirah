@@ -28,8 +28,7 @@
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
 
         <Button id="btn_Sendscore" onClick="sendScore"/>
-        <Label id="requiredText">  (*) مطلوب</Label>
-        
+     
         		
 	</Window>
 </Alloy>

@@ -10,8 +10,8 @@ function changeCheckbox()
 {
 	if (checkIndex == 0)
 	{
-	$.btn_Checkbox.backgroundImage = "/images/checkbox_normal.png";
-	checkIndex = 1;
+		$.btn_Checkbox.backgroundImage = "/images/checkbox_normal.png";
+		checkIndex = 1;
 	}
 	else
 	{
@@ -57,37 +57,77 @@ function sendScore()
 		}
 		
 		else if (checkIndex != 1)
-				{
-					customAlert("الرجاء الموافقة على التعهد بالشروط");
-					}
-		else
 		{
-			Cloud.Users.create({
-    first_name: $.fullName.value,
-    password: "password",
-    password_confirmation: "password",
-    username: $.IdNumber.value,
-    custom_fields:'{
- 					 "score": userScore,
- 					 "phone_number": $.phoneNumber.value
- 					 "university":$.uniName.value}'
- 					 }
- 					, function (e) {
- 		checkFields(first_name, username, phone_number,university);
-    if (e.success) {
-     console.log("user created successfully");
-    } else {
-     console.log("oops, something went wrong");// 
-    }
-});	
+				customAlert("الرجاء الموافقة على التعهد بالشروط");
+		}
+		else
+		{	
+				checkID();
+				 	
 		} 
 	
 	}
 
-//$.grptxt.text=args.groupid;
-//$.scoretxt.text="Your Score  "+ Alloy.Globals.score;
+function checkID(){
+	Cloud.Objects.query({
+    classname: 'sirah',
+    where: {
+        group_id : args.groupid,
+		id_number:$.txtFld_Idnumber.value
+    }
+}, function (e) {
+    if (e.success) {
+    	if(e.sirah.length){
+    		        alert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
+    	}else{
+    				sendToACS();
+    		
+    	}
+    	
 
-console.log("Score" + Alloy.Globals.score);
+
+    } else {
+        alert('Error:\n' +
+            ((e.error && e.message) || JSON.stringify(e)));
+    }
+});}
+
+
+function sendToACS(){
+	
+	Cloud.Users.login({
+			  login  : 'admin',
+			  password: 'password',
+			}, function(e) {
+			  if (e.success)   {
+			 
+			    Cloud.Objects.create({
+			      classname : 'sirah',
+			      fields : {
+					name : $.txtFld_Fullname.value,
+			        score : userScore,
+			        group_id : args.groupid,
+			        id_number:$.txtFld_Idnumber.value,
+			        phone_number:$.txtFld_Phonenumber.value,
+			        uni:$.txtFld_Uniname.value
+			      }
+			    }, function(e) {
+			      if(e.success) {
+			        alert("تم  إرسال إجابتك");
+			      } else {
+			        alert('Error: ' + ((e.error && e.message) || JSON.stringify(e)));
+			      }
+			    }); 
+			                 
+			  } else {
+			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
+			  } 
+			});
+	
+	
+}
+
+
 
 function onImg_homebtnClicked()
 	{

@@ -13,9 +13,7 @@ var winAbout = Alloy.createController('about').getView();
 function onBtn_openinfoClicked(e){
 	var winInfo = Alloy.createController('info').getView();
 	winInfo.open();
-	winInfo.activity.actionBar.hide();
 	};
 
 	
 $.index.open();
-$.index.activity.actionBar.hide();
