@@ -76,7 +76,7 @@
     "bottom": "2.48%",
     "backgroundLeftCap": 0.1,
     "height": "2.48%",
-    "image": "/images/separator.png"
+    "image": "/images/separator_image.png"
 }
 
 "#lbl_Grp_item": {
