@@ -62,7 +62,7 @@ function playtrack () {
     		
     		$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
     		console.log("no connection");
-    		alert("فضلا تحقق من الاتصال");
+    		customAlert();
     	}
     	
     	else
@@ -206,5 +206,16 @@ function onImg_homebtnClicked(){
   
 
 dialog.show();
+	
+}
+
+function customAlert()
+	{	
+		var dialog = Ti.UI.createAlertDialog({
+		title :'تنبيه',
+		message: 'فضلا تحقق من الاتصال',
+		buttonNames: ['موافق']
+	});
+	dialog.show();
 	
 }

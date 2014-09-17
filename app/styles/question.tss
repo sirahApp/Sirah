@@ -76,7 +76,7 @@
 "#ch2": {
     "right": "5%",
     "width": "90%",
-    "top": "45%",
+    "top": "42%",
     "height": "size",
     value: false,
     "number":"2"
