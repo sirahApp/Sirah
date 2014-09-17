@@ -31,7 +31,7 @@ else if (pageNumber == 4)
 else if (pageNumber == 5)
 {
 	pageNumber = "٦/٥";
-}  
+}  
 
 $.pageNumber.text = pageNumber ;
 
@@ -108,7 +108,7 @@ Titanium.Network.addEventListener('change', function(e){
 			stopTrack();
 			$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
     	    console.log("no connection event!");
-    	    alert("فضلا تحقق من الاتصال");
+    	   // alert("فضلا تحقق من الاتصال");
     	}
 	});
 
