@@ -112,7 +112,11 @@ function stopTrack() {
     	}          
         }
 
-
+audioPlayer.addEventListener('complete',function(e) 
+{
+	$.timeProgress.applyProperties({width: "100%" });
+	$.duration.setText(formatTime(Math.round(audioPlayer.duration/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000)));	
+});
 
 
 Titanium.Network.addEventListener('change', function(e){
@@ -140,7 +144,7 @@ audioPlayer.addEventListener('progress',function(e)
       else 
 		{
 			
-    var playedTime=formatTime(Math.round(audioPlayer.progress/1000))+" : "+formatTime(Math.round(audioPlayer.duration/1000));
+    var playedTime=formatTime(Math.round(audioPlayer.progress/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
     if (audioPlayer.progress > 0) 
    	{
    		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.progress);
