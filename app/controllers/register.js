@@ -3,7 +3,10 @@ var Cloud = require('ti.cloud');
 Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
 var userScore=Alloy.Globals.score;
-
+if (Ti.Platform.name === 'iPhone OS')
+{
+$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+}
 
 var checkIndex = 0;
 function changeCheckbox()
@@ -23,25 +26,25 @@ function changeCheckbox()
 
 function setAlertText()
 {
-	var alertText="فضلا أدخل";
+	var alertText="فضلا أدخل:";
 		    if (($.txtFld_Fullname.value==" " ) || (! $.txtFld_Fullname.hasText()) )
 		{
-			alertText+=" الاسم الرباعي ..";
+			alertText+=" \nالاسم الرباعي ";
 			} 
 		  
 		    if (( $.txtFld_Idnumber.value==" ") || (!$.txtFld_Idnumber.hasText()))
 		{
-			alertText+=(" الرقم الجامعي .. ");
+			alertText+=(" \nالرقم الجامعي");
 			}
 			
 			if ( ( $.txtFld_Uniname.value==" ") || (! $.txtFld_Uniname.hasText()) )
 		{
-			alertText+=" اسم الجامعة ..";
+			alertText+=" \nاسم الجامعة";
 			} 
 			
 			if ( ( $.txtFld_Phonenumber.value==" ") || (! $.txtFld_Phonenumber.hasText()) )
 		{
-			alertText+= " رقم الجوال ..";
+			alertText+= " \nرقم الجوال";
 			} 
 			return alertText;
 }
@@ -80,17 +83,14 @@ function checkID(){
     if (e.success) {
     	if(e.sirah.length){
     		       customAlert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
-    	}else{
+    	}
+    	else
+    	{
     				sendToACS();
-    				
-    		
     	}
     	
-
-
     } else {
-        alert('Error:\n' +
-            ((e.error && e.message) || JSON.stringify(e)));
+        customAlert("خطأ في الإرسال");
     }
 });}
 
@@ -119,7 +119,7 @@ function sendToACS(){
 			        $.register.close();
 			        
 			      } else {
-			        alert('Error: ' + ((e.error && e.message) || JSON.stringify(e)));
+			       customAlert("خطأ في الإرسال");
 			      }
 			    }); 
 			                 

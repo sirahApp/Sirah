@@ -5,7 +5,10 @@ Alloy.Collections.groups.fetch();
 Alloy.Collections.sirah.fetch();
 Alloy.Globals.score=0;
 
-
+if (Ti.Platform.name === 'iPhone OS')
+{
+$.groupList.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+}
 function openDetails(e){
  	var groupNumber=e.itemindex+1;
 	console.log('e.itemindex '+ e.itemIndex);

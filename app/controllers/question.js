@@ -3,7 +3,10 @@ var args = arguments[0] || {};
 Alloy.Collections.groups.fetch();
 Alloy.Collections.sirah.fetch();
 
-
+if (Ti.Platform.name === 'iPhone OS')
+{
+$.question.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+}
 
 $.questiontxt.text=args.question.question;
 $.ch1Txt.text=args.question.ch1;

@@ -1,6 +1,10 @@
 
 var args = arguments[0] || {};
 
+if (Ti.Platform.name === 'iPhone OS')
+{
+$.player.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+}
 var epindex=args.sirah.get('id');
 
 var audionum=args.sirah.get('audionumber'); 
