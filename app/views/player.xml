@@ -4,13 +4,13 @@
 		<ImageView  id="img_Logo" />
 		
 		<ImageView id="img_Imageview1" />
-		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />		
+		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+		<Label id="waiting"></Label>		
 		<View id="plyView"> 
 		<Label id="groupTextLbl"></Label>
 		<Label id="audioTextLbl"></Label>
 		<Button id="btn_Playpausebtn" onClick="playtrack"/>
         <Button id="btn_Stopbtn" onClick="stopTrack"/>
-        <Label id="waiting"></Label>
        <!--  <Label id="waitingAudio"></Label> -->
 		
 		<View id="timeBar">
