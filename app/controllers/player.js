@@ -54,9 +54,10 @@ var q={
 	
 
 var audioPlayer = Ti.Media.createAudioPlayer({ 
-    url: "http://d1.islamhouse.com/data/ar/ih_sounds/chain/ar_Fe_Thilal_Asiyrah/ar_Fe_Thilal_Asiyrah_"+audionum+".mp3",
-    allowBackground: true
+    url: "http://nadialnourain.com/sirah/"+audionum+".mp3",
+    allowBackground: false
 });  
+
 
  audioPlayer.addEventListener('change',function(e)
 {
