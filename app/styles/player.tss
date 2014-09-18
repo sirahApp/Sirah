@@ -55,17 +55,6 @@
    
 }
 
- "#waitingAudio": {  "font": {
-        "fontSize": 12,
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "left": "67.91%",
-    "color": "#666666",
-    "width": "28%",
-    "top": "51.04%",
-    "height": "size"
- 	
- }
 
 "#btn_Playpausebtn": {
     "left": "21.1%",
@@ -183,11 +172,10 @@
 }
 
 "#waiting": {
-	"left": "5%",
-    "top": "33%",
+    "top": "40%",
     "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "color": "#666666"
+    "color": "white",
 }

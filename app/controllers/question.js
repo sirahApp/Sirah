@@ -121,7 +121,7 @@ function checkAnswer()
 	    }
 	    
 	    
-	    this.backgroundColor = '#aaa';
+	    //this.backgroundColor = '#aaa';
 	    this.highlightedColor='yellow';
 	    answer=this.id;
 	    
