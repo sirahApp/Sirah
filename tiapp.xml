@@ -42,7 +42,12 @@
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>
-        <application android:theme="@style/Theme.NoActionBar"/>
+        <application android:theme="@style/Theme.NoActionBar">
+        	  <activity android:name="org.appcelerator.titanium.TiActivity" 
+                android:screenOrientation="portrait" 
+                android:configChanges="keyboardHidden|orientation">
+            </activity>
+        </application>
         <!-- Need to specify at least API level 11 for Titanium SDK 3.2.x and prior -->
         <!--uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16"/-->
     </manifest>

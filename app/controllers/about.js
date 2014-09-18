@@ -8,7 +8,7 @@ if (Ti.Platform.name === 'iPhone OS')
 {
 $.about.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
-
+      
 function onImg_logoClicked(){
 
 $.about.close();
