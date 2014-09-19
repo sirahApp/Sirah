@@ -63,7 +63,7 @@ var audioPlayer = Ti.Media.createAudioPlayer({
 {
 	console.log(e.description);
 	
-	if (e.description ==  "waiting_for_queue" ||e.description == "starting" )
+	if (e.description ==  "waiting_for_queue" || e.description == "waiting_for_data" ||e.description == "starting" )
 		{
 			$.waiting.setText("جاري التحميل .. ");
 			}
