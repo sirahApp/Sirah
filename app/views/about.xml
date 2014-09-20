@@ -3,6 +3,7 @@
         <ImageView onClick="onImg_logoClicked" id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
 		<Label id="aboutTitle">نادي النورين</Label>
+		<ImageView id="nourain_logo"/>
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="aboutView"> 
 	    <Label id="aboutText"> high</Label>

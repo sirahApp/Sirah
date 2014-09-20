@@ -24,9 +24,11 @@
         <Label id="lbl_Phonenumberlbl"/> 
         
         
-        <Label id="lbl_Checkboxlbl"/>      
+        <Label id="lbl_Checkboxlbl"/>  <Label id="lbl_openInfo" onClick="showInfo"/>   
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
-
+		<ScrollView id="infoView" onClick="hideInfo"> 
+	    	<Label id="infoText"> hi</Label>
+	    </ScrollView>   
         <Button id="btn_Sendscore" onClick="sendScore"/>
      
         		

@@ -58,7 +58,7 @@
 
 "#btn_Playpausebtn": {
     "left": "21.1%",
-    "width": "14.6%",
+    "width": "13%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/playPauseBtn_normal.png",
@@ -70,7 +70,7 @@
 
 "#btn_Stopbtn": {
     "left": "4.75%",
-    "width": "14.6%",
+    "width": "13%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/stopBtn_normal.png",
@@ -85,7 +85,7 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    "right": "7.5%",
+    "right": "5%",
     //"left": "5%",
     "color": "#666666",
     "width": "87%",
@@ -96,12 +96,12 @@
 
 "#duration": {
 	"font": {
-        "fontSize": '12dp',
+        "fontSize": '11dp',
     },
     "left": "8.64%",
     "color": "#666666",
     "width": "size",
-    "top": "55%",
+    "top": "35%",
     "height": "size",
 
 }
@@ -164,7 +164,7 @@
 	"width": "0%",
 	"backgroundGradient": {
     "type": 'linear',
-    "colors": ['#85447f', '#d59f5b'],
+    "colors": ['#d59f5b', '#85447f'],
     "startPoint": { x: 0, y: 0 },
     "endPoint": { x: '100%', y: '100%' },
     "backFillStart":false
