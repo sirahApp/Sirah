@@ -23,12 +23,15 @@
         <TextField id="txtFld_Phonenumber" />
         <Label id="lbl_Phonenumberlbl"/> 
         
-        
-        <Label id="lbl_Checkboxlbl"/>  <Label id="lbl_openInfo" onClick="showInfo"/>   
+        <View id="agreements">
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
-		<ScrollView id="infoView" onClick="hideInfo"> 
-	    	<Label id="infoText"> hi</Label>
-	    </ScrollView>   
+        <Label id="lbl_Checkboxlbl"/>  <Label id="lbl_openInfo" onClick="showInfo"/>   
+		</View>
+		<ScrollView id="infoView" onClick="hideInfo">
+			<Label id="closeTxt"> X إغلاق </Label> 
+	    	<Label id="infoText"></Label>
+	    </ScrollView> 
+	      
         <Button id="btn_Sendscore" onClick="sendScore"/>
      
         		

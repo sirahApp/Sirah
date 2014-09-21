@@ -90,7 +90,6 @@
 
 
 
-
 "#nourain_logo":{
     "left": "25%",
     "width": "42%",
@@ -106,44 +105,44 @@
 
 
 "#twitter_icon":{
-    "right": "86.35%",
+    "right": "31%",
     "width": "8%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "6.38%",
+    "top": "37%",
     "height": "5.13%",	
 	"image":"/images/twitter.png",	
 	
 }
 
 "#facebook_icon":{
-    "right": "76.35%",
+    "right": "41%",
     "width": "8%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "6.38%",
+    "top": "37%",
     "height": "5.13%",	
 	"image":"/images/facebook.png",	
 	
 }
 
 "#youtube_icon":{
-    "right": "66.35%",
+    "right": "51%",
     "width": "8%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "6.38%",
+    "top": "37%",
     "height": "5.13%",	
 	"image":"/images/youtube.png",	
 	
 }
 
 "#blog_icon":{
-    "right": "56.35%",
+    "right": "61%",
     "width": "8%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "top": "6.38%",
+    "top": "37%",
     "height": "5.13%",	
 	"image":"/images/blog.png",	
 	
