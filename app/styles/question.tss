@@ -100,7 +100,7 @@
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
-    "color": "#000000",
+    "color": "#150e26",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
@@ -112,7 +112,7 @@
         	"fontFamily": "HelveticaNeueW23forSKY-Reg"
     		},
     "right": "10%",
-    "color": "#000000",
+    "color": "#150e26",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
@@ -125,7 +125,7 @@
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
-    "color": "#000000",
+    "color": "#150e26",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
