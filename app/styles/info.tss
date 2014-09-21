@@ -79,14 +79,16 @@
 },
 
 "#infoText": {
-	textAlign: 'right',
-	color: 'black',
-	top: '1%',
+	textAlign: 'center',
+	color: '#150e26',
+	top: '5%',
 	//bottom: '1%',
 	left: '2%',
-	right: '5%',
-	font : {
-		fontSize: '14dp',
+	right: '2%',
+	  "font": {
+		"fontSize": "12dp",
+		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
 }
+
 

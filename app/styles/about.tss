@@ -76,13 +76,75 @@
 },
 
 "#aboutText": {
-	textAlign: 'right',
-	color: 'black',
-	top: '1%',
+	textAlign: 'center',
+	color: '#150e26',
+	top: '5%',
 	//bottom: '1%',
 	left: '2%',
-	right: '5%',
-	font : {
-		fontSize: '14dp',
+	right: '2%',
+	  "font": {
+		"fontSize": "12dp",
+		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
+}
+
+
+
+
+"#nourain_logo":{
+    "left": "25%",
+    "width": "42%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "11%",
+    "height": "28%",
+	"image":"/images/nourain_logo.png"
+
+	
+		
+}
+
+
+"#twitter_icon":{
+    "right": "86.35%",
+    "width": "8%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",	
+	"image":"/images/twitter.png",	
+	
+}
+
+"#facebook_icon":{
+    "right": "76.35%",
+    "width": "8%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",	
+	"image":"/images/facebook.png",	
+	
+}
+
+"#youtube_icon":{
+    "right": "66.35%",
+    "width": "8%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",	
+	"image":"/images/youtube.png",	
+	
+}
+
+"#blog_icon":{
+    "right": "56.35%",
+    "width": "8%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "6.38%",
+    "height": "5.13%",	
+	"image":"/images/blog.png",	
+	
 }
