@@ -139,7 +139,7 @@ audioPlayer.addEventListener('progress',function(e)
   var value=0;
      if (Ti.Platform.name === 'android')
         { 
-   var playedTime=formatTime(Math.round(audioPlayer.time/1000))+" : "+formatTime(Math.round(audioPlayer.duration/1000));
+   var playedTime=formatTime(Math.round(audioPlayer.time/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
    if (audioPlayer.time > 0) 
    	{
    		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);

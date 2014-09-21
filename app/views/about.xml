@@ -1,12 +1,37 @@
 <Alloy>
 	<Window id="about" title="">
-        <ImageView onClick="onImg_logoClicked" id="img_Logo" />
+  <!--      <ImageView onClick="onImg_logoClicked" id="img_Logo" /> -->
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
-		<Label id="aboutTitle">نادي النورين</Label>
-		<ImageView id="nourain_logo"/>
+        <ImageView id="twitter_icon" onClick="openTwitter"/>
+        <ImageView id="facebook_icon" onClick="openFacebook"/>
+        <ImageView id="youtube_icon" onClick="openYouTube"/>
+        <ImageView id="blog_icon" onClick="openBlog"/>
+	<!--	<Label id="aboutTitle">نادي النورين</Label>  -->
+		<ImageView id="nourain_logo"/>		  
 		<ImageView id="img_Imageview1"/>
+		
 		<ScrollView id="aboutView"> 
-	    <Label id="aboutText"> high</Label>
+
+	    <Label id="aboutText">
+  	
+نادي النورين هو ناد تابع لوكالة عمادة شؤون الطالبات بجامعة الدمام مجمع الريان شعاره بالقرآن والسنة تشرق حياتي
+
+الرؤية
+أن تشرق حياة الفتاة المسلمة بالقرآن والسنة
+
+الرسالة
+أن تنطلق الفتاة المسلمة في حياتها من القرآن والسنة وجعلهما المرجعين الرئيسيين في انبثاق فكرها وانبعاث قيمها والتخطيط لحياتها المستقبلية
+
+الأهداف
+تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً
+إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهما
+تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه
+ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة
+تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها
+إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة
+
+
+</Label>
 	    </ScrollView>
 	</Window>
 </Alloy>

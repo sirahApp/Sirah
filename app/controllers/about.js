@@ -15,9 +15,27 @@ $.about.close();
 	
 }
 
-var textValue= "-  مسابقة في ظلال السيرة هي مسابقة تقيمها جامعة الدمام "
-+"\n "+"\n "+"تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً" +"\n"+"\n "+"إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهم" 
-+ "\n"+"\n " + "تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه" + "\n"+"\n " + "ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة" +"\n " +"\n "+"تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n ";
-$.aboutText.setText(textValue);
+function openTwitter()
+{
+	var link ='https://twitter.com/Nourainclub';
+	Titanium.Platform.openURL(link); 
+}
+
+function openFacebook()
+{
+	var link ='https://www.facebook.com/NourainClubDU';
+	Titanium.Platform.openURL(link); 
+}
+
+function openBlog()
+{
+	var link ='http://nadialnourain.com';
+	Titanium.Platform.openURL(link); 
+}
+
+function openYouTube()
+{
+	var link ='http://www.youtube.com/user/NourainClub';
+	Titanium.Platform.openURL(link); 
+}
+

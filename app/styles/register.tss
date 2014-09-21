@@ -83,51 +83,46 @@
 	
 }
 
+"#agreements": {
+	    "width": "100%",
+	    "height": "7%",
+	    "top": "77.02%"
+	
+}
 
-"#lbl_Checkboxlbl": {
-    "font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    //"left": "48.12%",
-    "right": "16%",
-    "color": "#666666",
-    "width": "45%",
-    "text": " أوافق على ",
-    "top": "77.51%",
-    "height": "size"
+"#btn_Checkbox": {
+    "right": "10%",
+    "width": "4.79%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/checkbox_pressed.png",
+    "height": "40%",
 }
 
 "#lbl_Checkboxlbl": {
-    "font": {
+    "right": "16%",
+    "color": "#666666",
+    "width": "size",
+    "text": " أوافق على ",
+    //"top": "77.51%",
+    "height": "size",
+        "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "48.12%",
-    "right": "16%",
-    "color": "#666666",
-    "width": "20%",
-    "text": " أوافق على ",
-    "top": "77.51%",
-    "height": "size"
 }
-
-
-
-
 
 "#lbl_openInfo": {
-    "font": {
+    "right": "30%",
+    "color": "#683b68",
+    "width": "size",
+    "text": " شروط وقوانين المسابقة ",
+    //"top": "77.51%",
+    "height": "size",
+        "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    //"left": "48.12%",
-    "right": "33%",
-    "color": "#683b68",
-    "width": "45%",
-    "text": " شروط وقوانين المسابقة ",
-    "top": "77.51%",
-    "height": "size"
+    }
 }
 
 
@@ -153,18 +148,22 @@
 	left: '2%',
 	right: '5%',
     "font": {
-        "fontSize": '12dp',
+        "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
 }
 
-
-
-
-
-
-
-
+"#closeTxt": {
+	textAlign: 'left',
+	color: '#683b68',
+	top: '0%',
+	//bottom: '1%',
+	left: '2%',
+    "font": {
+        "fontSize": '14dp',
+        "fontWeight": 'bold' 
+    },
+}
 
 
 "#txtFld_Fullname": {
@@ -177,7 +176,7 @@
     "height": "6.04%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا آدخل الاسم الرباعي",
+    "hintText": "فضلا أدخل الاسم الرباعي",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
         "fontSize": '14dp',
@@ -253,7 +252,7 @@
     "height": "6.04%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا آدخل رقم الجوال",
+    "hintText": "فضلا أدخل رقم الجوال",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
         "fontSize": '14dp',
@@ -285,17 +284,6 @@
     "backgroundSelectedImage": "/images/sendScore_pressed.png"
 }
 
-"#btn_Checkbox": {
-    //"left": "87.29%",
-    "right": "10%",
-    "width": "4.79%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/checkbox_pressed.png",
-    "top": "77.02%",
-    "height": "3.19%",
-    //"backgroundSelectedImage": "/images/checkbox_pressed.png"
-}
 
 "#txtFld_Uniname": {
     "left": "10.31%",
@@ -307,7 +295,7 @@
     "height": "6.04%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا آدخل اسم الجامعة",
+    "hintText": "فضلا أدخل اسم الجامعة",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
         "fontSize": '14dp',
