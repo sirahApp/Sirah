@@ -102,3 +102,8 @@
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
 }
+
+"TableViewRow":{
+	selectedBackgroundColor: 'transparent'
+	
+}

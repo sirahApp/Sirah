@@ -15,9 +15,21 @@
     <analytics>true</analytics>
     <guid>0b311dae-ba78-4b8d-ba6c-0fc4b6a13a3c</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
+   
+   
+
+
+     
+       
+   
+
+   
     <ios>
         <plist>
             <dict>
+            	 <key>CFBundleDisplayName</key>
+        <string>fi hilal asirah</string>
+        
                 <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
