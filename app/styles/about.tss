@@ -1,7 +1,8 @@
-
 ".container" : {
   	backgroundColor:"white"
 }
+
+
 
 
 "#about": {
@@ -20,6 +21,8 @@
 }
 
 
+
+
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
@@ -29,6 +32,7 @@
     "height": "19.65%",
     "image": "/images/logo_image.png"
 }
+
 
 "#img_Homebtn": {
     "left": "86.35%",
@@ -41,19 +45,7 @@
 }
 
 
-"#aboutTitle": {
-	 
-	"right":"8%",
-	  "height":"size",
-	  "width":"size",
-	  "top":"35%",
-	  "color":"#FFFFFF",
-	 
-	  "font": {
-		"fontSize": "18dp",
-		"fontFamily": "HelveticaNeueW23forSKY-Reg"
-	}
-}
+
 
 "#img_Imageview1": {
 	opacity: '0.5',
@@ -67,6 +59,7 @@
     "image": "/images/imageView1_image.png"
 },
 
+
 "#aboutView": {
 	top: '43%',
 	scrollType: 'vertical',
@@ -74,20 +67,6 @@
 	height: '55%',
 	width: '100%'
 },
-
-"#aboutText": {
-	textAlign: 'center',
-	color: '#150e26',
-	top: '5%',
-	//bottom: '1%',
-	left: '2%',
-	right: '2%',
-	  "font": {
-		"fontSize": "12dp",
-		"fontFamily": "HelveticaNeueW23forSKY-Reg"
-	}
-}
-
 
 
 "#nourain_logo":{
@@ -97,10 +76,7 @@
     "backgroundLeftCap": 0.1,
     "top": "11%",
     "height": "28%",
-	"image":"/images/nourain_logo.png"
-
-	
-		
+	"image":"/images/nourain_logo.png"		
 }
 
 
@@ -111,9 +87,9 @@
     "backgroundLeftCap": 0.1,
     "top": "37%",
     "height": "5.13%",	
-	"image":"/images/twitter.png",	
-	
+	"image":"/images/twitter.png",		
 }
+
 
 "#facebook_icon":{
     "right": "41%",
@@ -122,9 +98,9 @@
     "backgroundLeftCap": 0.1,
     "top": "37%",
     "height": "5.13%",	
-	"image":"/images/facebook.png",	
-	
+	"image":"/images/facebook.png",		
 }
+
 
 "#youtube_icon":{
     "right": "51%",
@@ -133,9 +109,9 @@
     "backgroundLeftCap": 0.1,
     "top": "37%",
     "height": "5.13%",	
-	"image":"/images/youtube.png",	
-	
+	"image":"/images/youtube.png",		
 }
+
 
 "#blog_icon":{
     "right": "61%",
@@ -144,6 +120,36 @@
     "backgroundLeftCap": 0.1,
     "top": "37%",
     "height": "5.13%",	
-	"image":"/images/blog.png",	
-	
+	"image":"/images/blog.png",		
+}
+
+
+"#table": {
+	top: '5%',
+	backgroundColor:'transparent',
+	separatorColor:'transparent',
+}
+
+
+"#aboutText": {
+	textAlign: 'right',
+	color: '#150e26',
+	left: '3%',
+	right: '5%',
+	  "font": {
+		"fontSize": "12dp",
+		"fontFamily": "HelveticaNeueW23forSKY-Reg"
+	}
+}
+
+
+"#labelTitle": {
+	  "right": '5%',
+	  "height":"size",
+	  "width":"size",
+	  "color":"#FFFFFF",	 
+	  "font": {
+		"fontSize": "14dp",
+		"fontFamily": "HelveticaNeueW23forSKY-Reg"
+	}
 }

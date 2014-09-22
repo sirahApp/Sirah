@@ -45,13 +45,10 @@
 }
 
 "#infoTitle": {
-	 
-	"right":"8%",
 	  "height":"size",
 	  "width":"size",
-	  "top":"35%",
-	  "color":"#FFFFFF",
-	 
+	  "top":"37%",
+	  "color":"#FFFFFF",	 
 	  "font": {
 		"fontSize": "18dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
@@ -78,17 +75,30 @@
 	width: '100%'
 },
 
-"#infoText": {
-	textAlign: 'center',
-	color: '#150e26',
+"#table": {
 	top: '5%',
-	//bottom: '1%',
-	left: '2%',
-	right: '2%',
+	backgroundColor:'transparent',
+	separatorColor:'transparent',
+}
+
+"#infoText": {
+	textAlign: 'right',
+	color: '#150e26',
+	left: '3%',
+	right: '5%',
 	  "font": {
 		"fontSize": "12dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
 }
 
-
+"#labelTitle": {
+	  "right": '5%',
+	  "height":"size",
+	  "width":"size",
+	  "color":"#FFFFFF",	 
+	  "font": {
+		"fontSize": "14dp",
+		"fontFamily": "HelveticaNeueW23forSKY-Reg"
+	}
+}
