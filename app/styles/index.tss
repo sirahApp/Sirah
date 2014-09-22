@@ -1,6 +1,6 @@
 ".container": {
 	title: 'Index',
-	backgroundColor:"white"
+	"backgroundImage":"/images/bg_image.png"
 },
 "Label": {
 	width: Ti.UI.SIZE,
