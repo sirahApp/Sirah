@@ -3,12 +3,14 @@ var Cloud = require('ti.cloud');
 Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
 var userScore=Alloy.Globals.score;
+
 if (Ti.Platform.name === 'iPhone OS')
 {
-$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+	$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 
 var checkIndex = 0;
+
 function changeCheckbox()
 {
 	if (checkIndex == 0)
@@ -65,14 +67,13 @@ function sendScore()
 		}
 		else
 		{	
-				checkID();
-				
-				 	
+				checkID();								 	
 		} 
 	
 	}
 
-function checkID(){
+function checkID()
+{
 	Cloud.Objects.query({
     classname: 'sirah',
     where: {
@@ -126,11 +127,8 @@ function sendToACS(){
 			  } else {
 			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
 			  } 
-			});
-	
-	
+			});		
 }
-
 
 
 function onImg_homebtnClicked()
@@ -167,19 +165,21 @@ function customAlert(msg)
 
 function showInfo()
 {
-$.infoView.visible=true;
-var textValue= "-  مسابقة في ظلال السيرة هي مسابقة تقيمها جامعة الدمام "
-+"\n "+"\n "+"تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً" +"\n"+"\n "+"إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهم" 
-+ "\n"+"\n " + "تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه" + "\n"+"\n " + "ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة" +"\n " +"\n "+"تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n ";
-$.infoText.setText(textValue);	
+	$.infoView.visible=true;
+	var textValue="\n"+"\n"+ "- يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة"+"\n"
+	+"- يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها." +"\n"
+	+"- بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى."+"\n"
+	+"- لن يتيح التطبيق الإجابة على المجموعة أكثر من مرة."+"\n"
+	+"- يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى."+"\n"
+	+"- أن تكون بيانات المشاركة كاملة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة."+"\n" 
+	+"- أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها."+"\n" 
+	+"- في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه."+"\n" +"\n";
+	$.infoText.setText(textValue);	
 	
 }
 
 
 function hideInfo()
 {
-	
-$.infoView.visible=false;	
+	$.infoView.visible=false;	
 }

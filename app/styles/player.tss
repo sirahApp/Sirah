@@ -2,96 +2,83 @@
     "left": "0%",
     "width": "100%",
     "navBarHidden": true,
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "backgroundImage":"/images/bg_image.png"
+    "backgroundImage":"/images/bg_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
-
 
 ".container" : {
 	title: 'Player',
 	backgroundColor: 'white'
 }
 
-
-
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "10.27%",
     "height": "19.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
-
-
 
 "#img_Homebtn": {
     "left": "86.35%",
     "width": "8.12%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "6.38%",
     "height": "5.13%",
-    "image": "/images/homebtn_image.png"
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
-
-
 
 "#btn_Showquestion": {
     "left": "31.97%",
     "width": "34.68%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/showQuestion_normal.png",
     "top": "86.45%",
     "height": "6.87%",
     "backgroundSelectedImage": "/images/showQuestion_pressed.png",
-   // "enabled": "false"
-    
-   
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,       
 }
 
 
 "#btn_Playpausebtn": {
     "left": "21.1%",
     "width": "13%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/playPauseBtn_normal.png",
     "top": "5%",
     "height": "27.6%",
-   
-    
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,       
 }
 
 "#btn_Stopbtn": {
     "left": "4.75%",
     "width": "13%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/stopBtn_normal.png",
     "top": "5%",
     "height": "27.6%",
-    "backgroundSelectedImage": "/images/stopBtn_pressed.png"
+    "backgroundSelectedImage": "/images/stopBtn_pressed.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#audioTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-	"font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
     "right": "5%",
-    //"left": "5%",
     "color": "#666666",
     "width": "87%",
     "top": "65%",
     "bottom": "5%",
     "height": "size",
+	"font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }    
 }
 
 "#duration": {
@@ -102,54 +89,51 @@
     "color": "#666666",
     "width": "size",
     "top": "35%",
-    "height": "size",
-
+    "height": "size"
 }
 
 "#groupTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
     "right": "5%",
     "color": "#666666",
     "width": "size",
     "top": "14%",
-    "height": "size"
-}
-
-
-
-"#pageNumber": {
+    "height": "size",
     "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
+    }    
+}
+
+"#pageNumber": {
     "left": "46.25%",
     "color": "#666666",
     "width": "10%",
     "top": "95.13%",
-    "height": "size"
-	}
+    "height": "size",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }    
+}
 
 "#img_Imageview1": {
     "left": "5.2%",
     "width": "89.16%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "46.8%",
     "height": "27.91%",
-    "image": "/images/imageView1_image.png"
+    "image": "/images/imageView1_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#plyView": {
     "left": "5.2%",
     "width": "89.16%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "46.8%",
-    "height": "27.91%"
+    "height": "27.91%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#timeBar":{
@@ -173,9 +157,9 @@
 
 "#waiting": {
     "top": "40%",
+    "color": "white",
     "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "color": "white",
+    }    
 }

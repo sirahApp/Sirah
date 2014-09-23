@@ -2,11 +2,7 @@
   	backgroundColor:"white"
 }
 
-
-
-
 "#about": {
-
     "navBarHidden": true,
     "height": "100%",
     "left": "0%",
@@ -14,12 +10,9 @@
     "top": "0%",
     "height": "100%",
     "backgroundImage": "/images/bg_image.png",
-     "backgroundTopCap": 0.1,
+    "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
 }
-
-
-
 
 "#img_Logo": {
     "left": "30.52%",
@@ -27,10 +20,9 @@
     "top": "10.27%",
     "height": "19.65%",
     "image": "/images/logo_image.png",
-       "backgroundTopCap": 0.1,
+    "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
 }
-
 
 "#img_Homebtn": {
     "left": "86.35%",
@@ -38,12 +30,9 @@
     "top": "6.38%",
     "height": "5.13%",
     "image": "/images/homebtn_image.png",
-     "backgroundTopCap": 0.1,
+    "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
 }
-
-
-
 
 "#img_Imageview1": {
 	opacity: '0.5',
@@ -57,7 +46,6 @@
     backgroundLeftCap: '0.1',
 },
 
-
 "#aboutView": {
 	top: '43%',
 	scrollType: 'vertical',
@@ -65,7 +53,6 @@
 	height: '55%',
 	width: '100%'
 },
-
 
 "#nourain_logo":{
     "left": "25%",
@@ -77,17 +64,15 @@
     "backgroundLeftCap": 0.1,	
 }
 
-
 "#twitter_icon":{
     "right": "31%",
     "width": "8%",
     "top": "37%",
     "height": "5.13%",	
 	"image":"/images/twitter.png",	
-	 "backgroundTopCap": 0.1,
+	"backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,	
 }
-
 
 "#facebook_icon":{
     "right": "41%",
@@ -99,36 +84,31 @@
     "backgroundLeftCap": 0.1,	
 }
 
-
 "#youtube_icon":{
     "right": "51%",
     "width": "8%",
     "top": "37%",
     "height": "5.13%",	
 	"image":"/images/youtube.png",	
-	  "backgroundTopCap": 0.1,
+	"backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,	
 }
-
 
 "#blog_icon":{
     "right": "61%",
-    "width": "8%",
-  
+    "width": "8%",  
     "top": "37%",
     "height": "5.13%",	
 	"image":"/images/blog.png",	
-	  "backgroundTopCap": 0.1,
+	"backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,	
 }
 
 
-"#table": {
+"#ViewText": {
 	top: '5%',
-	backgroundColor:'transparent',
-	separatorColor:'transparent',
+	layout: 'vertical'
 }
-
 
 "#aboutText": {
 	textAlign: 'right',
@@ -141,7 +121,6 @@
 	}
 }
 
-
 "#labelTitle": {
 	  "right": '5%',
 	  "height":"size",
@@ -151,8 +130,4 @@
 		"fontSize": "14dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
-}
-"TableViewRow":{
-	selectedBackgroundColor: 'transparent'
-	
 }
