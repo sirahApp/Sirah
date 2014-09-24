@@ -1,33 +1,20 @@
 <Alloy>
 	<Collection src="sirah"/>
 	<Collection src="groups"/>
-
-<!--<NavigationWindow id="index" module="xp.ui"> 	-->
-
-
-		<Window id ="groupList" class="container" title="">
-			<ImageView id="img_Bg" />
-	        <ImageView id="img_Logo" />
-	        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
-			
-			
-
-			
-<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails" autoStyle="">
-
-				
-<!-- http://docs.appcelerator.com/titanium/latest/#!/guide/ListViews  -->			
-				<Templates>
-					<ItemTemplate name="listItemTemp" >
-						<ImageView id="img_Arrow" />  										
-						<Label bindId="title" id="titleLbl" />
-					</ItemTemplate>
-				</Templates>
-				
-				<ListSection dataCollection="groups">
-					<ListItem title:text="{title}" id="lstItem"/>
-				</ListSection>
-			</ListView>
-		</Window>
-	 <!-- </NavigationWindow> 	-->
+	<Window id ="groupList" class="container" title="">
+		<ImageView id="img_Bg" />
+		<ImageView id="img_Logo" />
+		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />			
+		<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails" autoStyle="">			
+			<Templates>
+				<ItemTemplate name="listItemTemp" >
+					<ImageView id="img_Arrow" />  										
+					<Label bindId="title" id="titleLbl" />
+				</ItemTemplate>
+			</Templates>				
+			<ListSection dataCollection="groups">
+				<ListItem title:text="{title}" id="lstItem"/>
+			</ListSection>
+		</ListView>
+	</Window>
 </Alloy>

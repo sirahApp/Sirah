@@ -1,22 +1,20 @@
 <Alloy>
 	<Window id="player" class="container" title="">
 		
-		<ImageView  id="img_Logo" />
-		
+		<ImageView  id="img_Logo" />		
 		<ImageView id="img_Imageview1" />
 		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+		
 		<Label id="waiting"></Label>		
 		<View id="plyView"> 
-		<Label id="groupTextLbl"></Label>
-		<Label id="audioTextLbl"></Label>
-		<Button id="btn_Playpausebtn" onClick="playtrack"/>
-        <Button id="btn_Stopbtn" onClick="stopTrack"/>
-       <!--  <Label id="waitingAudio"></Label> -->
-		
-		<View id="timeBar">
-		<View id="timeProgress"/>
-		</View> 
-		<Label id="duration"></Label>
+			<Label id="groupTextLbl"></Label>
+			<Label id="audioTextLbl"></Label>
+			<Button id="btn_Playpausebtn" onClick="playtrack"/>
+			<Button id="btn_Stopbtn" onClick="stopTrack"/>
+			<View id="timeBar">
+				<View id="timeProgress"/>
+			</View> 
+			<Label id="duration"></Label>
 		</View>
 		<Button onClick="onBtn_showquestionClicked" id="btn_Showquestion" />
 		<Label id="pageNumber"></Label>

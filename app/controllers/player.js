@@ -3,10 +3,9 @@ var args = arguments[0] || {};
 
 if (Ti.Platform.name === 'iPhone OS')
 {
-$.player.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+	$.player.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 var epindex=args.sirah.get('id');
-
 var audionum=args.sirah.get('audionumber'); 
 $.audioTextLbl.text = args.sirah.get('audiotext');
 $.groupTextLbl.text = args.group.get('title');
@@ -39,8 +38,6 @@ else if (pageNumber == 5)
 
 $.pageNumber.text = pageNumber ;
 
-
-
 var q={
 	question:args.sirah.get('questiontext'),
 	ch1:args.sirah.get('ch1'),
@@ -51,8 +48,6 @@ var q={
 	id:args.sirah.get('id')
 };
 
-	
-
 var audioPlayer = Ti.Media.createAudioPlayer({ 
     url: "http://nadialnourain.com/sirah/"+audionum+".mp3",
     allowBackground: false
@@ -60,9 +55,7 @@ var audioPlayer = Ti.Media.createAudioPlayer({
 
 
  audioPlayer.addEventListener('change',function(e)
-{
-	console.log(e.description);
-	
+{	
 	if (e.description ==  "waiting_for_queue" || e.description == "waiting_for_data" || e.description == "buffering" ||e.description == "starting" )
 		{
 			$.waiting.setText("جاري التحميل .. ");
@@ -73,49 +66,38 @@ var audioPlayer = Ti.Media.createAudioPlayer({
 			}
  
  });
-function playtrack () {
-	
+
+function playtrack () 
+{	
 	if (Titanium.Network.online == false )
-    	{
-    		
+    	{   		
     		$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
-    		console.log("no connection");
     		customAlert();
-    	}
-    	
-    	else
-    	
-    	{
+    	}else{
+    		
     		 if (audioPlayer.playing)
     		 {
     		 	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
     		 	audioPlayer.pause();
-    		 	}
-    		 	
-    		 	else
-    		 	{
-    		 		 $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";
-    		 		 audioPlayer.start();
-    		 		 }         
+    		 	}else{
+    		 		$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";
+    		 		audioPlayer.start();
+    		  }         
     	 }
      };
 
-
-
-function stopTrack() {
-	
-	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
-	
-	audioPlayer.stop(); 
-    
+function stopTrack() 
+{	
+	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";	
+	audioPlayer.stop();     
     if (Ti.Platform.name === 'android')
     {
     	audioPlayer.release();
     	$.duration.setText("00:00 : 00:00");
     	$.timeProgress.applyProperties({width: "0" });
     	audioPlayer.setTime(0);
-    	}          
-        }
+    }          
+}
 
 audioPlayer.addEventListener('complete',function(e) 
 {
@@ -129,8 +111,6 @@ Titanium.Network.addEventListener('change', function(e){
 		{ 
 			stopTrack();
 			$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
-    	    console.log("no connection event!");
-    	   // alert("فضلا تحقق من الاتصال");
     	}
 	});
 
@@ -139,45 +119,34 @@ audioPlayer.addEventListener('progress',function(e)
   var value=0;
      if (Ti.Platform.name === 'android')
         { 
-   var playedTime=formatTime(Math.round(audioPlayer.time/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
-   if (audioPlayer.time > 0) 
-   	{
-   		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);
-   		}
-   
-        } 
-      else 
-		{
-			
-    var playedTime=formatTime(Math.round(audioPlayer.progress/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
-    if (audioPlayer.progress > 0) 
-   	{
-   		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.progress);
-   		}
-
-		}       
-   
-   $.duration.setText(playedTime);
-   
-      
-   $.timeProgress.applyProperties({width: value + "%" });
-    
+        	var playedTime=formatTime(Math.round(audioPlayer.time/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
+        	if (audioPlayer.time > 0) 
+        	{
+        		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.time);
+   		    }   
+        }else{			
+        	
+        	var playedTime=formatTime(Math.round(audioPlayer.progress/1000))+"/"+formatTime(Math.round(audioPlayer.duration/1000));
+        	if (audioPlayer.progress > 0) 
+        	{
+        		value = Math.floor((100 / audioPlayer.duration) * audioPlayer.progress);
+   		    }
+		}          
+   $.duration.setText(playedTime); 
+   $.timeProgress.applyProperties({width: value + "%" });    
 });
 
-
-
-function formatTime(totalSeconds){   
+function formatTime(totalSeconds)
+{   
     var minutes =  parseInt(totalSeconds / 60 % 60);
     var seconds = parseInt(totalSeconds % 60);
     return (minutes > 9 ? minutes : "0" + minutes) + ":" + (seconds > 9 ? seconds : "0" + seconds);
 };
 
 $.timeBar.addEventListener('click',function(e){
-
      if (Ti.Platform.name === 'android')
      {
-     	var Xdp=Math.round(e.x / (Titanium.Platform.displayCaps.dpi / 160));
-     	
+     	var Xdp=Math.round(e.x / (Titanium.Platform.displayCaps.dpi / 160));    	
      	var timePercent=Xdp / parseInt($.timeBar.width);
    		var newTime =timePercent*audioPlayer.duration;
 	    audioPlayer.pause();
@@ -185,8 +154,6 @@ $.timeBar.addEventListener('click',function(e){
 	    audioPlayer.start();
      	$.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_pressed.png";
      }
-
- 
 });
         
         
@@ -202,15 +169,13 @@ $.timeBar.addEventListener('click',function(e){
 };
 
 
-function onImg_homebtnClicked(){
-
-	
+function onImg_homebtnClicked()
+{	
 	var dialog = Ti.UI.createAlertDialog({
 		title :'تنبيه ',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
 		buttonNames: ['نعم','لا']
-	});
-	
+	});	
 	dialog.addEventListener('click',function(e){
 		if(e.index==0)
 		{
@@ -223,12 +188,7 @@ function onImg_homebtnClicked(){
 				$.player.close();
 				}	
 	});
-	
-
-  
-
-dialog.show();
-	
+	dialog.show();	
 }
 
 function customAlert()

@@ -1,29 +1,29 @@
 <Alloy>
 	<Window id="about" title="">
-  <!--      <ImageView onClick="onImg_logoClicked" id="img_Logo" /> -->
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
         <ImageView id="twitter_icon" onClick="openTwitter"/>
         <ImageView id="facebook_icon" onClick="openFacebook"/>
         <ImageView id="youtube_icon" onClick="openYouTube"/>
         <ImageView id="blog_icon" onClick="openBlog"/>
-		<ImageView id="nourain_logo"/>		  
+		<ImageView id="nourain_logo"/>
+		<ImageView id="unilogo"/>					  
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="aboutView"> 
-			<TableView id="table">		
-				<TableViewSection>
-					<TableViewRow><Label id="labelTitle"> الرؤية </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> أن تشرق حياة الفتاة المسلمة بالقرآن والسنة </Label></TableViewRow>
-					<TableViewRow><Label id="labelTitle"> الرسالة </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> أن تنطلق الفتاة المسلمة في حياتها من القرآن والسنة وجعلهما المرجعين الرئيسيين في انبثاق فكرها وانبعاث قيمها والتخطيط لحياتها المستقبلية </Label></TableViewRow>
-					<TableViewRow><Label id="labelTitle"> الأهداف </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهما </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها </Label></TableViewRow>
-					<TableViewRow><Label id="aboutText"> - إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة </Label></TableViewRow>					
-	            </TableViewSection>
-	        </TableView>
+			<View id="ViewText">
+			     	<Label id="aboutText">	هو ناد تابع لوكالة عمادة شؤون الطالبات بجامعة الدمام مجمع الريان</Label> 
+					<Label id="aboutText">شعاره بالقرآن والسنة تشرق حياتي</Label> 
+					<Label id="labelTitle"> الرؤية </Label>
+					<Label id="aboutText"> أن تشرق حياة الفتاة المسلمة بالقرآن والسنة </Label>
+					<Label id="labelTitle"> الرسالة </Label>
+					<Label id="aboutText"> أن تنطلق الفتاة المسلمة في حياتها من القرآن والسنة وجعلهما المرجعين الرئيسيين في انبثاق فكرها وانبعاث قيمها والتخطيط لحياتها المستقبلية </Label>
+					<Label id="labelTitle"> الأهداف </Label>
+					<Label id="aboutText"> - تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً </Label>
+					<Label id="aboutText"> - إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهما </Label>
+					<Label id="aboutText"> - تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه </Label>
+					<Label id="aboutText"> - ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة </Label>
+					<Label id="aboutText"> - تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها </Label>
+					<Label id="aboutText"> - إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة </Label>				
+	        </View>
 	    </ScrollView>
 	</Window>
 </Alloy>

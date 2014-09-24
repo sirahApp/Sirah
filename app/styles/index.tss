@@ -1,7 +1,8 @@
 ".container": {
 	title: 'Index',
 	"backgroundImage":"/images/bg_image.png"
-},
+}
+
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
@@ -13,62 +14,59 @@
     "width": "100%",
     "navBarHidden": true,
     "top": 0,
-    "height": "100%",
-    
+    "height": "100%",    
 }
 
 "#img_Bg": {
     "left": "0%",
     "width": "100%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "image": "/images/bg_image.png"
+    "image": "/images/bg_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "10.27%",
     "height": "19.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
-
-
 
 "#btn_Openlist": {
     "left": "41.04%",
     "width": "16.97%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/openList_normal.png",
     "top": "45.34%",
     "height": "9.86%",
-    "backgroundSelectedImage": "/images/openList_pressed.png"
+    "backgroundSelectedImage": "/images/openList_pressed.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#btn_Openinfo": {
     "left": "37.81%",
     "width": "24.27%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/openInfo_normal.png",
     "top": "62.43%",
     "height": "10.27%",
-    "backgroundSelectedImage": "/images/openInfo_pressed.png"
+    "backgroundSelectedImage": "/images/openInfo_pressed.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#btn_Openabout": {
     "left": "41.66%",
     "width": "14.89%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/openAbout_normal.png",
     "top": "79.65%",
     "height": "10%",
-    "backgroundSelectedImage": "/images/openAbout_pressed.png"
+    "backgroundSelectedImage": "/images/openAbout_pressed.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 

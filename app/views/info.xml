@@ -7,33 +7,29 @@
         <Label id="infoTitle">مسابقة في ظلال السيرة</Label>
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="infoView"> 
-			<TableView id="table">
-				<TableViewSection>
-					<TableViewRow> <Label id="labelTitle"> فكرة المسابقة: </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> هي مسابقة تقام عبر تطبيق للهواتف الذكية لسلسلة في ظلال السيرة، تحكي السلسلة سيرة النبي محمد صلى الله عليه وسلم في حلقات صوتية قصيرة. </Label> </TableViewRow>
-					<TableViewRow> <Label id="labelTitle"> طريقة المسابقة: </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> قسمت حلقات في ظلال السيرة إلى مجموعات تحتوي كل مجموعة على ٦ حلقات وقد خصص كل أسبوع للمنافسة على إحدى المجموعات. تقوم المشاركة بالاستماع للحلقة ومن ثم الإجابة على السؤال المصاحب لها من خلال التطبيق.  </Label> </TableViewRow>
-					<TableViewRow> <Label id="labelTitle"> قوانين المسابقة: </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> - يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة </Label> </TableViewRow>
-					<TableViewRow><Label id="infoText"> - يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label> </TableViewRow>
-					<TableViewRow><Label id="infoText"> - بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - لن يتيح التطبيق الإجابة على المجموعة أكثر من مرة. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - أن تكون بيانات المشاركة كاملة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه.  </Label></TableViewRow>
-					<TableViewRow> <Label id="labelTitle"> الجوائز: </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> - تقدم جوائز أسبوعية لـ ٣ ممن حصلن على أكبر عدد من الإجابات الصحيحة، قيمة كل جائزة ١٠٠ ريال. </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> - تقدم ٥ جوائز كبرى في نهاية كل فصل دراسي لمن حصلت على أكبر عدد من الإجابات الصحيحة في جميع المجموعات، مجموع الجوائز ٥٠٠٠ ريال.</Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> وسيتم إعلان أسماء الفائزات على مواقع التواصل الاجتماعي الخاصة بالنادي</Label> </TableViewRow>
-					<TableViewRow> <Label id="labelTitle"> المدة الزمنية:  </Label> </TableViewRow>
-					<TableViewRow> <Label id="infoText"> على مدار العام الدراسي بواقع مجموعة كل أسبوع.</Label> </TableViewRow>
-					<TableViewRow> <Label id="labelTitle">  </Label> </TableViewRow>
-					<TableViewRow> 
-
-                   </TableViewRow>
-				</TableViewSection>
-				 </TableView>
+			<View id="ViewText">
+					<Label id="labelTitle"> فكرة المسابقة: </Label>
+					<Label id="infoText"> هي مسابقة تقام عبر تطبيق للهواتف الذكية لسلسلة في ظلال السيرة، تحكي السلسلة سيرة النبي محمد صلى الله عليه وسلم في حلقات صوتية قصيرة. </Label>
+					<Label id="labelTitle"> طريقة المسابقة: </Label>
+					<Label id="infoText"> قسمت حلقات في ظلال السيرة إلى مجموعات تحتوي كل مجموعة على ٦ حلقات وقد خصص كل أسبوع للمنافسة على إحدى المجموعات. تقوم المشاركة بالاستماع للحلقة ومن ثم الإجابة على السؤال المصاحب لها من خلال التطبيق. </Label>
+					<Label id="labelTitle"> قوانين المسابقة: </Label>
+					<Label id="infoText"> - يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة </Label>
+					<Label id="infoText"> - يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label>
+					<Label id="infoText"> - بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى. </Label>
+					<Label id="infoText"> - لن يتيح التطبيق الإجابة على المجموعة أكثر من مرة. </Label>
+					<Label id="infoText"> - يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى. </Label>
+					<Label id="infoText"> - أن تكون بيانات المشاركة كاملة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة. </Label>
+					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
+					<Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه.  </Label>
+					<Label id="labelTitle"> الجوائز: </Label>
+					<Label id="infoText"> - تقدم جوائز أسبوعية لـ ٣ ممن حصلن على أكبر عدد من الإجابات الصحيحة، قيمة كل جائزة ١٠٠ ريال. </Label>
+					<Label id="infoText"> - تقدم ٥ جوائز كبرى في نهاية كل فصل دراسي لمن حصلت على أكبر عدد من الإجابات الصحيحة في جميع المجموعات، مجموع الجوائز ٥٠٠٠ ريال.</Label>
+					<Label id="infoText"> وسيتم إعلان أسماء الفائزات على مواقع التواصل الاجتماعي الخاصة بالنادي</Label>
+					<Label id="labelTitle"> المدة الزمنية:  </Label>
+					<Label id="infoText"> على مدار العام الدراسي بواقع مجموعة كل أسبوع.</Label>
+					<Label id="labelTitle"> </Label>
+					<Label id="labelTitle"> </Label>
+				 </View>
 	    </ScrollView>   
 
 

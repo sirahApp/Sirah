@@ -17,6 +17,7 @@ if (Ti.Platform.name === 'iPhone OS')
 }
 
 var checkIndex = 0;
+
 function changeCheckbox()
 {
 	if (checkIndex == 0)
@@ -69,18 +70,18 @@ function sendScore()
 		
 		else if (checkIndex != 1)
 		{
-				customAlert("الرجاء الموافقة على التعهد بالشروط");
+				customAlert("الرجاء الموافقة على التعهد بشروط و قوانين المسابقة");
 		}
 		else
 		{	
-				checkID();
-				
-				 	
+				$.sendinglbl.setText(" جاري الإرسال ...");
+				checkID();								 	
 		} 
 	
 	}
 
-function checkID(){
+function checkID()
+{
 	Cloud.Objects.query({
     classname: 'sirah',
     where: {
@@ -90,6 +91,7 @@ function checkID(){
 }, function (e) {
     if (e.success) {
     	if(e.sirah.length){
+    				$.sendinglbl.setText("");
     		       customAlert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
     	}
     	else
@@ -98,6 +100,7 @@ function checkID(){
     	}
     	
     } else {
+    	$.sendinglbl.setText("");
         customAlert("خطأ في الإرسال");
     }
 });}
@@ -109,8 +112,8 @@ function sendToACS(){
 			  login  : 'admin',
 			  password: 'password',
 			}, function(e) {
-			  if (e.success)   {
-			 
+			  if (e.success)   
+			  {
 			    Cloud.Objects.create({
 			      classname : 'sirah',
 			      fields : {
@@ -123,29 +126,29 @@ function sendToACS(){
 			      }
 			    }, function(e) {
 			      if(e.success) {
+			     	$.sendinglbl.setText(""); 	
 			        customAlert("تم إرسال إجابتك");
 			        $.register.close();
 			        
 			      } else {
+			       $.sendinglbl.setText("");	
 			       customAlert("خطأ في الإرسال");
 			      }
 			    }); 
 			                 
 			  } else {
+			  	$.sendinglbl.setText("");	
 			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
 			  } 
-			});
-	
-	
+			});		
 }
-
 
 
 function onImg_homebtnClicked()
 	{
 		var dialog = Ti.UI.createAlertDialog({
 		title :' تنبيه',
-		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
+		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية؟',
 		buttonNames: ['نعم','لا']
 	});
 	
@@ -173,23 +176,33 @@ function customAlert(msg)
 }
 
 
+
 function showInfo()
 {
-$.infoView.visible=true;
-var textValue= "-  مسابقة في ظلال السيرة هي مسابقة تقيمها جامعة الدمام "
-+"\n "+"\n "+"تشجيع الطالبات على الإقبال على كتاب الله وسنة نبيه حفظاً وتفسيراً وتدبراً" +"\n"+"\n "+"إعداد جيل ناشئ على أخلاق القرآن الكريم والسنة الصحيحة وآدابهما وأحكامهم" 
-+ "\n"+"\n " + "تنشئة جيل حافظ ومهتم بكتاب الله وسنة نبيه" + "\n"+"\n " + "ربط الطالبات بكتاب الله وسنة نبيه فهو سبيل عزها في الدنيا وسبب سعادتها في الآخرة" +"\n " +"\n "+"تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"
-+"\n" +"\n "+"إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة"+"\n ";
-$.infoText.setText(textValue);	
+
+	if (Ti.Platform.name === 'android')
+   {
+   	$.infoView.visible=true;
+   	}
+   	else 
+   	{
+	$.infoView.show();
+	}
 	
+   
 }
 
 
 function hideInfo()
 {
-	
-$.infoView.visible=false;	
+	if (Ti.Platform.name === 'android')
+	{
+		$.infoView.visible = false;
+		}
+	else
+	{
+		$.infoView.hide();
+		}
 }
 
 

@@ -2,50 +2,37 @@
   	backgroundColor:"white"
 }
 
-
-
-
 "#about": {
- //   "left": 0,
-  //  "width": "100%",
     "navBarHidden": true,
- //   "top": 0,
     "height": "100%",
     "left": "0%",
     "width": "100%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "backgroundImage": "/images/bg_image.png"
+    "backgroundImage": "/images/bg_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
 }
-
-
-
 
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "10.27%",
     "height": "19.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
 }
-
 
 "#img_Homebtn": {
     "left": "86.35%",
     "width": "8.12%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "6.38%",
     "height": "5.13%",
-    "image": "/images/homebtn_image.png"
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
 }
-
-
-
 
 "#img_Imageview1": {
 	opacity: '0.5',
@@ -54,11 +41,10 @@
 	showVerticalScrollIndicator: 'true',
 	height: '55%',
 	width: '100%',
+    "image": "/images/imageView1_image.png",
     backgroundTopCap: '0.1',
     backgroundLeftCap: '0.1',
-    "image": "/images/imageView1_image.png"
 },
-
 
 "#aboutView": {
 	top: '43%',
@@ -68,68 +54,71 @@
 	width: '100%'
 },
 
-
 "#nourain_logo":{
-    "left": "25%",
-    "width": "42%",
+    "left": "10%",
+    "width": "33%",
+    "top": "16%",
+    "height": "24%",
+	"image":"/images/nourain_logo.png"	,
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "11%",
-    "height": "28%",
-	"image":"/images/nourain_logo.png"		
+    "backgroundLeftCap": 0.1,	
 }
 
+"#unilogo":{
+    "left": "50%",
+    "width": "43%",
+    "top": "18%",
+    "height": "22%",
+	"image":"/images/uniLogo.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
+}
 
 "#twitter_icon":{
-    "right": "31%",
+    "right": "56%",
     "width": "8%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
-	"image":"/images/twitter.png",		
+	"image":"/images/twitter.png",	
+	"backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
 }
-
 
 "#facebook_icon":{
-    "right": "41%",
+    "right": "66%",
     "width": "8%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
-	"image":"/images/facebook.png",		
+	"image":"/images/facebook.png",	
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
 }
-
 
 "#youtube_icon":{
-    "right": "51%",
+    "right": "75%",
     "width": "8%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
-	"image":"/images/youtube.png",		
+	"image":"/images/youtube.png",	
+	"backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
 }
-
 
 "#blog_icon":{
-    "right": "61%",
-    "width": "8%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "37%",
+    "right": "86%",
+    "width": "8%",  
+    "top": "7%",
     "height": "5.13%",	
-	"image":"/images/blog.png",		
+	"image":"/images/blog.png",	
+	"backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
 }
 
 
-"#table": {
+"#ViewText": {
 	top: '5%',
-	backgroundColor:'transparent',
-	separatorColor:'transparent',
+	layout: 'vertical'
 }
-
 
 "#aboutText": {
 	textAlign: 'right',
@@ -141,7 +130,6 @@
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
 }
-
 
 "#labelTitle": {
 	  "right": '5%',

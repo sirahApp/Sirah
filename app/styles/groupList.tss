@@ -10,81 +10,63 @@
 
 ".container": {
 	title: 'Group List'
-//	backgroundColor:"white"
-},
+}
+
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
 	color: "#000"
 } 
 
-
 "#img_Logo": {
     "left": "41.35%",
     "width": "17.39%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "3.54%",
     "height": "9.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#img_Homebtn": {
     "left": "86.35%",
     "width": "8.12%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "6.38%",
     "height": "5.13%",
-    "image": "/images/homebtn_image.png"
-}
-
-"#view_Item": {
-    "left": "0%",
-    "width": "100%",
+    "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "top": "15.9%",
-    "height": "11.18%"
+    "backgroundLeftCap": 0.1,    
 }
 
 "#img_Imageview1": {
     "left": "0%",
     "width": "100%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "image": "/images/listitem_image.png"
+    "image": "/images/listitem_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#img_Arrow": {
     "left": "3.33%",
-   // "width": "3.53%",
     "width":Titanium.UI.SIZE,
     "height":Titanium.UI.SIZE,
+    "image": "/images/arrow_image.png",
     "backgroundTopCap": 0.1,
     "top": "20%",
     "backgroundLeftCap": 0.1,
-  //  "height": "35.4%",
-    "image": "/images/arrow_image.png",
-
 }
 
-
-
 "#titleLbl": {
+    "color": "#ffffff",
+    "width": "80%",
+    "height": "size",
+    "textAlign": Ti.UI.TEXT_ALIGNMENT_CENTER,
     "font": {
         "fontSize": '18dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-   // "left": "67.08%",
-    "color": "#ffffff",
-    "width": "80%",
-  //  "text": "المجموعة الأولى",
- //   "top": "36.64%",
-    "height": "size",
-    "textAlign": Ti.UI.TEXT_ALIGNMENT_CENTER,
+    }    
 }
 
 "#lst": {

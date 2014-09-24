@@ -1,12 +1,14 @@
 <Alloy>
 	<Window id="register" class="container" title="">
-	<!--	<Label id="grptxt"></Label>
-		<Label id="scoretxt"></Label> -->
-		
+
+		<ImageView  id="img_Logo" />				
+
+		<ImageView id="img_Imageview1" />
+
         <ImageView  id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
 
-
+        <Label id="sendinglbl"/>
          	
    <ScrollView id="form" platform="ios">  
        	  	     
@@ -50,7 +52,8 @@
         
         <View id="agreements">
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
-        <Label id="lbl_Checkboxlbl"/>  <Label id="lbl_openInfo" onClick="showInfo"/>   
+        <Label id="lbl_Checkboxlbl"/> 
+        <Label id="lbl_openInfo" onClick="showInfo"/>   
 		</View>
 		
 		
@@ -62,8 +65,17 @@
       
 
 		<ScrollView id="infoView" onClick="hideInfo">
-			<Label id="closeTxt"> X إغلاق </Label> 
-	    	<Label id="infoText"></Label>
+			<Label id="closeTxt">X إغلاق  </Label>
+			<Label id="infoText"> شروط و قوانين المسابقة</Label>
+					<Label id="infoText"> - يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة </Label>
+					<Label id="infoText"> - أن تكون بيانات المشاركة كاملة و صحيحة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة. </Label>
+					<Label id="infoText"> - لن يتيح التطبيق الإجابة على المجموعة أكثر من مرة. </Label>
+					<Label id="infoText"> - يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label>
+					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
+					<Label id="infoText"> - بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى. </Label>
+					<Label id="infoText"> - يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى. </Label>	
+					<Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه.  </Label>
+					<Label>  </Label> 
 	    </ScrollView> 
 	      
         <Button id="btn_Sendscore" onClick="sendScore"/>

@@ -7,12 +7,13 @@
     "left": "0%",
     "width": "100%",
     "navBarHidden": true,
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
     "backgroundImage":"/images/bg_image.png",
-   
+
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+
 }
 
 
@@ -20,34 +21,30 @@
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "10.27%",
     "height": "19.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
 }
-
 
 
 "#img_Homebtn": {
     "left": "86.35%",
     "width": "8.12%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "6.38%",
     "height": "5.13%",
-    "image": "/images/homebtn_image.png"
-}
 
-"#sendScore":{
-	"top":"80%"
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
-
 
 
 "#agreements": {
 	    "width": "100%",
 	    "height": "7%",
+
 	    "top": "83%"
 	
 }
@@ -66,7 +63,6 @@
     "color": "#666666",
     "width": "size",
     "text": " أوافق على ",
-    //"top": "77.51%",
     "height": "size",
         "font": {
         "fontSize": '14dp',
@@ -79,7 +75,6 @@
     "color": "#683b68",
     "width": "size",
     "text": " شروط وقوانين المسابقة ",
-    //"top": "77.51%",
     "height": "size",
         "font": {
         "fontSize": '14dp',
@@ -87,26 +82,24 @@
     }
 }
 
-
-
 "#infoView": {
 	top: '32%',
 	scrollType: 'vertical',
 	showVerticalScrollIndicator: 'true',
+	right:'3%',
+	left:'3%',
 	height: '50%',
-	width: '100%',
+	layout: 'vertical',
 	visible:false,
 	borderRadius:'10dp',
 	backgroundColor:'White',
-	opacity:'0.9'
-	
+	opacity:'0.9'	
+
 }
 
 "#infoText": {
 	textAlign: 'right',
-	color: 'black',
-	top: '5%',
-	//bottom: '1%',
+	color: '#150e26',
 	left: '2%',
 	right: '5%',
     "font": {
@@ -119,11 +112,11 @@
 	textAlign: 'left',
 	color: '#683b68',
 	top: '0%',
-	//bottom: '1%',
 	left: '2%',
     "font": {
         "fontSize": '14dp',
-        "fontWeight": 'bold' 
+        "fontWeight": 'bold' ,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
 }
 
@@ -151,7 +144,6 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "72.39%",
     "right": "5%",
     "color": "#FFFFFF",
     "width": "size",
@@ -186,7 +178,6 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "71.97%",
     "right": "5%",
     "color": "#FFFFFF",
     "width": "size",
@@ -200,7 +191,6 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "76.56%",
     "right": "5%",
     "color": "#FFFFFF",
     "width": "size",
@@ -265,7 +255,6 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "74.16%",
     "right": "5%",
     "color": "#FFFFFF",
     "width": "size",
@@ -289,21 +278,10 @@
 
 
 
-"#requiredText": {
-	"font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "color": "red",
-    "left": "75.29%",
-    "top": "83.45%"
-    
-	
-}
+
 
 
 "#form":{
- borderColor:"red",
   contentHeight: 'auto',
  //	layout: 'vertical',
 	top:"30%",
@@ -316,3 +294,15 @@
 	top:"30%",
 	bottom:"13%"
 }
+
+
+"#sendinglbl":{
+	"top": "30%",
+    "color": "white",
+    "font": {
+    "fontSize": '14dp',
+    "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }   
+	
+}
+
