@@ -55,19 +55,29 @@
 },
 
 "#nourain_logo":{
-    "left": "25%",
-    "width": "42%",
-    "top": "11%",
-    "height": "28%",
+    "left": "10%",
+    "width": "33%",
+    "top": "16%",
+    "height": "24%",
 	"image":"/images/nourain_logo.png"	,
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,	
 }
 
+"#unilogo":{
+    "left": "50%",
+    "width": "43%",
+    "top": "18%",
+    "height": "22%",
+	"image":"/images/uniLogo.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
+}
+
 "#twitter_icon":{
-    "right": "31%",
+    "right": "56%",
     "width": "8%",
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
 	"image":"/images/twitter.png",	
 	"backgroundTopCap": 0.1,
@@ -75,9 +85,9 @@
 }
 
 "#facebook_icon":{
-    "right": "41%",
+    "right": "66%",
     "width": "8%",
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
 	"image":"/images/facebook.png",	
     "backgroundTopCap": 0.1,
@@ -85,9 +95,9 @@
 }
 
 "#youtube_icon":{
-    "right": "51%",
+    "right": "75%",
     "width": "8%",
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
 	"image":"/images/youtube.png",	
 	"backgroundTopCap": 0.1,
@@ -95,9 +105,9 @@
 }
 
 "#blog_icon":{
-    "right": "61%",
+    "right": "86%",
     "width": "8%",  
-    "top": "37%",
+    "top": "7%",
     "height": "5.13%",	
 	"image":"/images/blog.png",	
 	"backgroundTopCap": 0.1,

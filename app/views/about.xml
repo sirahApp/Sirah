@@ -5,10 +5,14 @@
         <ImageView id="facebook_icon" onClick="openFacebook"/>
         <ImageView id="youtube_icon" onClick="openYouTube"/>
         <ImageView id="blog_icon" onClick="openBlog"/>
-		<ImageView id="nourain_logo"/>		  
+		<ImageView id="nourain_logo"/>
+		<ImageView id="unilogo"/>					  
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="aboutView"> 
-			<View id="ViewText">		
+
+			<View id="ViewText">
+					<Label id="aboutText">	هو ناد تابع لوكالة عمادة شؤون الطالبات بجامعة الدمام مجمع الريان.</Label> 
+					<Label id="aboutText">شعاره بالقرآن والسنة تشرق حياتي.</Label> 		
 					<Label id="labelTitle"> الرؤية: </Label>
 					<Label id="aboutText"> أن تشرق حياة الفتاة المسلمة بالقرآن والسنة. </Label>
 					<Label id="labelTitle"> الرسالة: </Label>
@@ -21,6 +25,7 @@
 					<Label id="aboutText"> - تعليم الطالبات أحكام التجويد وكيفية التطبيق العملي لها. </Label>
 					<Label id="aboutText"> - إثارة روح المنافسة بين الطالبات من خلال مسابقات القرآن والسنة. </Label>				
 	        </View>
+	    
 	    </ScrollView>
 	</Window>
 </Alloy>

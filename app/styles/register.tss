@@ -10,9 +10,12 @@
     "top": "0%",
     "height": "100%",
     "backgroundImage":"/images/bg_image.png",
+
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
+
 }
+
 
 
 "#img_Logo": {
@@ -31,6 +34,7 @@
     "width": "8.12%",
     "top": "6.38%",
     "height": "5.13%",
+
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
@@ -40,7 +44,9 @@
 "#agreements": {
 	    "width": "100%",
 	    "height": "7%",
-	    "top": "77.02%"	
+
+	    "top": "83%"
+	
 }
 
 "#btn_Checkbox": {
@@ -49,7 +55,7 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/checkbox_pressed.png",
-    "height": "40%",
+    "height": "70%",
 }
 
 "#lbl_Checkboxlbl": {
@@ -121,12 +127,13 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",
-    "top": "37.77%",
-    "height": "6.04%",
+    "top": "10%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل الاسم الرباعي",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
     "font": {
         "fontSize": '14dp',
        }
@@ -141,7 +148,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الإسم الرباعي*",
-    "top": "37.93%",
+    "top": "13%",
     "height": "size"
 }
 
@@ -151,15 +158,19 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",    
-    "top": "47.63%",
-    "height": "6.04%",
+    "top": "28%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل الرقم الجامعي ",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+ //   "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '14dp'
        }
+       
+       
 }
 
 "#lbl_Idnumberlbl": {
@@ -171,7 +182,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الرقم الجامعي*",
-    "top": "47.65%",
+    "top": "31%",
     "height": "size"
 }
 
@@ -184,8 +195,28 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الجامعة*",
-    "top": "57.86%",
+    "top": "49%",
     "height": "size"
+}
+
+
+
+"#txtFld_Uniname": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",    
+    "top": "46%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintText": "فضلا أدخل اسم الجامعة",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "font": {
+        "fontSize": '14dp',
+       }
 }
 
 "#txtFld_Phonenumber": {
@@ -194,16 +225,30 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",    
-    "top": "67.36%",
-    "height": "6.04%",
+    "top": "64%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل رقم الجوال",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+  //  "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+   // "returnKeyType": Titanium.UI.RETURNKEY_SEND,
     "font": {
         "fontSize": '14dp',
        }
+
 }
+
+"#txtFld_Phonenumber[platform=ios]": {
+ 
+   "returnKeyType": Titanium.UI.RETURNKEY_SEND
+
+
+}
+
+
+
+
 
 "#lbl_Phonenumberlbl": {
     "font": {
@@ -214,7 +259,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "رقم الجوال*",
-    "top": "67.65%",
+    "top": "67%",
     "height": "size"
 }
 
@@ -230,20 +275,34 @@
 }
 
 
-"#txtFld_Uniname": {
-    "left": "10.31%",
-    "width": "56.66%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",    
-    "top": "57.36%",
-    "height": "6.04%",
-    "paddingLeft": "5",
-    "paddingRight": "5",
-    "hintText": "فضلا أدخل اسم الجامعة",
-    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+
+
+
+
+
+
+"#form":{
+  contentHeight: 'auto',
+ //	layout: 'vertical',
+	top:"30%",
+	bottom:"13%"
+}
+"#formView":{
+	//borderColor:"red",
+  contentHeight: 'auto',
+ //	layout: 'vertical',
+	top:"30%",
+	bottom:"13%"
+}
+
+
+"#sendinglbl":{
+	"top": "30%",
+    "color": "white",
     "font": {
-        "fontSize": '14dp',
-       }
+    "fontSize": '14dp',
+    "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }   
+	
 }
 

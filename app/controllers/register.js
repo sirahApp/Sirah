@@ -2,7 +2,14 @@ var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
 Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
+
 var userScore=Alloy.Globals.score;
+
+
+if (Ti.Platform.name === 'android')
+{
+
+}
 
 if (Ti.Platform.name === 'iPhone OS')
 {
@@ -67,6 +74,7 @@ function sendScore()
 		}
 		else
 		{	
+				$.sendinglbl.setText(" جاري الإرسال ...");
 				checkID();								 	
 		} 
 	
@@ -83,6 +91,7 @@ function checkID()
 }, function (e) {
     if (e.success) {
     	if(e.sirah.length){
+    				$.sendinglbl.setText("");
     		       customAlert("لقد قمت بالإجابة على هذه المجموعة مسبقاً");	
     	}
     	else
@@ -91,6 +100,7 @@ function checkID()
     	}
     	
     } else {
+    	$.sendinglbl.setText("");
         customAlert("خطأ في الإرسال");
     }
 });}
@@ -102,8 +112,8 @@ function sendToACS(){
 			  login  : 'admin',
 			  password: 'password',
 			}, function(e) {
-			  if (e.success)   {
-			 
+			  if (e.success)   
+			  {
 			    Cloud.Objects.create({
 			      classname : 'sirah',
 			      fields : {
@@ -116,15 +126,18 @@ function sendToACS(){
 			      }
 			    }, function(e) {
 			      if(e.success) {
+			     	$.sendinglbl.setText(""); 	
 			        customAlert("تم إرسال إجابتك");
 			        $.register.close();
 			        
 			      } else {
+			       $.sendinglbl.setText("");	
 			       customAlert("خطأ في الإرسال");
 			      }
 			    }); 
 			                 
 			  } else {
+			  	$.sendinglbl.setText("");	
 			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
 			  } 
 			});		
@@ -191,3 +204,32 @@ function hideInfo()
 		$.infoView.hide();
 		}
 }
+
+
+
+
+$.txtFld_Fullname.addEventListener('return', function(e){
+        $.txtFld_Idnumber.focus();
+    });
+    
+
+$.txtFld_Idnumber.addEventListener('return', function(e){
+        $.txtFld_Uniname.focus();
+    });
+    
+$.txtFld_Uniname.addEventListener('return', function(e){
+        $.txtFld_Phonenumber.focus();
+    });
+    
+    
+$.img_Logo.addEventListener('Click', function(e){
+
+
+	
+			$.txtFld_Fullname.blur();	
+	 		$.txtFld_Idnumber.blur();	
+	        $.txtFld_Uniname.blur();	
+	        $.txtFld_Phonenumber.blur();
+
+        
+    });    
