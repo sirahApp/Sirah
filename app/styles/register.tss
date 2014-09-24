@@ -131,20 +131,22 @@
 	top: '32%',
 	scrollType: 'vertical',
 	showVerticalScrollIndicator: 'true',
+	right:'3%',
+	left:'3%',
 	height: '50%',
-	width: '100%',
+	//width: '100%',
 	visible:false,
 	borderRadius:'10dp',
 	backgroundColor:'White',
+	
 	opacity:'0.9'
 	
 }
 
 "#infoText": {
 	textAlign: 'right',
-	color: 'black',
-	top: '1%',
-	//bottom: '1%',
+	color: '#150e26',
+	top: '2.5%',
 	left: '2%',
 	right: '5%',
     "font": {
@@ -157,11 +159,11 @@
 	textAlign: 'left',
 	color: '#683b68',
 	top: '0%',
-	//bottom: '1%',
 	left: '2%',
     "font": {
         "fontSize": '14dp',
-        "fontWeight": 'bold' 
+        "fontWeight": 'bold' ,
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
 }
 
@@ -264,7 +266,6 @@
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
-    //"left": "74.16%",
     "right": "5%",
     "color": "#FFFFFF",
     "width": "size",
@@ -303,14 +304,3 @@
 }
 
 
-"#requiredText": {
-	"font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "color": "red",
-    "left": "75.29%",
-    "top": "83.45%"
-    
-	
-}

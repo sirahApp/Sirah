@@ -17,9 +17,9 @@
 					<TableViewRow> <Label id="infoText"> - يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة </Label> </TableViewRow>
 					<TableViewRow><Label id="infoText"> - يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label> </TableViewRow>
 					<TableViewRow><Label id="infoText"> - بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - لن يتيح التطبيق الإجابة على المجموعة أكثر من مرة. </Label></TableViewRow>
+					<TableViewRow><Label id="infoText"> - لن يتيح التطبيق الإجابة على ذات المجموعة أكثر من مرة. </Label></TableViewRow>
 					<TableViewRow><Label id="infoText"> - يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى. </Label></TableViewRow>
-					<TableViewRow><Label id="infoText"> - أن تكون بيانات المشاركة كاملة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة. </Label></TableViewRow>
+					<TableViewRow><Label id="infoText"> - أن تكون بيانات المشاركة كاملة و صحيحة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة. </Label></TableViewRow>
 					<TableViewRow><Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label></TableViewRow>
 					<TableViewRow><Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه.  </Label></TableViewRow>
 					<TableViewRow> <Label id="labelTitle"> الجوائز: </Label> </TableViewRow>

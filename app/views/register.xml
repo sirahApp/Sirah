@@ -1,11 +1,7 @@
 <Alloy>
 	<Window id="register" class="container" title="">
-	<!--	<Label id="grptxt"></Label>
-		<Label id="scoretxt"></Label> -->
-		<ImageView  id="img_Logo" />		
 
-		
-		
+		<ImageView  id="img_Logo" />		
 		<ImageView id="img_Imageview1" />
         <ImageView  id="img_Logo" />
         <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
@@ -25,10 +21,12 @@
         
         <View id="agreements">
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
-        <Label id="lbl_Checkboxlbl"/>  <Label id="lbl_openInfo" onClick="showInfo"/>   
+        <Label id="lbl_Checkboxlbl"/> 
+        <Label id="lbl_openInfo" onClick="showInfo"/>   
 		</View>
+		
 		<ScrollView id="infoView" onClick="hideInfo">
-			<Label id="closeTxt"> X إغلاق </Label> 
+			<Label id="closeTxt">X إغلاق  </Label>
 	    	<Label id="infoText"></Label>
 	    </ScrollView> 
 	      
