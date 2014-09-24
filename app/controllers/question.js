@@ -5,7 +5,7 @@ Alloy.Collections.sirah.fetch();
 
 if (Ti.Platform.name === 'iPhone OS')
 {
-$.question.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+	$.question.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 
 $.questiontxt.text=args.question.question;
@@ -15,8 +15,6 @@ $.ch3Txt.text=args.question.ch3;
 var correctAnswer=args.question.correct;
 var grpid=args.question.groupid;
 var id = args.question.id;
-
-
 var answer;
 
 var pageNumber= id%6;
@@ -48,11 +46,7 @@ else if (pageNumber == 5)
 $.pageNumber.text = pageNumber ;
 
 
-
-
-
 function onBtn_nxtaudiobtnClicked()
-
 	{   
 		if( $.ch1.value==false && $.ch2.value==false && $.ch3.value==false)
 		{
@@ -80,26 +74,15 @@ function onBtn_nxtaudiobtnClicked()
 			}
 	}
 
-
-
-
 function checkAnswer()
 	{
 		if (correctAnswer==answer)
 		{
-			Alloy.Globals.score++;
-			console.log("Correct !");
-			console.log("Score "+ Alloy.Globals.score);			
-		}else{
-		
-			console.log("Wrong :( ");
-			console.log("Score "+ Alloy.Globals.score);	
+			Alloy.Globals.score++;		
 		}
 	}
 	
-
-
- function checked (e) 
+ function checked(e) 
  	{
 	    $.ch1.value=$.ch2.value=$.ch3.value=false;
 	    $.img_ch1img.image=$.img_ch2img.image=$.img_ch3img.image="/images/ch1img_image.png";
@@ -111,8 +94,7 @@ function checkAnswer()
 	  	  $.img_ch1img.image="/images/ch_checked_image.png";		
 	    }
 	    else if(this.number==$.img_ch2img.number)
-	    {
-	    	
+	    {	    	
 	    	 $.img_ch2img.image="/images/ch_checked_image.png";
 	    }
 	    else if (this.number==$.img_ch3img.number)
@@ -120,23 +102,16 @@ function checkAnswer()
 	    	$.img_ch3img.image="/images/ch_checked_image.png";
 	    }
 	    
-	    
-	    //this.backgroundColor = '#aaa';
-	    this.highlightedColor='yellow';
-	    answer=this.id;
-	    
+	    answer=this.id;	    
 	}
 
 function onImg_homebtnClicked()
-	{
-
-	
+{
 		var dialog = Ti.UI.createAlertDialog({
 		title :' تنبيه',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
 		buttonNames: ['نعم','لا']
-	});
-	
+	});	
 	dialog.addEventListener('click',function(e)
 		{
 			if(e.index==0)
@@ -144,19 +119,16 @@ function onImg_homebtnClicked()
 			$.question.close();
 			}	
 		});
-
-	dialog.show();
-	
+	dialog.show();	
 }
 
 function customAlert()
-	{	
+{	
 		var dialog = Ti.UI.createAlertDialog({
 		title :'تنبيه',
 		message: 'فضلاً اختر إجابة',
 		buttonNames: ['موافق']
 	});
-	dialog.show();
-	
+	dialog.show();	
 }
 

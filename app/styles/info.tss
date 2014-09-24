@@ -3,45 +3,35 @@
 }
 
 "#info": {
- //   "left": 0,
-  //  "width": "100%",
     "navBarHidden": true,
- //   "top": 0,
     "height": "100%",
     "left": "0%",
     "width": "100%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "backgroundImage": "/images/bg_image.png"
+    "backgroundImage": "/images/bg_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
 }
-
-"#homebtn":
-{	top:"80dp",
-	left:"250dp"
-	
-}
-
 
 "#img_Logo": {
     "left": "30.52%",
     "width": "35.52%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "10.27%",
     "height": "19.65%",
-    "image": "/images/logo_image.png"
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#img_Homebtn": {
     "left": "86.35%",
     "width": "8.12%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
     "top": "6.38%",
     "height": "5.13%",
-    "image": "/images/homebtn_image.png"
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
 }
 
 "#infoTitle": {
@@ -75,10 +65,9 @@
 	width: '100%'
 },
 
-"#table": {
-	top: '5%',
-	backgroundColor:'transparent',
-	separatorColor:'transparent',
+"#ViewText": {
+	top: '4%',
+	layout: 'vertical'
 }
 
 "#infoText": {
@@ -101,9 +90,4 @@
 		"fontSize": "14dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
-}
-
-"TableViewRow":{
-	selectedBackgroundColor: 'transparent'
-	
 }

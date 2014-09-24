@@ -3,12 +3,14 @@ var Cloud = require('ti.cloud');
 Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
 var userScore=Alloy.Globals.score;
+
 if (Ti.Platform.name === 'iPhone OS')
 {
-$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+	$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 
 var checkIndex = 0;
+
 function changeCheckbox()
 {
 	if (checkIndex == 0)
@@ -65,14 +67,13 @@ function sendScore()
 		}
 		else
 		{	
-				checkID();
-				
-				 	
+				checkID();								 	
 		} 
 	
 	}
 
-function checkID(){
+function checkID()
+{
 	Cloud.Objects.query({
     classname: 'sirah',
     where: {
@@ -126,11 +127,8 @@ function sendToACS(){
 			  } else {
 			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
 			  } 
-			});
-	
-	
+			});		
 }
-
 
 
 function onImg_homebtnClicked()
@@ -168,6 +166,7 @@ function customAlert(msg)
 
 function showInfo()
 {
+
 	if (Ti.Platform.name === 'android')
    {
    	$.infoView.visible=true;
@@ -176,16 +175,7 @@ function showInfo()
    	{
 	$.infoView.show();
 	}
-	var textValue= " قوانين المسابقة: "
-+"\n "+"- يشترط أن تكون المشاركة طالبة في إحدى جامعات المملكة."
-+"\n "+"- أن تكون بيانات المشاركة كاملة و صحيحة علماً بأن أي نقص أو خطأ فيها قد يحجب عنها الجائزة." 
-+"\n " + "- أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها." 
-+ "\n " +" - لن يتيح التطبيق الإجابة على ذات المجموعة أكثر من مرة." 
-+"\n "+"- يمكن للمشاركة الإجابة على المجموعة قبل الأسبوع المخصص لها."
-+"\n "+" - بعد إعلان أسماء الفائزات لأي مجموعة أسبوعية فإن أي مشاركة ستأتي لاحقاً تدخل في المنافسة على الجائزة الكبرى."
-+"\n "+"- يحق للمشاركة الفوز بالجائزة الأسبوعية مرة واحدة فقط وأي مشاركة لاحقا ستزيد فرصتها للفوز بالجائزة الكبرى." 
-+"\n"+"- في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعه."+"\n ";
-   $.infoText.setText(textValue);
+	
    
 }
 
@@ -200,5 +190,4 @@ function hideInfo()
 	{
 		$.infoView.hide();
 		}
-
 }
