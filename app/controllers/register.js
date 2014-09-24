@@ -2,10 +2,18 @@ var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
 Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
+
 var userScore=Alloy.Globals.score;
+
+
+if (Ti.Platform.name === 'android')
+{
+
+}
+
 if (Ti.Platform.name === 'iPhone OS')
 {
-$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
+	$.register.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 
 var checkIndex = 0;
@@ -183,3 +191,32 @@ function hideInfo()
 	
 $.infoView.visible=false;	
 }
+
+
+
+
+$.txtFld_Fullname.addEventListener('return', function(e){
+        $.txtFld_Idnumber.focus();
+    });
+    
+
+$.txtFld_Idnumber.addEventListener('return', function(e){
+        $.txtFld_Uniname.focus();
+    });
+    
+$.txtFld_Uniname.addEventListener('return', function(e){
+        $.txtFld_Phonenumber.focus();
+    });
+    
+    
+$.img_Logo.addEventListener('Click', function(e){
+
+
+	
+			$.txtFld_Fullname.blur();	
+	 		$.txtFld_Idnumber.blur();	
+	        $.txtFld_Uniname.blur();	
+	        $.txtFld_Phonenumber.blur();
+
+        
+    });    

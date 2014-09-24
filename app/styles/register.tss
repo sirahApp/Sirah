@@ -11,8 +11,10 @@
     "backgroundLeftCap": 0.1,
     "top": "0%",
     "height": "100%",
-    "backgroundImage":"/images/bg_image.png"
+    "backgroundImage":"/images/bg_image.png",
+   
 }
+
 
 
 "#img_Logo": {
@@ -41,52 +43,12 @@
 	"top":"80%"
 }
 
-"#fullName":{
-	
-	"borderStyle":"Ti.UI.INPUT_BORDERSTYLE_ROUNDED",
-	"color":"#336699",
-	"top":"150", 
-	"left":"30%", 
-	"width":"150",
-	"height":"30"
-	
-}
 
-"#IdNumber":{
-	
-
-	"color":"#336699",
-	"top":"200", 
-	"left":"30%", 
-	"width":"150",
-	"height":"30"
-	
-}
-
-"#phoneNumber":{
-	
-	"color":"#336699",
-	"top":"250", 
-	"left":"30%", 
-	"width":"150",
-	"height":"30"
-	
-}
-
-"#uniName":{	
-
-	"color":"#336699",
-	"top":"300", 
-	"left":"30%", 
-	"width":"150",
-	"height":"30"
-	
-}
 
 "#agreements": {
 	    "width": "100%",
 	    "height": "7%",
-	    "top": "77.02%"
+	    "top": "83%"
 	
 }
 
@@ -96,7 +58,7 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/checkbox_pressed.png",
-    "height": "40%",
+    "height": "70%",
 }
 
 "#lbl_Checkboxlbl": {
@@ -113,7 +75,7 @@
 }
 
 "#lbl_openInfo": {
-    "right": "30%",
+    "right": "34%",
     "color": "#683b68",
     "width": "size",
     "text": " شروط وقوانين المسابقة ",
@@ -143,7 +105,7 @@
 "#infoText": {
 	textAlign: 'right',
 	color: 'black',
-	top: '1%',
+	top: '5%',
 	//bottom: '1%',
 	left: '2%',
 	right: '5%',
@@ -172,12 +134,13 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",
-    "top": "37.77%",
-    "height": "6.04%",
+    "top": "10%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل الاسم الرباعي",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
     "font": {
         "fontSize": '14dp',
        }
@@ -193,7 +156,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الإسم الرباعي*",
-    "top": "37.93%",
+    "top": "13%",
     "height": "size"
 }
 
@@ -203,15 +166,19 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",    
-    "top": "47.63%",
-    "height": "6.04%",
+    "top": "28%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل الرقم الجامعي ",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+ //   "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '14dp'
        }
+       
+       
 }
 
 "#lbl_Idnumberlbl": {
@@ -224,7 +191,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الرقم الجامعي*",
-    "top": "47.65%",
+    "top": "31%",
     "height": "size"
 }
 
@@ -238,8 +205,28 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "الجامعة*",
-    "top": "57.86%",
+    "top": "49%",
     "height": "size"
+}
+
+
+
+"#txtFld_Uniname": {
+    "left": "10.31%",
+    "width": "56.66%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundImage": "/images/fullName_background.png",    
+    "top": "46%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintText": "فضلا أدخل اسم الجامعة",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "font": {
+        "fontSize": '14dp',
+       }
 }
 
 "#txtFld_Phonenumber": {
@@ -248,16 +235,30 @@
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/fullName_background.png",    
-    "top": "67.36%",
-    "height": "6.04%",
+    "top": "64%",
+    "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
     "hintText": "فضلا أدخل رقم الجوال",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+  //  "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+   // "returnKeyType": Titanium.UI.RETURNKEY_SEND,
     "font": {
         "fontSize": '14dp',
        }
+
 }
+
+"#txtFld_Phonenumber[platform=ios]": {
+ 
+   "returnKeyType": Titanium.UI.RETURNKEY_SEND
+
+
+}
+
+
+
+
 
 "#lbl_Phonenumberlbl": {
     "font": {
@@ -269,7 +270,7 @@
     "color": "#FFFFFF",
     "width": "size",
     "text": "رقم الجوال*",
-    "top": "67.65%",
+    "top": "67%",
     "height": "size"
 }
 
@@ -285,22 +286,7 @@
 }
 
 
-"#txtFld_Uniname": {
-    "left": "10.31%",
-    "width": "56.66%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",    
-    "top": "57.36%",
-    "height": "6.04%",
-    "paddingLeft": "5",
-    "paddingRight": "5",
-    "hintText": "فضلا أدخل اسم الجامعة",
-    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "font": {
-        "fontSize": '14dp',
-       }
-}
+
 
 
 "#requiredText": {
@@ -313,4 +299,20 @@
     "top": "83.45%"
     
 	
+}
+
+
+"#form":{
+ borderColor:"red",
+  contentHeight: 'auto',
+ //	layout: 'vertical',
+	top:"30%",
+	bottom:"13%"
+}
+"#formView":{
+	//borderColor:"red",
+  contentHeight: 'auto',
+ //	layout: 'vertical',
+	top:"30%",
+	bottom:"13%"
 }
