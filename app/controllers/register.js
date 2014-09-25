@@ -1,6 +1,6 @@
 var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
-Cloud.debug = true;  // optional; if you add this line, set it to false for production
+//Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
 
 var userScore=Alloy.Globals.score;
