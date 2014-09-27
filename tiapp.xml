@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
     <property name="acs-api-key-production" type="string">C4Auc9eRGArzinSy8xhhz9rXKKCRlZtd</property>
     <property name="acs-api-key-development" type="string">6H0uXpyogUSvZkIYaaqUv6b2VrvkxM2h</property>
     <id>com.nourainclub.sirah</id>
     <name>Sirah</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <publisher>nourainclub</publisher>
     <url>http://</url>
     <description>undefined</description>
@@ -15,11 +15,10 @@
     <analytics>true</analytics>
     <guid>0b311dae-ba78-4b8d-ba6c-0fc4b6a13a3c</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
-  
     <ios>
         <plist>
             <dict>
-            	 <key>UISupportedInterfaceOrientations~iphone</key>
+                <key>UISupportedInterfaceOrientations~iphone</key>
                 <array>
                     <string>UIInterfaceOrientationPortrait</string>
                 </array>
@@ -42,15 +41,14 @@
         </plist>
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-    <manifest>
-        <application android:theme="@style/Theme.NoActionBar">
-        	  <activity android:name="org.appcelerator.titanium.TiActivity" 
-                android:screenOrientation="portrait" 
-                android:configChanges="keyboardHidden|orientation">
-            </activity>
-        </application>
-    </manifest>
-</android>	
+        <manifest android:versionCode="1.1" android:versionName="1.1" >
+            <application android:theme="@style/Theme.NoActionBar">
+                <activity
+                    android:configChanges="keyboardHidden|orientation"
+                    android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+            </application>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>

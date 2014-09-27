@@ -37,7 +37,7 @@
 "#infoTitle": {
 	  "height":"size",
 	  "width":"size",
-	  "top":"37%",
+	  "top":"35%",
 	  "color":"#FFFFFF",	 
 	  "font": {
 		"fontSize": "18dp",
@@ -58,15 +58,15 @@
 },
 
 "#infoView": {
-	top: '43%',
+	top: '43.5%',
 	scrollType: 'vertical',
 	showVerticalScrollIndicator: 'true',
-	height: '55%',
+	height: '53%',
 	width: '100%'
 },
 
 "#ViewText": {
-	top: '4%',
+	top: '3%',
 	layout: 'vertical'
 }
 
