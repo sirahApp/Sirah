@@ -2,8 +2,10 @@
 	<Window id="player" class="container" title="">
 		
 		<ImageView  id="img_Logo" />		
-		<ImageView id="img_Imageview1" />
+
 		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+		
+		<ImageView onClick="onImg_profile" id="img_profile" />
 		
 		<Label id="waiting"></Label>		
 		<View id="plyView"> 

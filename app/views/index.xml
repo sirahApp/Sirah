@@ -3,9 +3,12 @@
 		<ImageView id="img_Bg" />
         <ImageView id="img_Logo" />
 			
-		<Button onClick="onBtn_openlistClicked" id="btn_Openlist" />
+
         <Button onClick="onBtn_openinfoClicked" id="btn_Openinfo" />
-        <Button onClick="onBtn_openaboutClicked" id="btn_Openabout" />
+        <Button onClick="onBtn_openaboutClicked" id="btn_Openabout" />        
+        <Button onClick="onBtn_signInClicked" id="btn_OpenSignIn" /> 
+        <Button onClick="onBtn_openlistClicked" id="btn_Openlist" />               
+        
 		
 	</Window>
 </Alloy>

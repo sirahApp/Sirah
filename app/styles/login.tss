@@ -1,0 +1,189 @@
+
+".container" : {
+  	"backgroundImage":"/images/bg_image.png"
+}
+
+"#login": {
+    "left": 0,
+    "width": "100%",
+    "navBarHidden": true,
+    "top": 0,
+    "height": "100%",    
+}
+
+
+"#img_Logo": {
+    "left": "30.52%",
+  //  "width": "35.52%",
+    "top": "10.06%",
+  //  "height": "19.65%",
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+}
+
+"#backArrow":{
+	
+	"right": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#ffffff",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "NeoSansArabic"
+    }    
+	
+}
+
+"#sendinglbl":{
+	"top": "35%",
+    "color": "white",
+    "font": {
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }   
+	
+}
+
+"#btn_SignIn":{
+    "width": "80%",
+    "backgroundColor":"#cd9365",
+    "top": "65%",
+    "height": "9%",
+    "title":"دخول",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}
+
+
+"#txtFld_Usrname":{
+    "right": "10%",
+    "width": "80%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
+    "top": "40%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintTextColor":"#ffffff",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "color":"#fff",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+}
+	
+	
+"#usrNameHint":{
+	touchEnabled: false,
+	"right": "13%",
+    "color":"white",
+    "top": "43%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+	
+	}
+	
+"#passwordHint":{
+	touchEnabled: false,
+	"right": "13%",
+   // "width": "80%",
+    "color":"white",
+    "top": "53%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+	
+	}	
+	
+	
+	
+	
+"#txtFld_Pass":{
+    "right": "10%",
+    "width": "80%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
+    "top": "50%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintTextColor":"#ffffff",
+    "passwordMask":"true",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+  //  "returnKeyType":Titanium.UI.RETURNKEY_SEND,
+    "color":"#fff", 
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+}
+
+
+"#txtFld_Pass[platform=ios]": {
+ 
+   "returnKeyType": Titanium.UI.RETURNKEY_SEND
+
+
+}
+
+"#skip_login":{
+	"color": "#ffffff",
+    "top": "80%",
+    "right": "15%",
+     "font": {
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }	
+ 	
+}
+
+
+"#line":{
+	"color": "#ffffff",
+    "top": "80%",
+    "right": "50%",
+     "font": {
+        "fontSize": '16dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }	
+ 	
+}
+
+
+"#Hline":{
+
+    "top": "50%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
+}
+
+
+
+"#signUp":{
+	"color": "#fff",
+    "top": "80%",
+    "right": "60%",
+     "font": {
+        "fontSize": '13dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }	
+ 	
+}

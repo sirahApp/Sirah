@@ -1,6 +1,7 @@
 ".container": {
 	title: 'Index',
-	"backgroundImage":"/images/bg_image.png"
+	//"backgroundImage":"/images/bg_image.png"
+	
 }
 
 "Label": {
@@ -23,50 +24,87 @@
     "top": "0%",
     "height": "100%",
     "image": "/images/bg_image.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+   // "backgroundTopCap": 0.1,
+    //"backgroundLeftCap": 0.1,    
 }
 
+
+
 "#img_Logo": {
-    "left": "30.52%",
-    "width": "35.52%",
+    "left": "33%",
+   // "width": "35.52%",
     "top": "10.27%",
-    "height": "19.65%",
+ //   "height": "19.65%",
     "image": "/images/logo_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
-"#btn_Openlist": {
-    "left": "41.04%",
-    "width": "16.97%",
-    "backgroundImage": "/images/openList_normal.png",
-    "top": "45.34%",
-    "height": "9.86%",
-    "backgroundSelectedImage": "/images/openList_pressed.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
-}
 
 "#btn_Openinfo": {
-    "left": "37.81%",
-    "width": "24.27%",
-    "backgroundImage": "/images/openInfo_normal.png",
-    "top": "62.43%",
-    "height": "10.27%",
-    "backgroundSelectedImage": "/images/openInfo_pressed.png",
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#9B4F73",
+    "top": "46%",
+    "height": "8%",
+    "title":" عن المسابقة >",
+    "color":"#ffffff",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
+
+
+
 
 "#btn_Openabout": {
-    "left": "41.66%",
-    "width": "14.89%",
-    "backgroundImage": "/images/openAbout_normal.png",
-    "top": "79.65%",
-    "height": "10%",
-    "backgroundSelectedImage": "/images/openAbout_pressed.png",
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#AD676F",
+    "top": "59%",
+    "height": "8%",
+    "title":"من نحن ؟ >",
+    "color":"#ffffff",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
 
+
+"#btn_OpenSignIn": {
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#BD7D6A",
+    "top": "72%",
+    "height": "8%",
+    "title":"المسابقة >",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}
+
+"#btn_Openlist":{
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#CD9365",
+    "top": "85%",
+    "height": "8%",
+    "title":"الاستماع >",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}

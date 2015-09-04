@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="courses" class="container" title="">
+		<ImageView id="img_Bg" />
+        <ImageView id="img_Logo" />
+        <ImageView  id="img_Homebtn" onClick="onImg_homebtnClicked"/>
+        <Button onClick="onBtn_openCourse1" id="btn_OpenCourse1" />
+        <Button onClick="onBtn_openCourse2" id="btn_OpenCourse2" />
+		
+	</Window>
+</Alloy>

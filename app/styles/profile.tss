@@ -1,0 +1,281 @@
+
+".container" : {
+	"backgroundColor":'#ffff',	
+//	"backgroundGradient": {
+        //type: 'linear',
+       // startPoint: { x: '0%', y: '50%' },
+      //  endPoint: { x: '100%', y: '50%' },
+    //    colors: [ { color: '#533250', offset: 0.0}, { color: '#9B4F73', offset: 0.5 }],
+  //  }
+}
+
+"#profile": {
+    "right": 0,
+    "width": "90%",
+    "navBarHidden": true,
+    "top": 0,
+    "height": "100%"
+}
+
+
+
+"#titleLbl": {
+    "color": "#533250",
+    "top":"13%",
+    "width": "80%",
+    "height": "size",
+    "textAlign": Ti.UI.TEXT_ALIGNMENT_CENTER,
+    "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }    
+}
+
+
+"#txtFld_Fullname": {
+  //  "left": "5%",
+   // "width": "80%",
+  //  "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,
+    //"backgroundColor":"transparent",
+     "width": "90%",
+    "top": "20%",
+    //"height": "10%",
+    //"paddingLeft": "5",
+    //"paddingRight": "5",
+    //"hintTextColor":"#ffffff",
+    //"textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+   // "returnKeyType":Titanium.UI.RETURNKEY_NEXT,
+      "textAlign": Ti.UI.TEXT_ALIGNMENT_CENTER,
+    "color":"#BD7D6A",  
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+}
+
+"#usrNameHint":{
+	touchEnabled: false,
+	"right": "7%",
+    "color":"#533250",
+    "top": "30%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+	
+	
+}
+
+"#Hline1":{
+
+    "top": "37%",
+    "width": "85%",
+	"height":"1px",
+	"backgroundColor":"#533250",
+ 	
+}
+
+"#txtFld_Idnumber": {
+    "left": "5%",
+    "width": "90%",
+    //"backgroundTopCap": 0.1,
+    //"backgroundLeftCap": 0.1, 
+    "top": "40%",
+    //"height": "10%",
+    //"paddingLeft": "5",
+    //"paddingRight": "5",
+    //"hintTextColor":"#ffffff",
+    //"textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    //"returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+   // "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+     "color":"#BD7D6A", 
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+       
+       
+}
+
+
+"#IdnumberHint":{
+	touchEnabled: false,
+	"right": "7%",
+    "color":"#533250",
+    "top": "40%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+
+"#Hline2":{
+
+    "top": "47%",
+    "width": "85%",
+	"height":"1px",
+	"backgroundColor":"#533250",
+ 	
+}
+
+"#txtFld_Password": {
+    "left": "5%",
+     "width": "90%",
+ //   "width": "80%",
+   // "backgroundTopCap": 0.1,
+    //"backgroundLeftCap": 0.1,
+  //  "backgroundImage": "/images/fullName_background.png",    
+    "top": "38%",
+    "height": "10%",
+   // "paddingLeft": "5",
+    //"paddingRight": "5",
+    //"hintTextColor":"#fff",
+    //"passwordMask":"true",
+    //"textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    //"returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+ //   "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD,
+     "color":"#BD7D6A",  
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+       
+       
+}
+
+
+"#passwordHint":{
+	touchEnabled: false,
+	"right": "7%",
+    "color":"#533250",
+    "top": "40%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+
+
+"#Hline3":{
+
+    "top": "57%",
+    "width": "85%",
+	"height":"1px",
+	"backgroundColor":"#533250",
+ 	
+}
+
+
+
+
+"#txtFld_Uniname": {
+    "left": "5%",
+    //"width": "80%",
+    //"backgroundTopCap": 0.1,
+    //"backgroundLeftCap": 0.1,
+  //  "backgroundImage": "/images/fullName_background.png",    
+    "top": "50%",
+     "width": "90%",
+    //"height": "10%",
+    //"paddingLeft": "5",
+    //"paddingRight": "5",
+    //"hintTextColor":"#ffffff",
+    //"textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+   // "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "color":"#BD7D6A", 
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+}
+
+
+"#uninameHint":{
+	touchEnabled: false,
+	"right": "7%",
+    "color":"#533250",
+    "top": "50%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+      
+      
+
+
+"#txtFld_Phonenumber": {
+    "left": "5%",
+    //"width": "80%",
+    //"backgroundTopCap": 0.1,
+    //"backgroundLeftCap": 0.1,
+    "top": "60%",
+   // "height": "10%",
+    //"paddingLeft": "5",
+   // "paddingRight": "5",
+    //"hintTextColor":"#ffffff",
+    //"textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+   // "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+   // "returnKeyType": Titanium.UI.RETURNKEY_SEND,
+   
+       "color":"#BD7D6A", 
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+
+}
+
+
+"#phoneHint":{
+	touchEnabled: false,
+	"right": "7%",
+    "color":"#533250",
+    "top": "60%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+      
+
+//"#txtFld_Phonenumber[platform=ios]": {
+ 
+//   "returnKeyType": Titanium.UI.RETURNKEY_SEND
+
+
+//}
+
+
+"#backArrow":{
+	
+	"left": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#533250",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "NeoSansArabic"
+    }    
+	
+}
+
+
+"#btn_SignOut":{
+    "width": "80%",
+    "backgroundColor":"#CD9365",
+    "top": "83%",
+    "height": "9%",
+    "title":"تسجيل خروج",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}

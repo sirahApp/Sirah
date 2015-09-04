@@ -20,9 +20,9 @@
 
 "#img_Logo": {
     "left": "30.52%",
-    "width": "35.52%",
+  //  "width": "35.52%",
     "top": "10.27%",
-    "height": "19.65%",
+   // "height": "19.65%",
     "image": "/images/logo_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
@@ -30,37 +30,50 @@
 
 
 "#img_Homebtn": {
-    "left": "86.35%",
-    "width": "8.12%",
-    "top": "6.38%",
-    "height": "5.13%",
-
+    "left": "5%",
+  //  "width": "8.12%",
+    "top": "6%",
+   // "height": "5.13%",
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
+"#backArrow":{
+	
+	"right": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#ffffff",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "NeoSansArabic"
+    }    
+	
+}
 
 "#agreements": {
 	    "width": "100%",
 	    "height": "7%",
-
-	    "top": "83%"
+	    "top": "88%"
 	
 }
 
 "#btn_Checkbox": {
-    "right": "10%",
-    "width": "4.79%",
+    "right": "15%",
+    "width": "4%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
     "backgroundImage": "/images/checkbox_pressed.png",
-    "height": "70%",
+    "height": "55%",
 }
 
 "#lbl_Checkboxlbl": {
-    "right": "16%",
-    "color": "#666666",
+    "right": "21%",
+    "color": "#ffffff",
     "width": "size",
     "text": " أوافق على ",
     "height": "size",
@@ -71,14 +84,14 @@
 }
 
 "#lbl_openInfo": {
-    "right": "34%",
-    "color": "#683b68",
+    "right": "41%",
+    "color": "#E5DB90",
     "width": "size",
     "text": " شروط وقوانين المسابقة ",
     "height": "size",
         "font": {
         "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+        "fontFamily":  "HelveticaNeueW23forSKY-Reg"
     }
 }
 
@@ -103,8 +116,8 @@
 	left: '2%',
 	right: '5%',
     "font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+        "fontSize": '12dp',
+        "fontFamily":  "HelveticaNeueW23forSKY-Reg"
     },
 }
 
@@ -114,130 +127,267 @@
 	top: '0%',
 	left: '2%',
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontWeight": 'bold' ,
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+        "fontFamily":  "HelveticaNeueW23forSKY-Reg"
     },
 }
 
 
 "#txtFld_Fullname": {
-    "left": "10.31%",
-    "width": "56.66%",
+    "left": "10%",
+    "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",
-    "top": "10%",
+    "backgroundColor":"transparent",
+    "top": "12%",
     "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا أدخل الاسم الرباعي",
+    "hintTextColor":"#ffffff",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
-    "font": {
-        "fontSize": '14dp',
-       }
-}
-
-"#lbl_Fullnamelbl": {
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT,
+    "color":"#fff",  
     "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "5%",
-    "color": "#FFFFFF",
-    "width": "size",
-    "text": "الإسم الرباعي*",
-    "top": "13%",
-    "height": "size"
+       }
+}
+
+"#usrNameHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "14%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+	
+	
+}
+
+"#Hline1":{
+
+    "top": "22%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
 }
 
 "#txtFld_Idnumber": {
-    "left": "10.31%",
-    "width": "56.66%",
+    "left": "10%",
+    "width": "80%",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",    
-    "top": "28%",
+    "backgroundLeftCap": 0.1, 
+    "top": "25%",
     "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا أدخل الرقم الجامعي ",
+    "hintTextColor":"#ffffff",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+     "color":"#fff", 
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+       
+       
+}
+
+
+"#IdnumberHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "27%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+
+"#Hline2":{
+
+    "top": "36%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
+}
+
+"#txtFld_Password": {
+    "left": "10%",
+    "width": "80%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+  //  "backgroundImage": "/images/fullName_background.png",    
+    "top": "38%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintTextColor":"#fff",
+    "passwordMask":"true",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+    "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+ //   "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD,
+     "color":"#fff",  
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+       }
+       
+       
+}
+
+
+"#passwordHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "40%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+
+
+"#Hline3":{
+
+    "top": "49%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
+}
+
+"#txtFld_PasswordConfirmation": {
+    "left": "10%",
+    "width": "80%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+    "top": "51%",
+    "height": "10%",
+    "paddingLeft": "5",
+    "paddingRight": "5",
+    "hintTextColor":"#ffffff",
+    "passwordMask":"true",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
  //   "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+     "color":"#fff", 
     "font": {
-        "fontSize": '14dp'
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
        }
        
        
 }
 
-"#lbl_Idnumberlbl": {
+
+"#passwordconHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "53%",
     "font": {
         "fontSize": '14dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "5%",
-    "color": "#FFFFFF",
-    "width": "size",
-    "text": "الرقم الجامعي*",
-    "top": "31%",
-    "height": "size"
-}
+      }  
+      }
 
-"#lbl_Uninamelbl": {
-    "font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "5%",
-    "color": "#FFFFFF",
-    "width": "size",
-    "text": "الجامعة*",
-    "top": "49%",
-    "height": "size"
-}
 
+"#Hline4":{
+
+    "top": "62%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
+}
 
 
 "#txtFld_Uniname": {
-    "left": "10.31%",
-    "width": "56.66%",
+    "left": "10%",
+    "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",    
-    "top": "46%",
+  //  "backgroundImage": "/images/fullName_background.png",    
+    "top": "65%",
     "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا أدخل اسم الجامعة",
+    "hintTextColor":"#ffffff",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "returnKeyType":Titanium.UI.RETURNKEY_NEXT, 
+    "color":"#fff", 
     "font": {
         "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
        }
+}
+
+
+"#uninameHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "66%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+      
+      
+
+"#Hline5":{
+
+    "top": "75%",
+    "width": "80%",
+	"height":"1px",
+	"backgroundColor":"#fff",
+ 	
 }
 
 "#txtFld_Phonenumber": {
-    "left": "10.31%",
-    "width": "56.66%",
+    "left": "10%",
+    "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/fullName_background.png",    
-    "top": "64%",
+    "top": "76%",
     "height": "10%",
     "paddingLeft": "5",
     "paddingRight": "5",
-    "hintText": "فضلا أدخل رقم الجوال",
+    "hintTextColor":"#ffffff",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-  //  "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+    "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
    // "returnKeyType": Titanium.UI.RETURNKEY_SEND,
+   
+       "color":"#fff", 
     "font": {
         "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
        }
 
 }
+
+
+"#phoneHint":{
+	touchEnabled: false,
+	"right": "11%",
+    "color":"white",
+    "top": "79%",
+    "font": {
+        "fontSize": '14dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+      }  
+      }
+      
 
 "#txtFld_Phonenumber[platform=ios]": {
  
@@ -250,30 +400,23 @@
 
 
 
-"#lbl_Phonenumberlbl": {
-    "font": {
-        "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
-    },
-    "right": "5%",
-    "color": "#FFFFFF",
-    "width": "size",
-    "text": "رقم الجوال*",
-    "top": "67%",
-    "height": "size"
-}
+
 
 "#btn_Sendscore": {
-    "left": "31.97%",
-    "width": "34.68%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-    "backgroundImage": "/images/sendScore_normal.png",
-    "top": "86.45%",
-    "height": "6.87%",
-    "backgroundSelectedImage": "/images/sendScore_pressed.png"
+   "left": "10%",
+    "width": "80%",
+    "backgroundColor":"#cd9365",
+    "top": "86%",
+    "height": "8%",
+    "title":"تسجيل",
+    "color":"#ffffff",
+  //  "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
-
 
 
 
@@ -284,24 +427,24 @@
 "#form":{
   contentHeight: 'auto',
  //	layout: 'vertical',
-	top:"30%",
+	top:"23%",
 	bottom:"13%"
 }
 "#formView":{
 	//borderColor:"red",
   contentHeight: 'auto',
  //	layout: 'vertical',
-	top:"30%",
+	top:"23%",
 	bottom:"13%"
 }
 
 
 "#sendinglbl":{
-	"top": "30%",
+	"top": "25%",
     "color": "white",
     "font": {
-    "fontSize": '14dp',
-    "fontFamily": "HelveticaNeueW23forSKY-Reg"
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }   
 	
 }

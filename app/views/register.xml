@@ -6,24 +6,31 @@
 		<ImageView id="img_Imageview1" />
 
         <ImageView  id="img_Logo" />
-        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+        <ImageView  id="img_Homebtn" onClick="onImg_homebtnClicked"/>
+		<Label id="backArrow" text=">" onClick="backArrowbtn"/>	    
 
         <Label id="sendinglbl"/>
          	
-   <ScrollView id="form" platform="ios">  
+   <ScrollView id="form" platform="ios" showVerticalScrollIndicator="true">  
        	  	     
 
-        <TextField id="txtFld_Fullname" />
-        <Label id="lbl_Fullnamelbl"/>
-        
-        <TextField id="txtFld_Idnumber" />
-        <Label id="lbl_Idnumberlbl"/>
-        
-        <TextField id="txtFld_Uniname" />
-        <Label id="lbl_Uninamelbl"/>
-        
-        <TextField id="txtFld_Phonenumber" />
-        <Label id="lbl_Phonenumberlbl"/> 
+        <TextField id="txtFld_Fullname" onFocus="fullname_focus" onBlur="fullname_blur" />
+        <Label id="usrNameHint" text="الإسم الرباعي" /> 
+                <View id="Hline1"> </View>
+        <TextField id="txtFld_Idnumber" onFocus="Idnumber_focus" onBlur="Idnumber_blur" />
+        <Label id="IdnumberHint" text="الرقم الجامعي" />        
+                <View id="Hline2"> </View>
+         <TextField id="txtFld_Password"  onFocus="Password_focus" onBlur="Password_blur" />
+        <Label id="passwordHint" text="كلمة المرور" />                  
+         		 <View id="Hline3"> </View>
+         <TextField id="txtFld_PasswordConfirmation" onFocus="Passwordcon_focus" onBlur="Passwordcon_blur"/>
+        <Label id="passwordconHint" text="تأكيد كلمة المرور" />                
+                <View id="Hline4"> </View>
+        <TextField id="txtFld_Uniname" onFocus="Uniname_focus" onBlur="Uniname_blur"/>
+        <Label id="uninameHint" text= "الجامعة" />          
+                <View id="Hline5"> </View>
+        <TextField id="txtFld_Phonenumber" onFocus="Phonenumber_focus" onBlur="Phonenumber_blur" />
+        <Label id="phoneHint" text="رقم الجوال" />          
         
         <View id="agreements">
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
@@ -39,16 +46,17 @@
        	  	     
 
         <TextField id="txtFld_Fullname" />
-        <Label id="lbl_Fullnamelbl"/>
-        
+
         <TextField id="txtFld_Idnumber" />
-        <Label id="lbl_Idnumberlbl"/>
-        
+
+         <TextField id="txtFld_Password" />
+         
+         <TextField id="txtFld_PasswordConfirmation" />        
+       
         <TextField id="txtFld_Uniname" />
-        <Label id="lbl_Uninamelbl"/>
-        
+     
         <TextField id="txtFld_Phonenumber" />
-        <Label id="lbl_Phonenumberlbl"/> 
+ 
         
         <View id="agreements">
         <Button id="btn_Checkbox" onClick="changeCheckbox" />
@@ -66,13 +74,13 @@
 
 		<ScrollView id="infoView" onClick="hideInfo">
 			<Label id="closeTxt">X إغلاق  </Label>
-			<Label id="infoText"> شروط و قوانين المسابقة</Label>
-					<Label id="infoText"> - يشترط أن تكون المشارِكة طالبة في إحدى جامعات المملكة العربية السعودية </Label>
+			<Label id="infoText"> شروط و قوانين المسابقة </Label>
+				<!--	<Label id="infoText"> - يشترط أن تكون المشارِكة طالبة في إحدى جامعات المملكة العربية السعودية </Label>  -->
 					<Label id="infoText"> - أن تكون بيانات المشارِكة  كاملة و صحيحة، علماً بأن أي نقص أو خطأ فيها قد يحجب عن الفائزة الجائزة. </Label>
-					<Label id="infoText"> - يمكن للمشارِكة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label>
-					<Label id="infoText"> - بعد انطلاق المسابقة.. يحق لأي طالبة المشارَكة في المجموعات الفائتة للدخول في السحب النهائي. </Label>
+				<!--	<Label id="infoText"> - يمكن للمشارِكة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label> -->
+				<!--	<Label id="infoText"> - بعد انطلاق المسابقة.. يحق لأي طالبة المشارَكة في المجموعات الفائتة للدخول في السحب النهائي. </Label> -->
 					<Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعة.  </Label>
-					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
+					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٦-١٤٣٧هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
 					<Label>  </Label> 
 	    </ScrollView> 
 	      

@@ -1,10 +1,9 @@
 <Alloy>
 	<Window id="info" title="">
 	<!-- <ImageView id="img_Bg" />  -->	
-        <ImageView onClick="onImg_logoClicked" id="img_Logo" />
-        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+        <Label id="backArrow" text=">" onClick="backArrowbtn"/>
        
-        <Label id="infoTitle">مسابقة في ظلال السيرة</Label>
+        <Label id="infoTitle">عن المسابقة</Label>
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="infoView"> 
 			<View id="ViewText">
@@ -13,18 +12,18 @@
 					<Label id="labelTitle"> طريقة المسابقة: </Label>
 					<Label id="infoText"> قُسمت حلقات في ظلال السيرة إلى مجموعات تحتوي كل مجموعة على ٦ حلقات، و في كل أسبوع تكون المنافسة على إحدى المجموعات. تقوم المشاركة بالاستماع للحلقة ومن ثم الإجابة على السؤال المصاحب لها من خلال التطبيق. </Label>
 					<Label id="labelTitle"> قوانين المسابقة: </Label>
-					<Label id="infoText"> - يشترط أن تكون المشارِكة طالبة في إحدى جامعات المملكة العربية السعودية </Label>
+					<!--	<Label id="infoText"> - يشترط أن تكون المشارِكة طالبة في إحدى جامعات المملكة العربية السعودية </Label>   -->	
 					<Label id="infoText"> - أن تكون بيانات المشارِكة  كاملة و صحيحة، علماً بأن أي نقص أو خطأ فيها قد يحجب عن الفائزة الجائزة. </Label>
 					<Label id="infoText"> - يمكن للمشارِكة الإجابة على المجموعة قبل الأسبوع المخصص لها. </Label>
 					<Label id="infoText"> - بعد انطلاق المسابقة يحق لأي طالبة المشارَكة في المجموعات الفائتة للدخول في السحب النهائي. </Label>
 					<Label id="infoText"> - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعة.  </Label>
-					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٥-١٤٣٦هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
+					<Label id="infoText"> - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٦-١٤٣٧هـ وتلغى الجائزة في حال التأخر عن استلامها. </Label>
 					<Label id="labelTitle"> الجوائز: </Label>
-					<Label id="infoText"> - تُقدّم جوائز أسبوعية لـ ٣ ممن حصلن على أكبر عدد من الإجابات الصحيحة، مجموع الجوائز ٣٠٠ ريال. </Label>
+					<Label id="infoText"> - تُقدّم جوائز أسبوعية لـ ٣ ممن حصلن على أكبر عدد من الإجابات الصحيحة. </Label>
 					<Label id="infoText"> - تُقدّم ٥ جوائز كبرى في نهاية كل فصل دراسي لمن حصلت على أكبر عدد من الإجابات الصحيحة في جميع المجموعات، مجموع الجوائز ٥٠٠٠ ريال.</Label>
 					<Label id="infoText"> وسيتم إعلان أسماء الفائزات على مواقع التواصل الاجتماعي الخاصة بالنادي</Label>
 					<Label id="labelTitle"> المدة الزمنية:  </Label>
-					<Label id="infoText"> على مدار العام الدراسي ١٤٣٦-١٤٣٥ هـ بواقع مجموعة كل أسبوع.</Label>
+					<Label id="infoText"> على مدار العام الدراسي ١٤٣٦-١٤٣٧ هـ بواقع مجموعة كل أسبوع.</Label>
 					<Label id="labelTitle"> </Label>
 					<Label id="labelTitle"> </Label>
 				 </View>

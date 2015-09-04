@@ -1,5 +1,6 @@
 function onBtn_openlistClicked(e){
-	var winList = Alloy.createController('groupList').getView();
+	var win = Alloy.createController('groupList', {crsNumber:1}).getView();
+	win.open();
 };
 
 if (Ti.Platform.name === 'iPhone OS')
@@ -18,5 +19,14 @@ function onBtn_openinfoClicked(e)
 	var winInfo = Alloy.createController('info').getView();
 	winInfo.open();
 	};
+	
+	
+function onBtn_signInClicked(e)
+{
+	var winInfo = Alloy.createController('login').getView();
+	winInfo.open();
+	};	
+
+$.img_Bg.setScaleType(ScaleType.FIT_XY);
 
 $.index.open();

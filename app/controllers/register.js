@@ -6,6 +6,109 @@ var Cloud = require('ti.cloud');
 var userScore=Alloy.Globals.score;
 
 
+
+
+function fullname_focus()
+{
+	
+	$.usrNameHint.visible=false;
+}
+
+
+function fullname_blur()
+
+{
+	if($.txtFld_Fullname.value == "")
+	{
+	$.usrNameHint.visible=true;
+	}	
+}
+
+
+function Idnumber_focus()
+{
+	
+	$.IdnumberHint.visible=false;
+}
+
+
+function Idnumber_blur()
+
+{
+	if($.txtFld_Idnumber.value == "")
+	{
+	$.IdnumberHint.visible=true;
+	}	
+}
+
+function Password_focus()
+{
+	
+	$.passwordHint.visible=false;
+}
+
+
+function Password_blur()
+
+{
+	if($.txtFld_Password.value == "")
+	{
+	$.passwordHint.visible=true;
+	}	
+}
+
+function Passwordcon_focus()
+{
+	
+	$.passwordconHint.visible=false;
+}
+
+
+function Passwordcon_blur()
+
+{
+	if($.txtFld_PasswordConfirmation.value == "")
+	{
+	$.passwordconHint.visible=true;
+	}	
+}
+
+
+function Uniname_focus()
+{
+	
+	$.uninameHint.visible=false;
+}
+
+
+function Uniname_blur()
+
+{
+	if($.txtFld_Uniname.value == "")
+	{
+	$.uninameHint.visible=true;
+	}	
+}
+
+
+function Phonenumber_focus()
+{
+	
+	$.phoneHint.visible=false;
+}
+
+
+function Phonenumber_blur()
+
+{
+	if($.txtFld_Phonenumber.value == "")
+	{
+	$.phoneHint.visible=true;
+	}	
+}
+
+
+
 if (Ti.Platform.name === 'android')
 {
 
@@ -75,17 +178,17 @@ function sendScore()
 		else
 		{	
 				$.sendinglbl.setText(" جاري الإرسال ...");
-				checkID();								 	
+				sendToACS();							 	
 		} 
 	
 	}
 
 function checkID()
 {
-	Cloud.Objects.query({
+	Cloud.Users.query({
     classname: 'sirah',
     where: {
-        group_id : args.groupid,
+    //    group_id : args.groupid,
 		id_number:$.txtFld_Idnumber.value
     }
 }, function (e) {
@@ -106,6 +209,7 @@ function checkID()
 });}
 
 
+
 function sendToACS(){
 	
 	Cloud.Users.login({
@@ -114,33 +218,66 @@ function sendToACS(){
 			}, function(e) {
 			  if (e.success)   
 			  {
-			    Cloud.Objects.create({
-			      classname : 'sirah',
-			      fields : {
-					name : $.txtFld_Fullname.value,
-			        score : userScore,
-			        group_id : args.groupid,
-			        id_number:$.txtFld_Idnumber.value,
-			        phone_number:$.txtFld_Phonenumber.value,
-			        uni:$.txtFld_Uniname.value
-			      }
+			    Cloud.Users.create({
+
+			        username:$.txtFld_Idnumber.value,			    	
+			    	password: $.txtFld_Password.value,
+    			 password_confirmation: $.txtFld_PasswordConfirmation.value,
+			     //   score : userScore,
+			     //   group_id : args.groupid,
+			custom_fields:{
+					name : $.txtFld_Fullname.value, 	
+				phone_number:$.txtFld_Phonenumber.value,
+			        uni:$.txtFld_Uniname.value	
+				 },
+				 
+
 			    }, function(e) {
 			      if(e.success) {
 			     	$.sendinglbl.setText(""); 	
-			        customAlert("تم إرسال إجابتك");
+			        customAlert("تم التسجيل");
+			        
+        			        
+			var win = Alloy.createController('groupList', {crsNumber:2}).getView();
+			win.open();
 			        $.register.close();
 			        
+						    Ti.App.Properties.setString('ID',$.txtFld_Idnumber.value);
+						    Ti.App.Properties.setString('Name',$.txtFld_Fullname.value);
+						    Ti.App.Properties.setString('phone',$.txtFld_Phonenumber.value);
+						    Ti.App.Properties.setString('uni',$.txtFld_Uniname.value);
+   			        
+			        
+
+					        
+			        
 			      } else {
+			      	
+			      //if($.txtFld_Password.value == $.txtFld_PasswordConfirmation.value){
+			      		//  $.sendinglbl.setText("");	
+			      	//	   customAlert("كلمة المرور غير متطابقة");	
+			      //	}
+			    //  	else {
+			    	
+			    	
+        alert('Error:\n' +
+            ((e.error && e.message) || JSON.stringify(e)));
+            
 			       $.sendinglbl.setText("");	
-			       customAlert("خطأ في الإرسال");
+			  //     customAlert("خطأ في التسجيل");
+			      //}
 			      }
 			    }); 
 			                 
 			  } else {
-			  	$.sendinglbl.setText("");	
+			 	$.sendinglbl.setText("");	
 			    alert('Login Error:' +((e.error && e.message) || JSON.stringify(e)));
 			  } 
-			});		
+			});	
+			
+
+						
+				
 }
 
 
@@ -179,15 +316,21 @@ function customAlert(msg)
 
 function showInfo()
 {
+		var dialoginfo = Ti.UI.createAlertDialog({
+		title :'شروط المسابقة',
+		message:' -يجب أن تكون بيانات المشارِكة  كاملة و صحيحة، علماً بأن أي نقص أو خطأ فيها قد يحجب عن الفائزة الجائزة \n \n  - أن تتسلم المشاركة جائزتها خلال العام الدراسي ١٤٣٦-١٤٣٧هـ وتلغى الجائزة في حال التأخر عن استلامها\n\n - في حال تساوي عدد الإجابات الصحيحة لعدد من المشاركات فسيتم اختيار الفائزة بالقرعة' ,
+		buttonNames: ['موافق']
+	});
+	dialoginfo.show();
 
-	if (Ti.Platform.name === 'android')
-   {
-   	$.infoView.visible=true;
-   	}
-   	else 
-   	{
-	$.infoView.show();
-	}
+	//if (Ti.Platform.name === 'android')
+   //{
+   //	$.infoView.visible=true;
+   //	}
+   	//else 
+   	//{
+	//$.infoView.show();
+//	}
 	
    
 }
@@ -233,3 +376,21 @@ $.img_Logo.addEventListener('Click', function(e){
 
         
     });    
+    
+    
+    
+function backArrowbtn(){
+	
+	var winInfo = Alloy.createController('login').getView();
+	winInfo.open();
+	$.register.close();
+	
+	
+}
+
+function onImg_homebtnClicked()
+{
+	$.register.close();
+
+	
+}

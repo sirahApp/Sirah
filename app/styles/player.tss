@@ -16,67 +16,86 @@
 
 "#img_Logo": {
     "left": "30.52%",
-    "width": "35.52%",
+   // "width": "35.52%",
     "top": "10.27%",
-    "height": "19.65%",
+   // "height": "19.65%",
     "image": "/images/logo_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
 "#img_Homebtn": {
-    "left": "86.35%",
-    "width": "8.12%",
-    "top": "6.38%",
-    "height": "5.13%",
+    "left": "5%",
+  //  "width": "8.12%",
+    "top": "6%",
+  //  "height": "5.13%",
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+   "backgroundLeftCap": 0.1,  
+     
 }
 
-"#btn_Showquestion": {
-    "left": "31.97%",
-    "width": "34.68%",
-    "backgroundImage": "/images/showQuestion_normal.png",
-    "top": "86.45%",
-    "height": "6.87%",
-    "backgroundSelectedImage": "/images/showQuestion_pressed.png",
+"#img_profile":{
+	
+	"right": "5%",
+ //   "width": "8.12%",
+    "top": "6%",
+   // "height": "5.13%",
+    "image": "/images/profile.png",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,       
+    "backgroundLeftCap": 0.1,    
+	
+}
+
+
+"#btn_Showquestion": {
+    "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#cd9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"سؤال الحلقة >",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
 
 
 "#btn_Playpausebtn": {
-    "left": "21.1%",
-    "width": "13%",
+    "left": "55%",
+  //  "width": "size",
     "backgroundImage": "/images/playPauseBtn_normal.png",
-    "top": "5%",
-    "height": "27.6%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,       
+    "top": "74%",
+    "height": "size",
+//    "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,       
 }
 
 "#btn_Stopbtn": {
-    "left": "4.75%",
-    "width": "13%",
+    "left": "40%",
+    "width":"size",
     "backgroundImage": "/images/stopBtn_normal.png",
-    "top": "5%",
-    "height": "27.6%",
+    "top": "74%",
+  //  "height": "size",
     "backgroundSelectedImage": "/images/stopBtn_pressed.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,    
 }
 
 "#audioTextLbl": {
-	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
     "right": "5%",
-    "color": "#666666",
-    "width": "87%",
-    "top": "65%",
+    "color": "#ffffff",
+    "width": "94%",
+    "top": "50%",
     "bottom": "5%",
     "height": "size",
 	"font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }
@@ -86,61 +105,51 @@
         "fontSize": '11dp',
     },
     "left": "8.64%",
-    "color": "#666666",
+    "color": "#ffffff",
     "width": "size",
-    "top": "35%",
+    "top": "88%",
     "height": "size"
 }
 
 "#groupTextLbl": {
-	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "right": "5%",
-    "color": "#666666",
+	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    "color": "#ffffff",
     "width": "size",
-    "top": "14%",
+    "top": "30%",
     "height": "size",
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '18dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }
 
 "#pageNumber": {
     "left": "46.25%",
-    "color": "#666666",
+    "color": "#ffffff",
     "width": "10%",
     "top": "95.13%",
     "height": "size",
     "font": {
         "fontSize": '14dp',
-        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+        "fontFamily": "NeoSansArabic"
     }    
 }
 
-"#img_Imageview1": {
-    "left": "5.2%",
-    "width": "89.16%",
-    "top": "46.8%",
-    "height": "27.91%",
-    "image": "/images/imageView1_image.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
-}
 
 "#plyView": {
     "left": "5.2%",
-    "width": "89.16%",
-    "top": "46.8%",
-    "height": "27.91%",
+    "width": "90%",
+    "top": "30%",
+    "height": "40%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
 "#timeBar":{
-	"top": "47%",
+	"top": "95%",
 	"width": 250,
-	"height": "7%",
-	"backgroundColor": "#857274",
+	"height": "3%",
+	"backgroundColor": "#5e3f5e",
 }
 
 "#timeProgress":{
@@ -148,7 +157,7 @@
 	"width": "0%",
 	"backgroundGradient": {
     "type": 'linear',
-    "colors": ['#d59f5b', '#85447f'],
+    "colors": ['#ffffff', '#ffffff'],
     "startPoint": { x: 0, y: 0 },
     "endPoint": { x: '100%', y: '100%' },
     "backFillStart":false
@@ -156,10 +165,10 @@
 }
 
 "#waiting": {
-    "top": "40%",
+    "top": "73%",
     "color": "white",
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }

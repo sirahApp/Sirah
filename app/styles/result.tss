@@ -1,0 +1,88 @@
+"#result": {
+    "left": 0,
+    "width": "100%",
+    "navBarHidden": true,
+    "top": 0,
+    "height": "100%",
+    "backgroundImage":"/images/bg_image.png"    
+}
+
+
+".container" : {
+  
+}
+
+
+"#img_Logo": {
+    "left": "30.52%",
+    "width": "35.52%",
+    "top": "10.27%",
+    "height": "19.65%",
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+}
+
+
+"#img_Homebtn": {
+    "left": "5%",
+   // "width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+}
+
+"#btn_result":{
+	"left": "0%",
+    "width": "100%",
+    "backgroundColor":"#9B4F73",
+    "top": "50%",
+    "height": "25%",
+   // "title":"النتيجة",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }  
+	
+}
+	
+
+"#btn_backHome":{
+	"left": "0%",
+    "width": "49.7%",
+    "backgroundColor":"#CD9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"الرئيسية",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '17dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }  
+	
+}
+
+
+"#btn_register":{
+	"right": "0%",
+    "width": "49.7%",
+    "backgroundColor":"#CD9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"المسابقة",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '17dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }  
+	
+}

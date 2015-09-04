@@ -3,6 +3,13 @@
 	backgroundColor: 'white'
 }
 
+
+"#QTxt": {
+    "width": "100%",
+    "top": "30%",
+    "height": "30%"
+}
+
 "#question": {
     "left": "0%",
     "width": "100%",
@@ -16,46 +23,40 @@
 
 "#img_Logo": {
     "left": "30.52%",
-    "width": "35.52%",
+   // "width": "35.52%",
     "top": "10.06%",
-    "height": "19.65%",
+  //  "height": "19.65%",
     "image": "/images/logo_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
 "#img_Homebtn": {
-    "left": "86.35%",
-    "width": "8.12%",
-    "top": "6.18%",
-    "height": "5.13%",
+    "left": "5%",
+   // "width": "8.12%",
+    "top": "6%",
+ //   "height": "5.13%",
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
 
-"#QTxt": {
-    "width": "100%",
-    "top": "32%",
-    "height": "17%"
-}
 
 "#questiontxt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
     "left": "10%",
-    "color": "#FFFFFF",
-    "height": "size"
+    "color": "#FFFFFF"
 }
 
 "#ch1": {
     "right": "5%",
     "width": "90%",
-    "top": "15%",
+    "top": "13%",
     "height": "size",
     value: false,
     "number":"1"
@@ -64,7 +65,7 @@
 "#ch2": {
     "right": "5%",
     "width": "90%",
-    "top": "42%",
+    "top": "39%",
     "height": "size",
     value: false,
     "number":"2"
@@ -73,7 +74,7 @@
 "#ch3": {
     "right": "5%",
     "width": "90%",
-    "top": "70%",
+    "top": "68%",
     "height": "size",
     value: false,
     "number":"3"
@@ -82,11 +83,11 @@
 "#ch1Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
 	    "font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
-    "color": "#150e26",
+    "color": "#ffffff",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
@@ -94,11 +95,11 @@
 "#ch2Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     	"font": {
-    	    "fontSize": '14dp',
+    	    "fontSize": '12dp',
         	"fontFamily": "HelveticaNeueW23forSKY-Reg"
     		},
     "right": "10%",
-    "color": "#150e26",
+    "color": "#ffffff",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
@@ -107,11 +108,11 @@
 "#ch3Txt": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_RIGHT,
     "font": {
-        "fontSize": '14dp',
+        "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "right": "10%",
-    "color": "#150e26",
+    "color": "#ffffff",
     "width": Titanium.UI.SIZE,
     "height": "size",
 }
@@ -141,14 +142,19 @@
 }
 
 "#btn_Nxtaudiobtn": {
-    "left": "32.08%",
-    "width": "34.68%",
-    "backgroundImage": "/images/nxtAudiobtn_normal.png",
-    "top": "86.45%",
-    "height": "6.87%",
-    "backgroundSelectedImage": "/images/nxtAudiobtn_pressed.png",
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#cd9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"التالي >",
+    "color":"#ffffff",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
 
 "#pageNumber": {
@@ -157,7 +163,7 @@
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     },
     "left": "46.04%",
-    "color": "#666666",
+    "color": "#ffffff",
     "width": "10%",
     "text": "\tمن ٦ ",
     "top": "95.13%",
@@ -166,11 +172,10 @@
 
 
 "#img_Imageview1": {
-    "left": "5.2%",
-    "width": "88.95%",
+    "width": "100%",
     "top": "50%",
-    "height": "27.84%",
-    "image": "/images/imageView1_image.png",
+    "height": "25%",
+    "backgroundColor": "#9b4f73",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
 }
@@ -185,4 +190,15 @@
 }
 
 
+"#img_profile":{
+	
+	"right": "5%",
+ //   "width": "8.12%",
+    "top": "6%",
+   // "height": "5.13%",
+    "image": "/images/profile.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+	
+}
 

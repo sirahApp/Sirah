@@ -1,20 +1,48 @@
 <Alloy>
 	<Collection src="sirah"/>
 	<Collection src="groups"/>
-	<Window id ="groupList" class="container" title="">
+	<Window id="groupList"  title="" >
 		<ImageView id="img_Bg" />
-		<ImageView id="img_Logo" />
-		<ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />			
-		<ListView id="lst" defaultItemTemplate="listItemTemp" onItemclick="openDetails" autoStyle="">			
-			<Templates>
-				<ItemTemplate name="listItemTemp" >
-					<ImageView id="img_Arrow" />  										
-					<Label bindId="title" id="titleLbl" />
-				</ItemTemplate>
-			</Templates>				
-			<ListSection dataCollection="groups">
-				<ListItem title:text="{title}" id="lstItem"/>
-			</ListSection>
-		</ListView>
+	<!--	<ImageView  id="img_Homebtn" onClick="onImg_homebtnClicked"/> -->
+		<Label id="backArrow" text=">" onClick="backArrowbtn"/>		
+		<ImageView onClick="onImg_profile" id="img_profile" />
+				
+			<Label id="titleLbl" text="اختر رقم المجموعة..." />
+
+				<View id="row1" layout="horizontal">
+
+				  <Button id="btn4" class="col4" onClick="openDetails" >٤</Button>
+				  <Button id="btn3" class="col3" onClick="openDetails">٣</Button>	
+				  <Button id="btn2" class="col2" onClick="openDetails">٢</Button>				  
+				  <Button id="btn1" class="col1"  onClick="openDetails">١</Button>						  		
+				</View>	
+				<View id="row2" layout="horizontal">
+				  <Button id="btn8" class="col4" onClick="openDetails">٨</Button>
+				  <Button id="btn7" class="col3" onClick="openDetails">٧</Button>					 	
+				  <Button id="btn6" class="col2" onClick="openDetails">٦</Button>
+				  <Button id="btn5" class="col1" onClick="openDetails">٥</Button>						  		
+				</View>	
+				<View id="row3" layout="horizontal">
+		
+				  <Button id="btn12" class="col4" onClick="openDetails">١٢</Button>
+				  <Button id="btn11" class="col3" onClick="openDetails">١١</Button>					  
+				  <Button id="btn10" class="col2" onClick="openDetails">١٠</Button>	
+				  <Button id="btn9" class="col1" onClick="openDetails">٩</Button>				  						  		
+				</View>	
+				<View id="row4" layout="horizontal">
+				  <Button id="btn16" class="col4" onClick="openDetails">١٦</Button>						
+				  <Button id="btn15" class="col3" onClick="openDetails">١٥</Button>
+				  <Button id="btn14" class="col2" onClick="openDetails">١٤</Button>				  						
+				  <Button id="btn13" class="col1" onClick="openDetails">١٣</Button>		
+				</View>
+				<View id="row5" layout="horizontal">
+	
+				  <Button id="btn20" class="col4" onClick="openDetails">٢٠</Button>						
+				  <Button id="btn19" class="col3" onClick="openDetails">١٩</Button>	
+				  <Button id="btn18" class="col2" onClick="openDetails">١٨</Button>				  
+				  <Button id="btn17" class="col1" onClick="openDetails">١٧</Button>					  			  					  		
+				</View>
+
+	
 	</Window>
 </Alloy>

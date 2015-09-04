@@ -8,9 +8,88 @@
 }
 
 
-".container": {
-	title: 'Group List'
+
+
+
+"#backArrow":{
+	
+	"right": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#ffffff",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "NeoSansArabic"
+    }    
+	
 }
+
+"#row1":{
+	top:"30%"
+	
+}
+
+
+"#row2":{
+	top:"41%",
+
+	
+}
+
+"#row3":{
+	top:"52%"
+	
+}
+
+"#row4":{
+	top:"63%"
+	
+}
+
+
+"#row5":{
+	top:"74%"
+	
+}
+
+
+
+
+".col4":{
+	"left":"10%"	
+}
+
+".col3":{
+  "left":"10%"	
+}
+
+".col2":{
+   "left":"10%"	
+}
+
+".col1":{
+"left":"10%"	
+}
+
+
+
+"Button":{
+	
+	 "width": '12.5%',
+	// "height": '40dp',
+//	"right":"7%",
+	 "backgroundColor":"#9b4f73",
+	 "color":"#ffffff",
+	 "font": {
+        "fontSize": '14dp',
+        "fontFamily": "NeoSansArabic"
+    }
+	
+}
+
 
 "Label": {
 	width: Ti.UI.SIZE,
@@ -18,24 +97,27 @@
 	color: "#000"
 } 
 
-"#img_Logo": {
-    "left": "41.35%",
-    "width": "17.39%",
-    "top": "3.54%",
-    "height": "9.65%",
-    "image": "/images/logo_image.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
-}
 
 "#img_Homebtn": {
-    "left": "86.35%",
-    "width": "8.12%",
-    "top": "6.38%",
-    "height": "5.13%",
+    "left": "5%",
+  //  "width": "8.12%",
+    "top": "6%",
+ //   "height": "5.13%",
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,  
+}
+
+"#img_profile":{
+	
+	"right": "5%",
+ //   "width": "8.12%",
+    "top": "6%",
+   // "height": "5.13%",
+    "image": "/images/profile.png",
+    "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,    
+	
 }
 
 "#img_Imageview1": {
@@ -48,19 +130,12 @@
     "backgroundLeftCap": 0.1,    
 }
 
-"#img_Arrow": {
-    "left": "3.33%",
-    "width":Titanium.UI.SIZE,
-    "height":Titanium.UI.SIZE,
-    "image": "/images/arrow_image.png",
-    "backgroundTopCap": 0.1,
-    "top": "20%",
-    "backgroundLeftCap": 0.1,
-}
+
 
 "#titleLbl": {
     "color": "#ffffff",
-    "width": "80%",
+    "top":"16%",
+    "width": "60%",
     "height": "size",
     "textAlign": Ti.UI.TEXT_ALIGNMENT_CENTER,
     "font": {
@@ -69,11 +144,4 @@
     }    
 }
 
-"#lst": {
-	top: '17%',
-	"backgroundColor":"Transparent"
-}
 
-"#lstItem":{
-	"backgroundColor":"Transparent"
-}

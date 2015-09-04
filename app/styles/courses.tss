@@ -1,0 +1,87 @@
+
+".container" : {
+  backgroundColor:null
+}
+
+"#courses": {
+    "navBarHidden": true,
+    "height": "100%",
+    "left": "0%",
+    "width": "100%",
+    "top": "0%",
+    "height": "100%",
+    "backgroundImage": "/images/bg_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,
+}
+
+"#img_Logo": {
+    "left": "30.52%",
+    "width": "35.52%",
+    "top": "10.06%",
+    "height": "19.65%",
+    "image": "/images/logo_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+}
+
+"#img_Homebtn": {
+    "left": "5%",
+    "width": "8.12%",
+    "top": "6%",
+    "height": "5.13%",
+    "image": "/images/homebtn_image.png",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,    
+}
+
+
+
+"#backArrow":{
+	
+	"right": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#ffffff",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }    
+	
+}
+
+"#btn_OpenCourse2": {
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#cd9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"الدورة الحالية ٣٦-٣٧ هـ",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}
+
+
+"#btn_OpenCourse1": {
+   "left": "0%",
+    "width": "100%",
+    "backgroundColor":"#BD7D6A",
+    "top": "70%",
+    "height": "8%",
+    "title":" الدورة السابقة ٣٥- ٣٦ هـ",
+    "color":"#ffffff",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1, 
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
+}

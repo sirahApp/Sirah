@@ -1,0 +1,22 @@
+<Alloy>
+	<Window id="login" class="container" title="">
+		<ImageView id="img_Bg" />
+        <ImageView id="img_Logo" />
+         <Label id="sendinglbl"/>
+        <Label id="backArrow" text=">" onClick="backArrowbtn"/>
+        <TextField id="txtFld_Usrname" onFocus="onTxtUsr_focus" onBlur="onTxtUsr_blur" />
+        <Label id="usrNameHint" text="الرقم الجامعي" /> 
+          <Label id="loginglbl"/>
+		 <View id="Hline"> </View>
+        <TextField id="txtFld_Pass" onFocus="onTxtPass_focus" onBlur="onTxtPass_blur"  />
+        <Label id="passwordHint" text="كلمة المرور" />    
+        <Button  id="btn_SignIn" onClick="onBtn_loginClicked"/>   
+        
+       <Label id="skip_login" text="متابعة بدون تسجيل" onClick="skip_login_btn" /> 
+       <Label id="line" text="|" />
+       <Label id="signUp" text="اشتراك جديد" onClick="onBtn_SignUpClicked" /> 
+           
+        
+		
+	</Window>
+</Alloy>

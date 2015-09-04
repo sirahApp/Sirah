@@ -1,5 +1,5 @@
 var args = arguments[0] || {};
-function onImg_homebtnClicked()
+function backArrowbtn()
 {
 	$.info.close();	
 }

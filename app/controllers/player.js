@@ -1,6 +1,9 @@
 
 var args = arguments[0] || {};
 
+
+
+
 if (Ti.Platform.name === 'iPhone OS')
 {
 	$.player.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
@@ -9,34 +12,77 @@ var epindex=args.sirah.get('id');
 var audionum=args.sirah.get('audionumber'); 
 $.audioTextLbl.text = args.sirah.get('audiotext');
 $.groupTextLbl.text = args.group.get('title');
+ var courseNumber= args.courseNumber;
 
-var pageNumber= epindex%6;
-if (pageNumber == 0)
-{
-	pageNumber = "٦/٦";
+
+
+function onImg_profile(){
+	
+	var profileView=Alloy.createController('profile',{prvWindowID:'player'}).getView();
+	profileView.open();
+	
 }
-else if (pageNumber == 1)
-{
-	pageNumber = "٦/١";
+
+
+if(courseNumber==1)
+{		$.img_profile.visible='false';
+		var pageNumber= epindex%6;
+		if (pageNumber == 0)
+		{
+			pageNumber = "٦/٦";
+		}
+		else if (pageNumber == 1)
+		{
+			pageNumber = "٦/١";
+		}
+		else if (pageNumber == 2)
+		{
+			pageNumber = "٦/٢";
+		}
+		else if (pageNumber == 3)
+		{
+			pageNumber = "٦/٣";
+		}
+		else if (pageNumber == 4)
+		{
+			pageNumber = "٦/٤";
+		}
+		else if (pageNumber == 5)
+		{
+			pageNumber = "٦/٥";
+		}  
+		
+		}
+		
+		else if(courseNumber==2){
+				$.img_profile.visible='true';
+			var pageNumber= epindex%5;
+		if (pageNumber == 0)
+		{
+			pageNumber = "٥/٥";
+		}
+		else if (pageNumber == 1)
+		{
+			pageNumber = "٥/١";
+		}
+		else if (pageNumber == 2)
+		{
+			pageNumber = "٥/٢";
+		}
+		else if (pageNumber == 3)
+		{
+			pageNumber = "٥/٣";
+		}
+		else if (pageNumber == 4)
+		{
+			pageNumber = "٥/٤";
+		}
+			
 }
-else if (pageNumber == 2)
-{
-	pageNumber = "٦/٢";
-}
-else if (pageNumber == 3)
-{
-	pageNumber = "٦/٣";
-}
-else if (pageNumber == 4)
-{
-	pageNumber = "٦/٤";
-}
-else if (pageNumber == 5)
-{
-	pageNumber = "٦/٥";
-}  
 
 $.pageNumber.text = pageNumber ;
+
+
 
 var q={
 	question:args.sirah.get('questiontext'),
@@ -53,6 +99,7 @@ var audioPlayer = Ti.Media.createAudioPlayer({
     allowBackground: false
 });  
 
+Ti.API.info("sound number"+audionum);
 
  audioPlayer.addEventListener('change',function(e)
 {	
@@ -98,6 +145,10 @@ function stopTrack()
     	audioPlayer.setTime(0);
     }          
 }
+
+
+
+
 
 audioPlayer.addEventListener('complete',function(e) 
 {
@@ -158,7 +209,7 @@ $.timeBar.addEventListener('click',function(e){
         
         
  function onBtn_showquestionClicked() {
- 	var questionWin=Alloy.createController('question',{question:q,index:epindex}).getView().open();
+ 	var questionWin=Alloy.createController('question',{question:q,index:epindex,courseNumber:courseNumber}).getView().open();
     $.btn_Playpausebtn.backgroundImage= "/images/playPauseBtn_normal.png";
 	audioPlayer.stop(); 
 	if (Ti.Platform.name === 'android')
@@ -171,6 +222,14 @@ $.timeBar.addEventListener('click',function(e){
 
 function onImg_homebtnClicked()
 {	
+	
+	
+	if(courseNumber==1){
+		
+		$.player.close();
+	}
+	
+	else{
 	var dialog = Ti.UI.createAlertDialog({
 		title :'تنبيه ',
 		message: 'بالعودة للقائمة الرئيسية ستفقد جميع المعلومات و لن يتم اعتبار الاجابات، هل أنت متأكد بأنك تريد العودة للقائمة الرئيسية ؟',
@@ -187,8 +246,11 @@ function onImg_homebtnClicked()
 				}  
 				$.player.close();
 				}	
+				
 	});
 	dialog.show();	
+	
+	}
 }
 
 function customAlert()

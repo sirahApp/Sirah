@@ -11,3 +11,4 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 Alloy.Collections.groups = Alloy.createCollection('groups'); 
 Alloy.Collections.sirah = Alloy.createCollection('sirah');
+Alloy.Collections.sirah2 = Alloy.createCollection('sirah2');

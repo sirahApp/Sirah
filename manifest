@@ -1,9 +1,9 @@
-#appname: Sirah
-#publisher: nourainclub
-#url: http://
-#image: appicon.png
-#appid: com.nourainclub.sirah
-#desc: undefined
-#type: mobile
-#guid: 0b311dae-ba78-4b8d-ba6c-0fc4b6a13a3c
-#version: 1.1
+#appname:Sirah
+#publisher:nourainclub
+#url:http://
+#image:appicon.png
+#appid:com.nourain.sirah
+#desc:undefined
+#type:mobile
+#guid:0b311dae-ba78-4b8d-ba6c-0fc4b6a13a3c
+#version:1.1

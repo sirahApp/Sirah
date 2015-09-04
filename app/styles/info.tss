@@ -14,15 +14,7 @@
     "backgroundLeftCap": 0.1,
 }
 
-"#img_Logo": {
-    "left": "30.52%",
-    "width": "35.52%",
-    "top": "10.27%",
-    "height": "19.65%",
-    "image": "/images/logo_image.png",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
-}
+
 
 "#img_Homebtn": {
     "left": "86.35%",
@@ -34,10 +26,27 @@
     "backgroundLeftCap": 0.1,    
 }
 
+
+"#backArrow":{
+	
+	"right": "3%",
+    //"width": "8.12%",
+    "top": "6%",
+    //"height": "5.13%",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,  
+     "color":"#ffffff",
+    "font": {
+        "fontSize": '36dp',
+        "fontFamily": "NeoSansArabic"
+    }    
+	
+}
+
 "#infoTitle": {
 	  "height":"size",
 	  "width":"size",
-	  "top":"35%",
+	  "top":"15%",
 	  "color":"#FFFFFF",	 
 	  "font": {
 		"fontSize": "18dp",
@@ -53,15 +62,14 @@
 	height: '55%',
 	width: '100%',
     backgroundTopCap: '0.1',
-    backgroundLeftCap: '0.1',
-    "image": "/images/imageView1_image.png"
+    backgroundLeftCap: '0.1'
 },
 
 "#infoView": {
-	top: '43.5%',
+	top: '25%',
 	scrollType: 'vertical',
 	showVerticalScrollIndicator: 'true',
-	height: '53%',
+	height: '70%',
 	width: '100%'
 },
 
@@ -72,9 +80,9 @@
 
 "#infoText": {
 	textAlign: 'right',
-	color: '#150e26',
 	left: '3%',
 	right: '5%',
+	"color":"#ffffff",
 	  "font": {
 		"fontSize": "12dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
@@ -85,7 +93,7 @@
 	  "right": '5%',
 	  "height":"size",
 	  "width":"size",
-	  "color":"#FFFFFF",	 
+	  "color":"#bd7d6a",	 
 	  "font": {
 		"fontSize": "14dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"

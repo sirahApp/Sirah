@@ -1,9 +1,9 @@
 <Alloy>
 	<Window id="about" title="">
-        <ImageView onClick="onImg_homebtnClicked" id="img_Homebtn" />
+        <Label id="backArrow" text=">" onClick="backArrowbtn"/>
         <ImageView id="twitter_icon" onClick="openTwitter"/>
-        <ImageView id="facebook_icon" onClick="openFacebook"/>
-        <ImageView id="youtube_icon" onClick="openYouTube"/>
+    <!-- <ImageView id="facebook_icon" onClick="openFacebook"/>   --> 
+    <!-- <ImageView id="youtube_icon" onClick="openYouTube"/>  --> 
         <ImageView id="blog_icon" onClick="openBlog"/>
 		<ImageView id="nourain_logo"/>
 		<ImageView id="unilogo"/>					  

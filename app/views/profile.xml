@@ -1,0 +1,21 @@
+<Alloy>
+	<Window id="profile" class="container" onOpen="show_profile" onSwipe="show_profile">
+	<View class="container">
+	<Label id="backArrow" text=">" onClick="backArrowbtn"/>			
+	 <Label id="titleLbl" text="بيانات حساب" />
+		 <Label id="txtFld_Fullname" /> 
+
+           
+        <Label id="txtFld_Idnumber" />
+        <Label id="IdnumberHint" text="الرقم الجامعي" />        
+                <View id="Hline2"> </View>
+        <Label id="txtFld_Uniname"/>
+        <Label id="uninameHint" text= "الجامعة" />          
+                <View id="Hline3"> </View>
+        <Label id="txtFld_Phonenumber" />
+        <Label id="phoneHint" text="رقم الجوال" />          
+        
+        <Button  id="btn_SignOut" onClick="onBtn_SignOutClicked"/>   
+	</View>
+	</Window>
+</Alloy>
