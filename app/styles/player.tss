@@ -25,10 +25,17 @@
 }
 
 "#img_Homebtn": {
+<<<<<<< Updated upstream
     "left": "5%",
   //  "width": "8.12%",
     "top": "6%",
   //  "height": "5.13%",
+=======
+    "left":"7%",
+    "width":"8.12%",
+    "top": "6%",
+    "height": "5.13%",
+>>>>>>> Stashed changes
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
    "backgroundLeftCap": 0.1,  
@@ -51,6 +58,7 @@
 "#btn_Showquestion": {
     "left": "0%",
     "width": "100%",
+<<<<<<< Updated upstream
     "backgroundColor":"#cd9365",
     "top": "83%",
     "height": "8%",
@@ -62,10 +70,25 @@
         "fontSize": '18dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }        
+=======
+    "backgroundColor": "#cd9365",
+    "top": "85%",
+    "height": "7%",
+    "textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    "color":"white",
+    "title":"التالي >" ,
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,  
+    	"font": {
+        "fontSize": '18dp',
+        "fontFamily": "NeoSansArabic"
+    }     
+>>>>>>> Stashed changes
 }
 
 
 "#btn_Playpausebtn": {
+<<<<<<< Updated upstream
     "left": "55%",
   //  "width": "size",
     "backgroundImage": "/images/playPauseBtn_normal.png",
@@ -73,14 +96,32 @@
     "height": "size",
 //    "backgroundTopCap": 0.1,
    // "backgroundLeftCap": 0.1,       
+=======
+    "left": "50%",
+    "width": "13%",
+     "size:":"5%",
+    "backgroundImage": "/images/playPauseBtn_normal.png",
+    "top": "20%",
+    "height": "27.6%",
+    "backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,       
+>>>>>>> Stashed changes
 }
 
 "#btn_Stopbtn": {
     "left": "40%",
+<<<<<<< Updated upstream
     "width":"size",
     "backgroundImage": "/images/stopBtn_normal.png",
     "top": "74%",
   //  "height": "size",
+=======
+    "width": "13%",
+    "size:":"10%",
+    "backgroundImage": "/images/stopBtn_normal.png",
+    "top": "20%",
+    "height": "27.6%",
+>>>>>>> Stashed changes
     "backgroundSelectedImage": "/images/stopBtn_pressed.png",
  //   "backgroundTopCap": 0.1,
    // "backgroundLeftCap": 0.1,    
@@ -90,13 +131,22 @@
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
     "right": "5%",
     "color": "#ffffff",
+<<<<<<< Updated upstream
     "width": "94%",
+=======
+    "width": "87%",
+>>>>>>> Stashed changes
     "top": "50%",
     "bottom": "5%",
     "height": "size",
 	"font": {
+<<<<<<< Updated upstream
         "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
+=======
+        "fontSize": '14dp',
+        "fontFamily": "NeoSansArabic"
+>>>>>>> Stashed changes
     }    
 }
 
@@ -113,6 +163,7 @@
 
 "#groupTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
+<<<<<<< Updated upstream
     "color": "#ffffff",
     "width": "size",
     "top": "30%",
@@ -120,12 +171,25 @@
     "font": {
         "fontSize": '18dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
+=======
+    "color": "white",
+    "width": "size",
+    "top": "10%",
+    "height": "size",
+    "font": {
+        "fontSize": '18dp',
+        "fontFamily": "NeoSansArabic"
+>>>>>>> Stashed changes
     }    
 }
 
 "#pageNumber": {
     "left": "46.25%",
+<<<<<<< Updated upstream
     "color": "#ffffff",
+=======
+    "color": "white",
+>>>>>>> Stashed changes
     "width": "10%",
     "top": "95.13%",
     "height": "size",
@@ -135,40 +199,64 @@
     }    
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 "#plyView": {
     "left": "5.2%",
     "width": "90%",
+<<<<<<< Updated upstream
     "top": "30%",
     "height": "40%",
+=======
+    "top": "46.8%",
+    "height": "27.91%",
+>>>>>>> Stashed changes
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+    "backgroundLeftCap": 0.1,
+       
 }
 
 "#timeBar":{
+<<<<<<< Updated upstream
 	"top": "95%",
 	"width": 250,
 	"height": "3%",
+=======
+	"top": "80%",
+	"width": 250,
+	"height": "5%",
+>>>>>>> Stashed changes
 	"backgroundColor": "#5e3f5e",
 }
 
 "#timeProgress":{
 	"left": "0%",
 	"width": "0%",
+<<<<<<< Updated upstream
 	"backgroundGradient": {
     "type": 'linear',
     "colors": ['#ffffff', '#ffffff'],
+=======
+    "backgroundColor":"white",
+>>>>>>> Stashed changes
     "startPoint": { x: 0, y: 0 },
     "endPoint": { x: '100%', y: '100%' },
     "backFillStart":false
   }
-}
 
 "#waiting": {
     "top": "73%",
     "color": "white",
     "font": {
+<<<<<<< Updated upstream
         "fontSize": '12dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
+=======
+        "fontSize": '14dp',
+        "fontFamily": "NeoSansArabic"
+>>>>>>> Stashed changes
     }    
 }
