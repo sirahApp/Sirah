@@ -5,25 +5,33 @@ var Cloud = require('ti.cloud');
 
 Cloud.debug = true;
 
+
 if (Ti.Platform.name === 'iPhone OS')
 {
 	$.login.applyProperties({statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT });
 }
 
+var first = true;
 
 
 function onTxtUsr_focus()
 {
+	if(first){
+        first = false;
+    }else{
+       $.usrNameHint.visible=false;
+    }
 	
-	$.usrNameHint.visible=false;
+	
 }
 
 
 function onTxtUsr_blur()
 
 {
+	
 	if($.txtFld_Usrname.value == "")
-	{
+	{		
 	$.usrNameHint.visible=true;
 	}	
 }
@@ -31,7 +39,6 @@ function onTxtUsr_blur()
 	
 function onTxtPass_focus()
 {
-	
 	$.passwordHint.visible=false;
 }
 

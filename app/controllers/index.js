@@ -27,6 +27,6 @@ function onBtn_signInClicked(e)
 	winInfo.open();
 	};	
 
-$.img_Bg.setScaleType(ScaleType.FIT_XY);
+//$.img_Bg.setScaleType(ScaleType.FIT_XY);
 
 $.index.open();
