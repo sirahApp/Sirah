@@ -1,8 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<<<<<<< Updated upstream
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="acs-api-key-production" type="string">NBE2pjjbdlTBcxnfWSHMOkd6X0XF7YTZ</property>
-    <property name="acs-api-key-development" type="string">g7G5TP3CLRowKq1dwiahtggq7S7DQ2Ct</property>
+    <property name="acs-api-key-production" type="string">C4Auc9eRGArzinSy8xhhz9rXKKCRlZtd</property>
+    <property name="acs-api-key-development" type="string">6H0uXpyogUSvZkIYaaqUv6b2VrvkxM2h</property>
     <id>com.nourain.sirah</id>
     <name>Sirah</name>
     <version>1.1.1.2</version>
@@ -43,8 +42,7 @@
     </ios>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest android:versionCode="2" android:versionName="1.1"
-            package="com.nourain.sirah" xmlns:android="http://schemas.android.com/apk/res/android">
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
+            package="com.nourainclub.sirah" xmlns:android="http://schemas.android.com/apk/res/android">
             <application android:theme="@style/Theme.NoActionBar">
                 <activity
                     android:configChanges="keyboardHidden|orientation"
@@ -70,100 +68,9 @@
         <target device="iphone">true</target>
         <target device="mobileweb">true</target>
     </deployment-targets>
-    <sdk-version>4.1.0.GA</sdk-version>
+    <sdk-version>3.5.1.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
     <property name="appc-app-id" type="string">55b671f9ee42dd851b5789b2</property>
-    <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
-    <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-development" type="string">Xt6KSkFm68Aud02Q8RDyuCP2wZ9wNM8R</property>
-    <property name="acs-oauth-key-development" type="string">820K1Qw3eD5PNEmgGT7oZzqvdxwNrjXm</property>
-    <property name="acs-username-development" type="string">appc_app_user_dev</property>
-    <property name="acs-password-development" type="string">VNy5Gqr4R3JQ9s1h1s</property>
-    <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
-    <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
-    <property name="acs-oauth-secret-production" type="string">aKFdlyS8oKqxWg3rlGQwk0WJR9VS1jdl</property>
-    <property name="acs-oauth-key-production" type="string">CRxFdO3CMWLnyOrwUkZaP9FJBk1MSTBx</property>
-    <property name="acs-username-production" type="string">appc_app_user</property>
-    <property name="acs-password-production" type="string">dyIrXDlXbY06nWiAOf</property>
-    <property name="appc-org-id" type="string">100021962</property>
-    <property name="appc-creator-user-id" type="string">5af36e19-94f8-4cf1-a69a-45514c0d710d</property>
 </ti:app>
-=======
-<ti:app 
-  xmlns:ti="http://ti.appcelerator.org">
-  <property name="acs-api-key-production" type="string">C4Auc9eRGArzinSy8xhhz9rXKKCRlZtd</property>
-  <property name="acs-api-key-development" type="string">6H0uXpyogUSvZkIYaaqUv6b2VrvkxM2h</property>
-  <id>com.nourain.sirah</id>
-  <name>Sirah</name>
-  <version>1.1.1.2</version>
-  <publisher>nourainclub</publisher>
-  <url>http://</url>
-  <description>undefined</description>
-  <copyright>2014 by nourainclub</copyright>
-  <icon>appicon.png</icon>
-  <fullscreen>false</fullscreen>
-  <navbar-hidden>true</navbar-hidden>
-  <analytics>true</analytics>
-  <guid>38d3c6eb-6435-4cb9-9bbb-d3d64055e4c2</guid>
-  <property name="ti.ui.defaultunit" type="string">dp</property>
-  <ios>
-    <plist>
-      <dict>
-        <key>UISupportedInterfaceOrientations~iphone</key>
-        <array>
-          <string>UIInterfaceOrientationPortrait</string>
-        </array>
-        <key>UISupportedInterfaceOrientations~ipad</key>
-        <array>
-          <string>UIInterfaceOrientationPortrait</string>
-          <string>UIInterfaceOrientationPortraitUpsideDown</string>
-          <string>UIInterfaceOrientationLandscapeLeft</string>
-          <string>UIInterfaceOrientationLandscapeRight</string>
-        </array>
-        <key>UIRequiresPersistentWiFi</key>
-        <false/>
-        <key>UIPrerenderedIcon</key>
-        <false/>
-        <key>UIStatusBarHidden</key>
-        <false/>
-        <key>UIStatusBarStyle</key>
-        <string>UIStatusBarStyleDefault</string>
-      </dict>
-    </plist>
-  </ios>
-  <android 
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <manifest android:versionCode="2" android:versionName="1.1" package="com.nourainclub.sirah" 
-      xmlns:android="http://schemas.android.com/apk/res/android">
-      <application android:theme="@style/Theme.NoActionBar">
-        <activity android:configChanges="keyboardHidden|orientation" android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
-      </application>
-    </manifest>
-  </android>
-  <mobileweb>
-    <precache/>
-    <splash>
-      <enabled>false</enabled>
-      <inline-css-images>true</inline-css-images>
-    </splash>
-    <theme>default</theme>
-  </mobileweb>
-  <modules>
-    <module platform="commonjs">ti.cloud</module>
-  </modules>
-  <deployment-targets>
-    <target device="android">true</target>
-    <target device="blackberry">false</target>
-    <target device="ipad">false</target>
-    <target device="iphone">true</target>
-    <target device="mobileweb">true</target>
-  </deployment-targets>
-  <sdk-version>3.4.0.GA</sdk-version>
-  <plugins>
-    <plugin version="1.0">ti.alloy</plugin>
-  </plugins>
-  <property name="appc-app-id" type="string">55b671f9ee42dd851b5789b2</property>
-</ti:app>
->>>>>>> Stashed changes
