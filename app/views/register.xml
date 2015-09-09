@@ -11,10 +11,10 @@
 
         <Label id="sendinglbl"/>
          	
-   <ScrollView id="form" platform="ios" showVerticalScrollIndicator="true">  
+   <ScrollView id="form">  
        	  	     
 
-        <TextField id="txtFld_Fullname" onFocus="fullname_focus" onBlur="fullname_blur" />
+        <TextField id="txtFld_Fullname" onFocus="fullname_focus" onChange="fullname_focus" onBlur="fullname_blur" />
         <Label id="usrNameHint" text="الإسم الرباعي" /> 
                 <View id="Hline1"> </View>
         <TextField id="txtFld_Idnumber" onFocus="Idnumber_focus" onBlur="Idnumber_blur" />
@@ -41,36 +41,7 @@
        	
       </ScrollView> 
       
-      
-      <View id="formView" platform="android">  
-       	  	     
-
-        <TextField id="txtFld_Fullname" />
-
-        <TextField id="txtFld_Idnumber" />
-
-         <TextField id="txtFld_Password" />
-         
-         <TextField id="txtFld_PasswordConfirmation" />        
-       
-        <TextField id="txtFld_Uniname" />
-     
-        <TextField id="txtFld_Phonenumber" />
  
-        
-        <View id="agreements">
-        <Button id="btn_Checkbox" onClick="changeCheckbox" />
-        <Label id="lbl_Checkboxlbl"/> 
-        <Label id="lbl_openInfo" onClick="showInfo"/>   
-		</View>
-		
-		
-       	
-      </View> 
-      
-      
-      
-      
 
 		<ScrollView id="infoView" onClick="hideInfo">
 			<Label id="closeTxt">X إغلاق  </Label>

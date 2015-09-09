@@ -180,7 +180,8 @@
     "left": "10%",
     "width": "80%",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1, 
+    "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent", 
     "top": "25%",
     "height": "10%",
     "paddingLeft": "5",
@@ -224,6 +225,7 @@
     "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
   //  "backgroundImage": "/images/fullName_background.png",    
     "top": "38%",
     "height": "10%",
@@ -270,6 +272,7 @@
     "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
     "top": "51%",
     "height": "10%",
     "paddingLeft": "5",
@@ -316,6 +319,7 @@
     "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
   //  "backgroundImage": "/images/fullName_background.png",    
     "top": "65%",
     "height": "10%",
@@ -359,6 +363,7 @@
     "width": "80%",
     "backgroundTopCap": 0.1,
     "backgroundLeftCap": 0.1,
+    "backgroundColor":"transparent",
     "top": "76%",
     "height": "10%",
     "paddingLeft": "5",
@@ -418,25 +423,13 @@
     }        
 }
 
-
-
-
-
-
-
 "#form":{
   contentHeight: 'auto',
  //	layout: 'vertical',
 	top:"23%",
 	bottom:"13%"
 }
-"#formView":{
-	//borderColor:"red",
-  contentHeight: 'auto',
- //	layout: 'vertical',
-	top:"23%",
-	bottom:"13%"
-}
+
 
 
 "#sendinglbl":{

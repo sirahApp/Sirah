@@ -104,8 +104,8 @@ function onBtn_loginClicked(){
 						          
 						    } else {
 						    	$.sendinglbl.setText("");
-						        alert('Error:\n' +
-						            ((e.error && e.message) || JSON.stringify(e)));
+						       // alert('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
+						            customAlert();
 						    }
 						});
 						
@@ -128,18 +128,23 @@ function onBtn_SignUpClicked() {
 	
 	var winReg = Alloy.createController('register').getView();
 	winReg.open();
-	$.login.close();	
-	
-	
-	
+	$.login.close();		
 }
 
 function backArrowbtn()
 {
-	$.login.close();	
-	
+	$.login.close();		
 }
 
-
+function customAlert()
+	{	
+		var dialog = Ti.UI.createAlertDialog({
+		title :'تنبيه',
+        message: 'فضلا ادخل الرقم الجامعي وكلمة المرور',
+		buttonNames: ['موافق']
+	});
+	dialog.show();
+	
+}
 
 

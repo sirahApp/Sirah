@@ -8,11 +8,7 @@
 }
 
 
-
-
-
-"#backArrow":{
-	
+"#backArrow":{	
 	"right": "3%",
     //"width": "8.12%",
     "top": "6%",
@@ -23,40 +19,28 @@
     "font": {
         "fontSize": '36dp',
         "fontFamily": "NeoSansArabic"
-    }    
-	
+    }    	
 }
 
 "#row1":{
-	top:"30%"
-	
+	top:"30%"	
 }
 
-
 "#row2":{
-	top:"41%",
-
-	
+	top:"42%",	
 }
 
 "#row3":{
-	top:"52%"
-	
+	top:"54%"	
 }
 
 "#row4":{
-	top:"63%"
-	
+	top:"66%"	
 }
-
 
 "#row5":{
-	top:"74%"
-	
+	top:"78%"	
 }
-
-
-
 
 ".col4":{
 	"left":"10%"	
@@ -76,18 +60,16 @@
 
 
 
-"Button":{
-	
+"Button":{	
 	 "width": '12.5%',
-	// "height": '40dp',
+	 "height": '7%',
 //	"right":"7%",
 	 "backgroundColor":"#9b4f73",
 	 "color":"#ffffff",
 	 "font": {
         "fontSize": '14dp',
         "fontFamily": "NeoSansArabic"
-    }
-	
+    }	
 }
 
 

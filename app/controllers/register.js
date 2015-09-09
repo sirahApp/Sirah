@@ -6,12 +6,14 @@ var Cloud = require('ti.cloud');
 var userScore=Alloy.Globals.score;
 
 
-
-
+var first = true;
 function fullname_focus()
-{
-	
-	$.usrNameHint.visible=false;
+{	
+		if(first){
+        first = false;
+    }else{
+       $.usrNameHint.visible=false;
+    }
 }
 
 
