@@ -25,10 +25,10 @@
 }
 
 "#img_Homebtn": {
-    "left":"7%",
-    "width":"8.12%",
+    "left": "5%",
+  //  "width": "8.12%",
     "top": "6%",
-    "height": "5.13%",
+  //  "height": "5.13%",
     "image": "/images/homebtn_image.png",
     "backgroundTopCap": 0.1,
    "backgroundLeftCap": 0.1,  
@@ -51,58 +51,78 @@
 "#btn_Showquestion": {
     "left": "0%",
     "width": "100%",
-    "backgroundColor": "#cd9365",
-    "top": "85%",
-    "height": "7%",
-    "textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
-    "color":"white",
-    "title":"التالي >" ,
+    "backgroundColor":"#cd9365",
+    "top": "83%",
+    "height": "8%",
+    "title":"سؤال الحلقة >",
+    "color":"#ffffff",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,  
-    	"font": {
+    "backgroundLeftCap": 0.1, 
+       "font": {
         "fontSize": '18dp',
-        "fontFamily": "NeoSansArabic"
-    }     
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }        
 }
 
 
-
-"#btn_Playpausebtn": {
-    "left": "50%",
-    "width": "13%",
-     //"size:":"5%",
+"#btn_Playpausebtn[platform=ios]": {
+    "left": "55%",
+  //  "width": "size",
     "backgroundImage": "/images/playPauseBtn_normal.png",
-    "top": "20%",
-    "height": "27.6%",
-    "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,    
+    "top": "74%",
+    "height": "size",
+//    "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,       
 }
 
-
-"#btn_Stopbtn": {
+"#btn_Stopbtn[platform=ios]": {
     "left": "40%",
-    "width": "13%",
-    //"size:":"10%",
+    "width":"size",
     "backgroundImage": "/images/stopBtn_normal.png",
-    "top": "20%",
-    "height": "27.6%",
+    "top": "74%",
+  //  "height": "size",
+    "backgroundSelectedImage": "/images/stopBtn_pressed.png",
+ //   "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,    
+}
+"#ply_stp_btn[platform=android]":{
+	"top": "70%",
+	"height": "8%",
+}
+
+"#btn_Playpausebtn[platform=android]": {
+    "left": "50%",
+    "width": "7%",
+    "backgroundImage": "/images/playPauseBtn_normal.png",
+    //"top": "70%",
+    //"height": Titanium.UI.FILL,
+//    "backgroundTopCap": 0.1,
+   // "backgroundLeftCap": 0.1,       
+}
+
+"#btn_Stopbtn[platform=android]": {
+    "left": "40%",
+    "width":"5%",
+    "backgroundImage": "/images/stopBtn_normal.png",
+    "top": "4%",
+    "bottom": "10%",
+    //"height": Titanium.UI.FILL,
     "backgroundSelectedImage": "/images/stopBtn_pressed.png",
  //   "backgroundTopCap": 0.1,
    // "backgroundLeftCap": 0.1,    
 }
 
-
 "#audioTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
     "right": "5%",
     "color": "#ffffff",
-    "width": "87%",
+    "width": "94%",
     "top": "50%",
     "bottom": "5%",
     "height": "size",
 	"font": {
-        "fontSize": '14dp',
-        "fontFamily": "NeoSansArabic"
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }
 
@@ -119,19 +139,19 @@
 
 "#groupTextLbl": {
 	"textAlign":Titanium.UI.TEXT_ALIGNMENT_CENTER,
-    "color": "white",
+    "color": "#ffffff",
     "width": "size",
-    "top": "10%",
+    "top": "30%",
     "height": "size",
     "font": {
         "fontSize": '18dp',
-        "fontFamily": "NeoSansArabic"
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }
 
 "#pageNumber": {
     "left": "46.25%",
-    "color": "white",
+    "color": "#ffffff",
     "width": "10%",
     "top": "95.13%",
     "height": "size",
@@ -141,37 +161,40 @@
     }    
 }
 
+
 "#plyView": {
     "left": "5.2%",
     "width": "90%",
-    "top": "46.8%",
-    "height": "27.91%",
+    "top": "30%",
+    "height": "40%",
     "backgroundTopCap": 0.1,
-    "backgroundLeftCap": 0.1,
-       
+    "backgroundLeftCap": 0.1,    
 }
 
 "#timeBar":{
-	"top": "80%",
+	"top": "95%",
 	"width": 250,
-	"height": "5%",
+	"height": "3%",
 	"backgroundColor": "#5e3f5e",
 }
 
 "#timeProgress":{
 	"left": "0%",
 	"width": "0%",
-    "backgroundColor":"white",
+	"backgroundGradient": {
+    "type": 'linear',
+    "colors": ['#ffffff', '#ffffff'],
     "startPoint": { x: 0, y: 0 },
     "endPoint": { x: '100%', y: '100%' },
     "backFillStart":false
   }
+}
 
 "#waiting": {
     "top": "73%",
     "color": "white",
     "font": {
-        "fontSize": '14dp',
-        "fontFamily": "NeoSansArabic"
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }    
 }
