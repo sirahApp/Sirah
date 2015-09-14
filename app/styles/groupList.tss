@@ -22,24 +22,31 @@
     }    	
 }
 
+
+
 "#row1":{
-	top:"30%"	
+	top:"0%",
+	height:"10%",
 }
 
 "#row2":{
-	top:"42%",	
+	top:"5%",
+	height:"10%",
 }
 
 "#row3":{
-	top:"54%"	
+	top:"5%",
+	height:"10%",
 }
 
 "#row4":{
-	top:"66%"	
+	top:"5%",
+	height:"10%",	
 }
 
 "#row5":{
-	top:"78%"	
+	top:"5%",
+	height:"10%",	
 }
 
 ".col4":{
@@ -59,10 +66,9 @@
 }
 
 
-
 "Button":{	
 	 "width": '12.5%',
-	 "height": '7%',
+	 "height": '100%',
 //	"right":"7%",
 	 "backgroundColor":"#9b4f73",
 	 "color":"#ffffff",

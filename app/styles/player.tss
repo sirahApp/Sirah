@@ -87,12 +87,12 @@
 }
 "#ply_stp_btn[platform=android]":{
 	"top": "70%",
-	"height": "8%",
+	"height": "20%",
 }
 
 "#btn_Playpausebtn[platform=android]": {
     "left": "50%",
-    "width": "7%",
+    "width": "11%",
     "backgroundImage": "/images/playPauseBtn_normal.png",
     //"top": "70%",
     //"height": Titanium.UI.FILL,
@@ -102,10 +102,10 @@
 
 "#btn_Stopbtn[platform=android]": {
     "left": "40%",
-    "width":"5%",
+    "width":"11%",
     "backgroundImage": "/images/stopBtn_normal.png",
     "top": "4%",
-    "bottom": "10%",
+    "bottom": "3%",
     //"height": Titanium.UI.FILL,
     "backgroundSelectedImage": "/images/stopBtn_pressed.png",
  //   "backgroundTopCap": 0.1,

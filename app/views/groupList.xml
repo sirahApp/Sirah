@@ -8,9 +8,8 @@
 		<ImageView onClick="onImg_profile" id="img_profile" />
 				
 			<Label id="titleLbl" text="اختر رقم المجموعة..." />
-
+<View top="30%" layout="vertical">
 				<View id="row1" layout="horizontal">
-
 				  <Button id="btn4" class="col4" onClick="openDetails" >٤</Button>
 				  <Button id="btn3" class="col3" onClick="openDetails">٣</Button>	
 				  <Button id="btn2" class="col2" onClick="openDetails">٢</Button>				  
@@ -42,7 +41,7 @@
 				  <Button id="btn18" class="col2" onClick="openDetails">١٨</Button>				  
 				  <Button id="btn17" class="col1" onClick="openDetails">١٧</Button>					  			  					  		
 				</View>
-
+</View>
 	
 	</Window>
 </Alloy>

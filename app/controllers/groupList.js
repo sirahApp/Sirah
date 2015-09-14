@@ -99,35 +99,6 @@ var pWidth4 = Ti.Platform.displayCaps.platformWidth*0.88;
 
 var heightofBtn=Ti.Platform.displayCaps.platformWidth*0.125;
 
-//var heightofBtn='10%';
-
-Ti.API.info('Hight if button android = '+heightofBtn);
-	
-	
-
-$.btn1.height=heightofBtn;
-$.btn2.height=heightofBtn;
-$.btn3.height=heightofBtn;
-$.btn4.height=heightofBtn;
-$.btn5.height=heightofBtn;
-$.btn6.height=heightofBtn;
-$.btn7.height=heightofBtn;
-$.btn8.height=heightofBtn;
-
-$.btn9.height=heightofBtn;
-$.btn10.height=heightofBtn;
-$.btn11.height=heightofBtn;
-$.btn12.height=heightofBtn;
-$.btn13.height=heightofBtn;
-$.btn14.height=heightofBtn;
-$.btn15.height=heightofBtn;
-$.btn16.height=heightofBtn;
-
-$.btn17.height=heightofBtn;
-$.btn18.height=heightofBtn;
-$.btn19.height=heightofBtn;
-$.btn20.height=heightofBtn;
-
 
 
 function backArrowbtn()
