@@ -2,6 +2,11 @@ var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
 //Cloud.debug = true;  // optional; if you add this line, set it to false for production
 
+if (Ti.Platform.name === 'android')
+{
+	$.register.windowSoftInputMode = Ti.UI.Android.SOFT_INPUT_ADJUST_PAN;
+}
+
 
 var userScore=Alloy.Globals.score;
 
@@ -11,8 +16,11 @@ function fullname_focus()
 {	
 		if(first){
         first = false;
+        $.txtFld_Fullname.setColor("transparent");
     }else{
        $.usrNameHint.visible=false;
+       $.txtFld_Fullname.setColor("#fff");
+       
     }
 }
 
