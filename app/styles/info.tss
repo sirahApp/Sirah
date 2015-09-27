@@ -66,10 +66,10 @@
 },
 
 "#infoView": {
-	top: '25%',
+	top: '23%',
 	scrollType: 'vertical',
 	showVerticalScrollIndicator: 'true',
-	height: '70%',
+	height: '60%',
 	width: '100%'
 },
 
@@ -98,4 +98,38 @@
 		"fontSize": "14dp",
 		"fontFamily": "HelveticaNeueW23forSKY-Reg"
 	}
+}
+
+
+"#twitter_icon":{
+    "left": "60%",
+   // "width": "8%",
+   // "top": "8%",
+   // "height": "5.13%",	
+	"image":"/images/twitter.png",	
+	"backgroundTopCap": 0.1,
+    "backgroundLeftCap": 0.1,	
+}
+
+
+"#btn_result":{
+    "width": "80%",
+   "backgroundColor":"#cd9365",
+    "top": "85%",
+    "height": "9%",
+   // "title":" (تويتر)عرض النتائج",
+  //  "color":"#ffffff",
+      
+}
+
+
+
+"#showResult":{
+	   "left":"27%",
+	   "color":"#ffffff",
+       "font": {
+        "fontSize": '18dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }
+	
 }

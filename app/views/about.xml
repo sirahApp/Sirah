@@ -1,11 +1,11 @@
 <Alloy>
 	<Window id="about" title="">
         <Label id="backArrow" text=">" onClick="backArrowbtn"/>
-        <ImageView id="twitter_icon" onClick="openTwitter"/>
+      <!--     <ImageView id="twitter_icon" onClick="openTwitter"/> --> 
     <!-- <ImageView id="facebook_icon" onClick="openFacebook"/>   --> 
     <!-- <ImageView id="youtube_icon" onClick="openYouTube"/>  --> 
-        <ImageView id="blog_icon" onClick="openBlog"/>
-		<ImageView id="nourain_logo"/>
+       <!--    <ImageView id="blog_icon" onClick="openBlog"/>  --> 
+		<ImageView id="nourain_logo"onClick="openBlog"/>
 		<ImageView id="unilogo"/>					  
 		<ImageView id="img_Imageview1"/>
 		<ScrollView id="aboutView"> 

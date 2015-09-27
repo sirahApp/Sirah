@@ -19,7 +19,7 @@
 
 
 "#img_Logo": {
-    "left": "30.52%",
+    "left": "33%",
   //  "width": "35.52%",
     "top": "10.27%",
    // "height": "19.65%",
@@ -370,8 +370,8 @@
     "paddingRight": "5",
     "hintTextColor":"#ffffff",
     "textAlign": Titanium.UI.TEXT_ALIGNMENT_RIGHT,
-    "keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
-   // "returnKeyType": Titanium.UI.RETURNKEY_SEND,
+     //"keyboardType":Titanium.UI.KEYBOARD_NUMBER_PAD, 
+     "returnKeyType": Titanium.UI.RETURNKEY_SEND,
    
        "color":"#fff", 
     "font": {
@@ -436,7 +436,7 @@
 	"top": "25%",
     "color": "white",
     "font": {
-        "fontSize": '12dp',
+        "fontSize": '10dp',
         "fontFamily": "HelveticaNeueW23forSKY-Reg"
     }   
 	

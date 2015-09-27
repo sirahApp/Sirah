@@ -21,10 +21,20 @@
     "backgroundLeftCap": 0.1,
 }
 
+"#sendinglbl":{
+	"top": "30%",
+    "color": "white",
+    "font": {
+        "fontSize": '12dp',
+        "fontFamily": "HelveticaNeueW23forSKY-Reg"
+    }   
+	
+}
+
 "#img_Logo": {
-    "left": "30.52%",
+    "left": "33%",
    // "width": "35.52%",
-    "top": "10.06%",
+    "top": "10.27%",
   //  "height": "19.65%",
     "image": "/images/logo_image.png",
     "backgroundTopCap": 0.1,

@@ -3,7 +3,7 @@ var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
 
 
-Cloud.debug = true;
+//Cloud.debug = true;
 
 
 if (Ti.Platform.name === 'iPhone OS')
@@ -73,30 +73,30 @@ function onBtn_loginClicked(){
 		//	  $.sendinglbl.setText(" جاري تسجيل الدخول ...");	
 	//		  if (e.success)   
 		//	  {
-								    
+						$.sendinglbl.setText(" جاري تسجيل الدخول ...");		    
 						Cloud.Users.login({
 		
-						 login:$.txtFld_Usrname.getValue(),
-						 password:$.txtFld_Pass.getValue()
-							// login:'56789',
-						     //password:'56789'
+						login:$.txtFld_Usrname.getValue(),
+						password:$.txtFld_Pass.getValue()
+					     //	 login:'admin',
+						  //   password:'password'
 						}, function (e) {
+						//	$.sendinglbl.setText(" جاري تسجيل الدخول ...");
 						    if (e.success) {
 						        var user = e.users[0];
-						  //      alert('Success:\n' +
-						   //         'id: ' + user.id + '\n' +
-						    //        'sessionId: ' + Cloud.sessionId + '\n' +
-						     //       'first name: ' + user.first_name + '\n' +
-						      //      'last name: ' + user.last_name);
-						   //   alert(user);
+						      //  alert('Success:\n' +
+						        //    'id: ' + user.id + '\n' +
+						          //  'sessionId: ' + Cloud.sessionId + '\n' +
+						          //  'first name: ' + user.first_name + '\n' +
+						          // 'last name: ' + user.last_name);
+						     //alert(user);
 						    Ti.App.Properties.setString('ID',$.txtFld_Usrname.value);
 						    Ti.App.Properties.setString('Name',user.custom_fields.name);
 						    Ti.App.Properties.setString('phone',user.custom_fields.phone_number);
 						    Ti.App.Properties.setString('uni',user.custom_fields.uni);
    
-						    
-						//  Ti.API.info('The value ' +     Ti.App.Properties.setString('ID',$.txtFld_Usrname.value));
-						    $.sendinglbl.setText("");
+					
+						   
 							var win = Alloy.createController('groupList',{crsNumber:2}).getView();
 							win.open();
 							$.login.close();
@@ -104,20 +104,22 @@ function onBtn_loginClicked(){
 						          
 						    } else {
 						    	$.sendinglbl.setText("");
-						       // alert('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
-						            customAlert();
+						      //  alert('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
+						           customAlert();
 						    }
-						});
+					});
 						
 											
 
 			   
 			                 
 			//  } else {
+				
+				
 			
 		  } 
 		//	});	
-		//	
+		
 
 
 
@@ -140,7 +142,7 @@ function customAlert()
 	{	
 		var dialog = Ti.UI.createAlertDialog({
 		title :'تنبيه',
-        message: 'فضلا ادخل الرقم الجامعي وكلمة المرور',
+        message: 'خطأ في الرقم الجامعي/ كلمة المرور',
 		buttonNames: ['موافق']
 	});
 	dialog.show();

@@ -1,5 +1,6 @@
 var args = arguments[0] || {};
 var Cloud = require('ti.cloud');
+
 Alloy.Collections.groups.fetch();
 Alloy.Collections.sirah.fetch();
 Alloy.Collections.sirah2.fetch();
@@ -133,11 +134,10 @@ function onBtn_nxtaudiobtnClicked()
 						{
 							if(e.index==0)
 							{
-								//	Ti.API.info("Score "+userScore);		
+								//	Ti.API.info("Score "+userScore);
+									$.sendinglbl.setText(" جاري  الإرسال ...");	
 									sendToACS();
-									$.question.close();
-									var win = Alloy.createController('index').getView();
-									win.open();
+
 											
 							}	
 						});
@@ -168,7 +168,7 @@ function checkAnswer()
 
 			Alloy.Globals.score++;	
 			userScore=Alloy.Globals.score;
-			Ti.API.info("Global "+Alloy.Globals.score);
+		//	Ti.API.info("Global "+Alloy.Globals.score);
 		}
 	}
 	
@@ -262,12 +262,15 @@ function sendToACS(){
 			      }
 			    }, function(e) {
 			      if(e.success) {
-			  //  	$.sendinglbl.setText(""); 	
+			     	$.sendinglbl.setText(""); 	
 			        customAlert("تم إرسال إجابتك");
 			    //    $.register.close();
-			        
+			       $.question.close();
+					var win = Alloy.createController('index').getView();
+					win.open();
+					
 			      } else {
-			  //  $.sendinglbl.setText("");	
+			      $.sendinglbl.setText("");	
 			       customAlert("خطأ في الإرسال");
 			      }
 			    }); 

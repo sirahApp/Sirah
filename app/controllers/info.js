@@ -15,3 +15,9 @@ function onImg_logoClicked()
 }
 
 
+function onBtn_resultClicked()
+{
+	var link ='https://twitter.com/Nourainclub';
+	Titanium.Platform.openURL(link); 
+	
+}

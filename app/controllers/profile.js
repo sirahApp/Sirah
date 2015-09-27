@@ -52,11 +52,16 @@ function onBtn_SignOutClicked(){
 		var dialog = Ti.UI.createAlertDialog({
 		title :'تنبيه ',
 		message: 'هل أنت متأكد من أنك تود تسجيل الخروج؟',
-		buttonNames: ['نعم','إلغاء']
+		buttonNames: ['إلغاء','نعم']
 	});	
 	dialog.addEventListener('click',function(e){
-		
+
+if(e.index==1){		
+			
 		Cloud.Users.logout(function (e) {
+			
+	
+			
     if (e.success) {
         customAlert('تم تسجيل خروجك بنجاح');
         $.profile.close();
@@ -70,13 +75,21 @@ function onBtn_SignOutClicked(){
         alert('Error:\n' +
             ((e.error && e.message) || JSON.stringify(e)));
     }
+    
+    
+    
 });
-	
+
+
 		$.profile.close();
 		Ti.App.Properties.removeProperty('ID');
 		Ti.App.Properties.removeProperty('uni');		
 		Ti.App.Properties.removeProperty('Name');
 		Ti.App.Properties.removeProperty('phone');
+
+}
+	
+
 	});	
 	
 	

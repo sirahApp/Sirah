@@ -99,7 +99,7 @@ var audioPlayer = Ti.Media.createAudioPlayer({
     allowBackground: false
 });  
 
-Ti.API.info("sound number"+audionum);
+//Ti.API.info("sound number"+audionum);
 
  audioPlayer.addEventListener('change',function(e)
 {	
